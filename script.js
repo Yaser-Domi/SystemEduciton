@@ -539,12 +539,12 @@
             {
                 title: "جامعة بوغازتشي",
                 image: "/IMAGE/boğaziçi/جامعة بوغازتشي.png",
-                url: "/HTML/boğaziçi.html" 
+                url: "boğaziçi.html" 
             },
             {
                 title: "جامعة الفرات",
                 image: "/IMAGE/Fırat/جامعة الفرات.png",
-                url: "/HTML/Fırat.html" 
+                url: "Fırat.html" 
             },
             {
                 title: "جامعة نيغدة عمر خالص",
