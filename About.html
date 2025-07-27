@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/About.css">
+    <title>من نحن؟</title>
+</head>
+<body>
+
+    <!-- Start Nab-bar Section -->
+    <nav class="golden-navbar">
+        <div class="nav-row-1">
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-pages">
+                <li><a href="/HTML/Home.html" target="_blank"><i class="fa fa-fw fa-home"></i>الصفحة الرئيسية</a></li>
+                
+                <li>
+                    <a href="#"><i class="fa-solid fa-landmark"></i>الجامعات</a>
+                    <ul class="dropdown-menus">
+                        <li><a href="/HTML/public universities.html" target="_blank">الجامعات الحكومية</a></li>
+                        <li><a href="/HTML/private universities.html" target="_blank">الجامعات الخاصة</a></li>
+                        <li><a href="map.html" target="_blank">خريطة الجامعات</a></li>
+                        <li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="/HTML/Scholarships.html" target="_blank"><i class="fa-solid fa-dollar-sign"></i>المنح</a>
+                </li>
+                
+                <li>
+                    <a href="/HTML/Training.html" target="_blank"><i class="fa-solid fa-chalkboard-user"></i>فرص التدريب</a>
+                </li>
+                
+                <li>
+                    <a href="./About.html" target="_blank"><i class="fa-solid fa-circle-user"></i>من نحن؟</a>
+                </li>
+            </ul>
+            
+            <!-- Communication icons -->
+            <div class="nav-icons">
+                <a href="https://wa.me/905343498411" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://t.me/systemtr" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        
+        <!-- Navigation Bar -->
+        <div class="nav-row-2">
+            <div class="nav-logo">
+                <img src="/IMAGE/system logo.png" alt="شعار الفريق">
+            </div>
+            <div class="nav-search">
+                <input type="text" id="searchInput" placeholder="ابحث في الجامعات، المنح، التدريب...">
+                <i class="fas fa-search" id="searchIcon"></i>
+                
+                <div class="search-results-container" id="searchResults">
+                    <div class="search-results" id="resultsContainer"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-pages">
+                <li>
+                    <a href="/HTML/Home.html" target="_blank"><i class="fa fa-fw fa-home"></i>الصفحة الرئيسية</a>
+                </li>
+                
+                <li>
+                    <div class="dropdown-toggle" data-target="universities">
+                        <span><i class="fa-solid fa-landmark"></i>الجامعات</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="mobile-dropdown" id="universities">
+                        <li><a href="/HTML/public universities.html" target="_blank">الجامعات الحكومية</a></li>
+                        <li><a href="/HTML/private universities.html" target="_blank">الجامعات الخاصة</a></li>
+                        <li><a href="/HTML/map.html" target="_blank">خريطة الجامعات</a></li>
+                        <li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <div class="dropdown-toggle" data-target="scholarships">
+                        <a href="/HTML/Scholarships.html" target="_blank"><i class="fa-solid fa-dollar-sign"></i>المنح</a>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="dropdown-toggle" data-target="training">
+                        <a href="/HTML/Training.html" target="_blank"><i class="fa-solid fa-chalkboard-user"></i>فرص التدريب</a>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="/HTML/About.html" target="_blank"><i class="fa-solid fa-circle-user"></i>من نحن؟</a>
+                </li>
+            </ul>
+            
+            <div class="mobile-icons">
+                <a href="https://wa.me/905343498411" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://t.me/systemtr" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Nab-bar Section -->
+
+    <!-- Start Header Section -->
+    <section>
+        <div class="full-header">
+            <div class="header-content">
+                <header>
+                    <div class="gold-overlay"></div>
+                    <div class="header-grid">
+                        <div class="text-column" data-aos="fade-right" data-aos-duration="1000">
+                            <h1>أكاديمية التميز التعليمية</h1>
+                            <p>
+                                انطلق في رحلة التعلم مع أكاديمية التميز حيث نقدم لك تجربة تعليمية استثنائية بجودة ذهبية. مناهجنا المصممة بعناية، ومعلمونا الخبراء، وتقنياتنا الحديثة تضمن لك تحقيق أهدافك الأكاديمية والمهنية.
+                            </p>
+                            <div class="buttons">
+                                <button class="btn btn-primary">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    ابدأ رحلتك التعليمية
+                                </button>
+                                <button class="btn btn-secondary">
+                                    <i class="fas fa-book-open"></i>
+                                    تصفح المناهج
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="image-column" data-aos="zoom-in" data-aos-duration="1000">
+                            <div class="image-wrapper floating">
+                                <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="منصة التعليم التفاعلي">
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            
+            <div class="gold-floating-1"></div>
+            <div class="gold-floating-2"></div>
+            <div class="gold-floating-3"></div>
+            
+            <div class="gold-pattern gold-pattern-1"></div>
+            <div class="gold-pattern gold-pattern-2"></div>
+        </div>
+    </section>
+    <!-- End Header Section -->
+
+    <!-- Start Section One -->
+    <section class="section-one">
+    <div class="intro-section">
+        <div class="gold-overlay"></div>
+        <div class="section-title" data-aos="fade-down">
+            <h1>فريقنا التعليمي</h1>
+        </div>
+        
+        <div class="section-grid">
+            <div class="text-column" data-aos="fade-left" data-aos-duration="800">
+                <h1>رسالة التميز والإبداع</h1>
+                <div class="gold-divider"></div>
+                <p>
+                 تتمثل في إعداد جيل قادر على مواجهة تحديات المستقبل بثقة وإبداع، مجهز بالمهارات والمعرفة ليكون قائداً ملهماً في مجتمعه.
+                </p>
+                <p>
+                 تتمثل في إعداد جيل قادر على مواجهة تحديات المستقبل بثقة وإبداع، مجهز بالمهارات والمعرفة ليكون قائداً ملهماً في مجتمعه.
+                </p>
+            </div>
+            
+            <div class="image-column" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="circle-image">
+                    <img src="https://images.unsplash.com/photo-1535982330050-f1c2fb79ff78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="فريقنا التعليمي">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- End Section One -->
+
+    <!-- Start Section Two -->
+    <section class="section-tow">
+        <div class="intro-section">
+            <div class="gold-overlay"></div>
+            
+            <div class="section-title" data-aos="fade-down">
+                <h1>رؤيتنا ورسالتنا</h1>
+            </div>
+            
+            <div class="section-grid">
+                <div class="text-column" data-aos="fade-right" data-aos-duration="800">
+                    <h1>نحو مستقبل تعليمي متميز</h1>
+                    <div class="gold-divider"></div>
+
+                    
+                    <div class="gold-icon-list">
+                        <div class="gold-icon-item">
+                            <div class="gold-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="gold-icon-text">
+                                <h3>التعليم المتكامل</h3>
+                                <p>برامج شاملة تغطي الجوانب الأكاديمية والمهارات الحياتية</p>
+                            </div>
+                        </div>
+                        
+                        <div class="gold-icon-item">
+                            <div class="gold-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="gold-icon-text">
+                                <h3>الابتكار التربوي</h3>
+                                <p>أساليب تعليمية حديثة تركز على التفكير النقدي والإبداعي</p>
+                            </div>
+                        </div>
+                        
+                        <div class="gold-icon-item">
+                            <div class="gold-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="gold-icon-text">
+                                <h3>المجتمع التعليمي</h3>
+                                <p>بيئة داعمة تشجع التعاون وتبادل الخبرات بين الطلاب  </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="image-column" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="circle-image">
+                        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="رؤيتنا التعليمية">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gold-floating-1"></div>
+            <div class="gold-floating-2"></div>
+        </div>
+    </section>
+    <!-- End Section Two -->
+
+    <!-- Start Section Three -->
+    <section class="section-one">
+    <div class="intro-section">
+        <div class="gold-overlay"></div>
+        <div class="section-title" data-aos="fade-down">
+            <h1>فريقنا التعليمي</h1>
+        </div>
+        
+        <div class="section-grid">
+            <div class="text-column" data-aos="fade-left" data-aos-duration="800">
+                <h1>رسالة التميز والإبداع</h1>
+                <div class="gold-divider"></div>
+                <p>
+                 تتمثل في إعداد جيل قادر على مواجهة تحديات المستقبل بثقة وإبداع، مجهز بالمهارات والمعرفة ليكون قائداً ملهماً في مجتمعه.
+                </p>
+                <p>
+                 تتمثل في إعداد جيل قادر على مواجهة تحديات المستقبل بثقة وإبداع، مجهز بالمهارات والمعرفة ليكون قائداً ملهماً في مجتمعه.
+                </p>
+            </div>
+            
+            <div class="image-column" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="circle-image">
+                    <img src="https://images.unsplash.com/photo-1535982330050-f1c2fb79ff78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="فريقنا التعليمي">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- End Section Three -->
+
+    <!-- Start Section Principle-->
+    <section class="principles">
+    <div class="principles-section">
+        <div class="section-background"></div>
+        <div class="dark-overlay"></div>
+        
+        <div class="section-content">
+            <div class="section-header" data-aos="fade-down">
+                <h1>مبادئ فريقنا التعليمي</h1>
+            </div>
+            
+            <div class="principles-grid">
+                <!-- principle 1 -->
+                <div class="principle-item" data-aos="fade-up" data-aos-delay="50">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="principle-title">الإبداع والابتكار</h3>
+                </div>
+                
+                <!-- principle 2 -->
+                <div class="principle-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="principle-title">الاهتمام الفردي</h3>
+                </div>
+                
+                <!-- principle 3 -->
+                <div class="principle-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="principle-title">التميز الأكاديمي</h3>
+                </div>
+                
+                <!-- principle 4 -->
+                <div class="principle-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="principle-title">العمل الجماعي</h3>
+                </div>
+                
+                <!-- principle 5 -->
+                <div class="principle-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="principle-title">التعلم المستمر</h3>
+                </div>
+                
+                <!-- principle 6 -->
+                <div class="principle-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="principle-title">العدالة والمساواة</h3>
+                </div>
+                
+                <!-- principle 7 -->
+                <div class="principle-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="principle-title">الانفتاح العالمي</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- End Section Principle-->
+
+    <!-- Start Section Form -->
+    <section class="form">
+        <div class="form-header">
+            <h1>استبيان الطلاب الشامل</h1>
+        </div>
+        <div class="gold-form-section">
+            <div class="image-column">
+                <div class="gold-image-frame">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="التعليم التفاعلي">
+                    <div class="gold-image-overlay">
+                        <h2>مركز دعم الطلاب</h2>
+                        <p>فريقنا متاح للإجابة على استفساراتك وتقديم الدعم الأكاديمي المتميز</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-column">                
+                <div class="gold-form-container">
+                    <form id="student-form" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="طلب جديد من موقع التعليمي">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <div class="form-row row-1">
+                            <div class="form-group">
+                                <label for="first-name"><i class="fas fa-user"></i> الاسم الأول</label>
+                                <input type="text" id="first-name" name="first-name" class="form-control" placeholder="ادخل اسمك الأول" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name"><i class="fas fa-user-tag"></i> الكنية</label>
+                                <input type="text" id="last-name" name="last-name" class="form-control" placeholder="ادخل كنيـتك" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row row-2">
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone-alt"></i> رقم الهاتف</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="ادخل رقم هاتفك" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="ادخل بريدك الإلكتروني" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row row-3">
+                            <div class="form-group">
+                                <label for="country"><i class="fas fa-globe-asia"></i> الدولة</label>
+                                <select id="country" name="country" class="form-control" required>
+                                    <option value="">اختر دولتك</option>
+                                    <option value="السعودية">المملكة العربية السعودية</option>
+                                    <option value="الإمارات">الإمارات العربية المتحدة</option>
+                                    <option value="الكويت">الكويت</option>
+                                    <option value="قطر">قطر</option>
+                                    <option value="البحرين">البحرين</option>
+                                    <option value="عُمان">عُمان</option>
+                                    <option value="مصر">مصر</option>
+                                    <option value="الأردن">الأردن</option>
+                                    <option value="سوريا">سوريا</option>
+                                    <option value="العراق">العراق</option>
+                                    <option value="الجزائر">الجزائر</option>
+                                    <option value="المغرب">المغرب</option>
+                                    <option value="تونس">تونس</option>
+                                    <option value="ليبيا">ليبيا</option>
+                                    <option value="السودان">السودان</option>
+                                    <option value="اليمن">اليمن</option>
+                                    <option value="لبنان">لبنان</option>
+                                    <option value="موريتانيا">موريتانيا</option>
+                                    <option value="الصومال">الصومال</option>
+                                    <option value="جيبوتي">جيبوتي</option>
+                                    <option value="فلسطين">فلسطين</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="service"><i class="fas fa-hands-helping"></i> نوع الخدمة</label>
+                                <select id="service" name="service" class="form-control" required>
+                                    <option value="">اختر نوع الخدمة</option>
+                                    <option value="استشارة طلابية">استشارة طلابية</option>
+                                    <option value="استفسار عن منحة">استفسار عن منحة</option>
+                                    <option value="طلب سفر دراسي">طلب سفر دراسي</option>
+                                    <option value="تسجيل في دورة تدريبية">تسجيل في دورة تدريبية</option>
+                                    <option value="استفسار عن القبول الجامعي">استفسار عن القبول الجامعي</option>
+                                    <option value="استشارة أكاديمية">استشارة أكاديمية</option>
+                                    <option value="خدمة أخرى">خدمة أخرى</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row row-4">
+                            <div class="form-group">
+                                <label><i class="fas fa-venus-mars"></i> الجنس</label>
+                                <div class="gender-group">
+                                    <div class="gender-option">
+                                        <input type="radio" id="male" name="gender" value="ذكر" required>
+                                        <label for="male">ذكر</label>
+                                    </div>
+                                    <div class="gender-option">
+                                        <input type="radio" id="female" name="gender" value="أنثى">
+                                        <label for="female">أنثى</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row row-5">
+                            <div class="form-group">
+                                <label for="message"><i class="fas fa-comment-dots"></i> الرسالة</label>
+                                <textarea id="message" name="message" class="form-control" placeholder="اكتب رسالتك أو استفسارك بالتفصيل..." required></textarea>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            إرسال الطلب <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="confirmation-message" id="confirmation">
+            <i class="fas fa-check-circle"></i>
+            <h2>تم إرسال طلبك بنجاح!</h2>
+            <p>سيقوم فريقنا بالتواصل معك في أقرب وقت ممكن. شكراً لثقتك بنا.</p>
+            <button onclick="closeConfirmation()">حسناً</button>
+        </div>
+    </section>
+
+    <!-- End Section Form -->
+    
+<!-- Start Footer -->
+
+<div class="footer-wrapper">
+    <div class="footer-content">
+        <!-- Right Column -->
+        <div class="footer-column right-align">
+            <a href="/HTML/index4.html" target="_blank" class="footer-link">
+                <i class="fas fa-university"></i>
+                <span>الجامعات الحكومية</span>
+            </a>
+            <hr class="footer-divider">
+            <a href="/HTML/index5.html" target="_blank" class="footer-link">
+                <i class="fas fa-building"></i>
+                <span>الجامعات الخاصة</span>
+            </a>
+            <hr class="footer-divider">
+            <a href="/HTML/index6.html" target="_blank" class="footer-link">
+                <i class="fas fa-globe"></i>
+                <span>المنح العالمية</span>
+            </a>
+            <hr class="footer-divider">
+            <a href="/HTML/index7.html" target="_blank" class="footer-link">
+                <i class="fas fa-graduation-cap"></i>
+                <span>التدريب</span>
+            </a>
+        </div>
+        
+        <!-- Middle Column -->
+        <div class="footer-column center-align">
+            <a href="/HTML/map.html" target="_blank" class="footer-link">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>خريطة الجامعات</span>
+            </a>
+            <hr class="footer-divider">
+            <a href="/HTML/Table.html" target="_blank" class="footer-link">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>تقويم الجامعات</span>
+            </a>
+            <hr class="footer-divider">
+            <a href="/HTML/About.html" target="_blank" class="footer-link">
+                <i class="fa-solid fa-circle-question"></i>
+                <span>من نحن؟</span>
+            </a>
+            <hr class="footer-divider">
+            <a href="https://wa.me/905343498411" target="_blank" class="footer-link">
+                <i class="fas fa-phone-alt"></i>
+                <span>اتصل بنا</span>
+            </a>
+        </div>
+        
+        <!-- Left Column (Map) -->
+        <div class="footer-column left-align map-column">
+            <div class="map-container">
+                <iframe class="map-iframe" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.279637145691!2d28.97885931572036!3d41.00819497930028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab974807d0575%3A0x44089783d1089f31!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        title="موقعنا في اسطنبول">
+                </iframe>
+            </div>
+            
+            <div class="social-icons">
+                <a href="https://wa.me/905343498411" target="_blank" class="social-icon" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://t.me/systemtr" target="_blank" class="social-icon" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="copyright-section">
+        <hr class="copyright-divider">
+        <div class="copyright">
+            جميع الحقوق محفوظة لدى فريق <span class="heart">❤</span> سيستم © <span id="current-year">2023</span>
+        </div>
+    </div>
+</div>
+<!-- End Footer-->
+
+    <!-- Start Chat Bot -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+    <section>
+    <!-- Floating Chat Button - RIGHT SIDE -->
+    <button class="chat-btn" id="chatButton">
+        <i class="fas fa-plus"></i>
+    </button>
+    
+    <!-- Chat Container -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <h3><i class="fas fa-robot"></i> مساعد الذكاء الاصطناعي</h3>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <div class="message-icon bot-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                مرحبًا! كيف يمكنني مساعدتك اليوم؟
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="اكتب رسالتك هنا..." autocomplete="off">
+            <button class="send-btn" id="sendButton">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+            <button class="mic-btn" id="micButton">
+                <i class="fas fa-microphone"></i>
+            </button>
+        </div>
+    </div>
+    </section>
+
+    <!-- End Chat Bot -->
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/About.js"></script>
+</body>
+</html>

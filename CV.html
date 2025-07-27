@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700&family=Almarai:wght@400&display=swap" 
+    rel="stylesheet">
+    <link rel="icon" href="/IMAGE/system logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/CV.css">
+</head>
+<body>
+
+    <!-- Start Nab-bar Section -->
+    <nav class="golden-navbar">
+        <div class="nav-row-1">
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-pages">
+                <li><a href="/HTML/Home.html" target="_blank"><i class="fa fa-fw fa-home"></i>الصفحة الرئيسية</a></li>
+                
+                <li>
+                    <a href="#"><i class="fa-solid fa-landmark"></i>الجامعات</a>
+                    <ul class="dropdown-menus">
+                        <li><a href="/HTML/public universities.html" target="_blank">الجامعات الحكومية</a></li>
+                        <li><a href="/HTML/private universities.html" target="_blank">الجامعات الخاصة</a></li>
+                        <li><a href="map.html" target="_blank">خريطة الجامعات</a></li>
+                        <li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="/HTML/Scholarships.html" target="_blank"><i class="fa-solid fa-dollar-sign"></i>المنح</a>
+                </li>
+                
+                <li>
+                    <a href="/HTML/Training.html" target="_blank"><i class="fa-solid fa-chalkboard-user"></i>فرص التدريب</a>
+                </li>
+                
+                <li>
+                    <a href="./About.html" target="_blank"><i class="fa-solid fa-circle-user"></i>من نحن؟</a>
+                </li>
+            </ul>
+            
+            <!-- Communication icons -->
+            <div class="nav-icons">
+                <a href="https://wa.me/905343498411" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://t.me/systemtr" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        
+        <!-- Navigation Bar -->
+        <div class="nav-row-2">
+            <div class="nav-logo">
+                <img src="/IMAGE/system logo.png" alt="شعار الفريق">
+            </div>
+            <div class="nav-search">
+                <input type="text" id="searchInput" placeholder="ابحث في الجامعات، المنح، التدريب...">
+                <i class="fas fa-search" id="searchIcon"></i>
+                
+                <div class="search-results-container" id="searchResults">
+                    <div class="search-results" id="resultsContainer"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-pages">
+                <li>
+                    <a href="/HTML/Home.html" target="_blank"><i class="fa fa-fw fa-home"></i>الصفحة الرئيسية</a>
+                </li>
+                
+                <li>
+                    <div class="dropdown-toggle" data-target="universities">
+                        <span><i class="fa-solid fa-landmark"></i>الجامعات</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="mobile-dropdown" id="universities">
+                        <li><a href="/HTML/public universities.html" target="_blank">الجامعات الحكومية</a></li>
+                        <li><a href="/HTML/private universities.html" target="_blank">الجامعات الخاصة</a></li>
+                        <li><a href="/HTML/map.html" target="_blank">خريطة الجامعات</a></li>
+                        <li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <div class="dropdown-toggle" data-target="scholarships">
+                        <a href="/HTML/Scholarships.html" target="_blank"><i class="fa-solid fa-dollar-sign"></i>المنح</a>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="dropdown-toggle" data-target="training">
+                        <a href="/HTML/Training.html" target="_blank"><i class="fa-solid fa-chalkboard-user"></i>فرص التدريب</a>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="/HTML/About.html" target="_blank"><i class="fa-solid fa-circle-user"></i>من نحن؟</a>
+                </li>
+            </ul>
+            
+            <div class="mobile-icons">
+                <a href="https://wa.me/905343498411" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://t.me/systemtr" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Nab-bar Section -->
+
+
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="floating-element circle" style="top:10%; left:5%; width:80px; height:80px; animation: float1 18s infinite ease-in-out;"></div>
+        <div class="floating-element circle" style="bottom:15%; right:5%; width:120px; height:120px; animation: float1 25s infinite ease-in-out reverse;"></div>
+
+        <div class="header-content">
+            <div class="text-content">
+                <h4>ألية إعداد CV - مقال شامل</h4>
+                <hr class="content-hr">
+                <p>
+                دليل احترافي لإعداد السيرة الذاتية: خطوات واضحة تبرز مهاراتك وتجذب انتباه أصحاب العمل
+                </p>
+                <div class="button-group">
+                    <button class="btn btn-primary">إبدأ الرحلة</button>
+                    <button class="btn btn-secondary">استكشف المزيد</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Start Section -->
+<div class="academic-section">
+        <!-- main column -->
+        <div class="main-column">
+            <div class="section-head">
+            <h1>السيرة الذاتية CV</h1>
+            <div class="gold-line first-line"></div>
+            <div class="gold-line second-line"></div>
+            </div>
+            <section class="section-img">
+                <img src="./imges/kırklareli.png" alt="صورة جامعية">
+            </section>
+
+
+            <!-- Start Slideshow -->
+            <section class="section">
+            <i class="section-icon fa-solid fa-images"></i>
+            <span class="section-text">السيرة الذاتية CV</span>
+            </section>
+            <div class="gallery-container">
+            <div class="gallery-slideshow">
+            <div class="slide active">
+            <img src="./imges/kırklareli1.jpg" alt="Kırklareli-Üniversitesi1">
+            <div class="slide-counter">1/3</div>
+            </div>
+            <div class="slide">
+            <img src="./imges/kırkklareli2.jpg" alt="Kırklareli-Üniversitesi2">
+            <div class="slide-counter">2/3</div>
+            </div>
+            <div class="slide">
+            <img src="./imges/kırklareli3.jpg" alt="Kırklareli-Üniversitesi3">
+            <div class="slide-counter">3/3</div>
+            </div>
+            
+            <button class="slide-arrow prev-arrow">&#10095;</button>
+            <button class="slide-arrow next-arrow">&#10094;</button>
+            <div class="slide-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            </div>
+             </div>
+            </div>
+            <!-- End Slideshow -->
+
+            <section class="section">
+            <i class="section-icon fa-solid fa-building-columns"></i>
+            <span class="section-text">السيرة الذاتية CV</span>
+            </section>
+             
+            <section class="section-texts">
+                <div class="text-row">
+                <i class="fa-solid fa-file-lines"></i>
+                <div class="text-content">
+                    <h2 id="education">السيرة الذاتية CV</h2>
+                    <p>
+                    السيرة الذاتية أو Curriculum Vitae (CV) هي وثيقة رسمية تُستخدم لتقديم ملخص شامل عن المؤهلات الأكاديمية والخبرات المهنية والمهارات المكتسبة لدى الفرد، سواء كان باحثًا عن عمل، أو متقدّمًا لفرصة تدريبية، أو راغبًا في مواصلة دراسته الأكاديمية.
+                    <br>تُعدّ السيرة الذاتية أداة تسويقية تمثّل الانطباع الأول الذي يُكوّنه صاحب العمل أو لجنة القبول عن المتقدّم، لذا فإن إعدادها بأسلوب احترافي ومنظم يُعدّ خطوة محورية في مسار النجاح المهني أو الأكاديمي.
+                    <br>تُستخدم السيرة الذاتية غالبًا عند التقدّم للوظائف، المنح الدراسية، برامج الدراسات العليا، أو فرص التدريب، وهي تختلف عن السيرة الذاتية القصيرة (Résumé) من حيث التفاصيل والشمولية.
+                    </p>
+                </div>
+                </div>
+                <div class="text-row">
+                <i class="fa-solid fa-file-lines"></i>
+                <div class="text-content">
+                    <h2>الهيكل العام للسيرة الذاتية</h2>
+                    <p>
+                    يتّبع إعداد السيرة الذاتية (CV) هيكلًا منظمًا يسهّل على القارئ استعراض المعلومات الأساسية بسرعة وفعالية. ويُفضل ترتيب محتوى السيرة الذاتية وفق تسلسل منطقي، مع مراعاة الوضوح والاختصار دون الإخلال بالمضمون. وفيما يلي أبرز الأقسام التي تتكوّن منها السيرة الذاتية:
+                    <br>1- المعلومات الشخصية:
+                    تتضمن الاسم الكامل، تاريخ الميلاد (اختياري)، الجنسية، رقم الهاتف، البريد الإلكتروني، وعنوان السكن. ويُفضل استخدام بريد إلكتروني رسمي يتضمّن الاسم الشخصي.
+                    <br>2- الملخّص المهني أو الهدف الوظيفي:
+                    <br> فقرة قصيرة تُقدّم لمحة عن الخبرات والمهارات الأساسية، وتُبرز التوجّه المهني أو الأكاديمي للمتقدّم. يجب أن تكون محددة ومتناسبة مع نوع الفرصة المستهدفة.
+                    <br>3- التحصيل الأكاديمي:
+                    <br> يُعرض فيه التسلسل التعليمي بدءًا من المؤهل الأكاديمي الأحدث، مع ذكر اسم المؤسسة، الدرجة العلمية، التخصص، وتاريخ التخرج.
+                    <br> 4- الخبرات العملية:
+                    <br> تتضمن المناصب السابقة التي شغلها المتقدّم، سواء بدوام كامل أو جزئي أو حتى تطوّعية، مع توضيح اسم الجهة، الفترة الزمنية، والمهام الرئيسية أو الإنجازات المُحققة.
+                    <br> المهارات:
+                    <br> تشمل المهارات التقنية مثل الحاسوب أو البرمجيات، والمهارات اللغوية، بالإضافة إلى المهارات الشخصية مثل العمل الجماعي، القيادة، والتواصل.
+                    <br> الدورات التدريبية والشهادات:
+                    <br> تُدرج الدورات المهنية أو البرامج التدريبية ذات الصلة بالمجال المطلوب، مع ذكر الجهة المُقدمة وتاريخ الانتهاء.
+                    <br> الأنشطة التطوعية أو المجتمعية:
+                    <br> وهي دليل على الانخراط المجتمعي والنشاط خارج النطاق الأكاديمي أو الوظيفي، مما يضيف بُعدًا إيجابيًا لصورة المتقدّم.
+                    <br> الهوايات والاهتمامات الشخصية (اختياري):
+                    <br> يمكن إدراجها بشكل مختصر إذا كانت ذات صلة أو تضيف قيمة للصورة المهنية.
+                    <br> المراجع (References):
+                    <br> تُذكر عند الطلب، أو يمكن الإشارة إلى توفرها لاحقًا، ويُفضّل أن تكون من أشخاص ذوي صلة مهنية أو أكاديمية.
+                    </p>
+                </div>
+                </div>
+                <div class="text-row">
+                <i class="fa-solid fa-file-lines"></i>
+                <div class="text-content">
+                    <h2>القواعد الشكلية لتنسيق السيرة الذاتية</h2>
+                    <p>
+                    لا تقلّ أهمية التنسيق الشكلي للسيرة الذاتية عن محتواها، إذ إن الشكل العام يُحدث الانطباع الأول لدى القارئ ويُعبّر عن مدى احترافية المتقدّم وتنظيمه. لذلك، يجب الالتزام بعدد من القواعد الشكلية الأساسية التي تعزز من قابلية القراءة وتضفي مظهرًا مهنيًا على الوثيقة، ومن أبرز هذه القواعد:
+                    <br> 1- اختيار خط رسمي وواضح:
+                    <br> يُفضّل استخدام خطوط احترافية مثل (Times New Roman، Arial، Calibri)، بحجم 11 إلى 12 للنصوص و14 إلى 16 للعناوين.
+                    <br> 2- تنظيم الأقسام بوضوح:
+                    <br> يجب استخدام عناوين فرعية بارزة لكل قسم، مع الحفاظ على مسافات متساوية بين الأقسام، لتجنب التكدّس البصري.
+                    <br> 3- ترتيب زمني عكسي للمعلومات:
+                    <br> يُعرض أحدث ما تم تحقيقه أولًا في الأقسام الخاصة بالتعليم والخبرة، لتسهيل التعرّف على المؤهلات الحالية.
+                    <br> 4- الاختصار دون الإخلال بالمعلومة:
+                    <br> ينبغي تجنّب الإسهاب، والتركيز على تقديم معلومات دقيقة ومباشرة، باستخدام نقاط (bullets) عند الحاجة.
+                    <br> 5- الطول المناسب:
+                    <br> يُفضّل أن لا تتجاوز السيرة الذاتية صفحة واحدة لحديثي التخرّج، وصفحتين كحد أقصى لأصحاب الخبرة المتقدمة.
+                    <br> 6- حفظ السيرة الذاتية بصيغة PDF:
+                    <br> يُنصح بحفظ الملف بصيغة PDF للحفاظ على التنسيق، واستخدام اسم ملف واضح
+                    <br> 7- التحقق من اللغة والإملاء:
+                    <br> يجب مراجعة السيرة الذاتية بعناية لتجنّب الأخطاء اللغوية والنحوية، مع الالتزام بلغة رسمية خالية من التعابير العامية.
+                    <br> 8- استخدام لغة مهنية:
+                    <br> يُستحسن استخدام أفعال قوية ومباشرة (مثل: أشرفت، أنجزت، طوّرت، ساهمت) بدلًا من عبارات مبهمة أو غير فعالة.
+                   </p>
+                </div>
+                </div>
+                <div class="text-row">
+                <i class="fa-solid fa-file-lines"></i>
+                <div class="text-content">
+                    <h2>نصائح فعّالة لكتابة سيرة ذاتية احترافية</h2>
+                    <p>
+                    إعداد سيرة ذاتية فعّالة يتطلب أكثر من مجرد ترتيب معلومات، إذ ينبغي مراعاة معايير الجودة والملاءمة الوظيفية لجعلها أداة جذب فعّالة في سوق العمل أو البيئة الأكاديمية. فيما يلي مجموعة من النصائح الجوهرية التي ترفع من مستوى الاحترافية في كتابة السيرة الذاتية:
+                    <br> 1- تكييف السيرة الذاتية حسب الفرصة المستهدفة:
+                    <br> يجب تخصيص السيرة الذاتية وفقًا لكل وظيفة أو منحة أو برنامج أكاديمي، من خلال التركيز على المهارات والخبرات ذات الصلة المباشرة بالمجال.
+                    <br> 2- استخدام أفعال قوية ومؤثرة:
+                    <br> صغ المهام والإنجازات باستخدام أفعال فعلية مثل: أنشأت، طوّرت، حلّلت، قُدت، ساهمت، نظّمت... مما يعكس القدرة على الإنجاز والتحرّك الفعّال.
+                    <br> 3- إبراز الإنجازات لا المهام فقط:
+                    <br> بدلاً من سرد المهام الوظيفية، يُفضل ذكر الإنجازات القابلة للقياس (مثل: "زيادة نسبة المبيعات بنسبة 20%" أو "تنظيم فعالية حضرها 500 مشارك").
+                    <br> 4- تجنّب العبارات العامة وغير الواضحة:
+                    <br> يُستحسن الابتعاد عن الصيغ المبهمة كـ "أقوم بالعديد من المهام" واستبدالها بمعلومات محددة تعكس الجهد الملموس.
+                    <br> 5- إضافة روابط داعمة (إن وُجدت):
+                    <br> يمكن تضمين روابط لمعرض الأعمال (Portfolio)، الحساب المهني على LinkedIn، أو مشاريع منشورة عبر الإنترنت لتعزيز المصداقية.
+                    <br> 6- عدم إغفال المهارات الشخصية:
+                    <br> رغم التركيز على المهارات التقنية، فإن المهارات الشخصية مثل العمل الجماعي، حل المشكلات، والتفكير النقدي لها أثر كبير في تقييم المرشح.
+                    <br> 7- التحقق من الترجمة (إن كانت بلغة غير الأم):
+                    <br> في حال إعداد السيرة الذاتية بلغة أجنبية (كالإنجليزية)، يُوصى بمراجعتها لغويًا أو تدقيقها عبر جهة مختصة لضمان خلوها من الأخطاء.
+                    </p>
+                </div>
+                </div>
+                <div class="text-row">
+                <i class="fa-solid fa-file-lines"></i>
+                <div class="text-content">
+                    <h2>الأخطاء الشائعة التي يجب تجنّبها في كتابة السيرة الذاتية</h2>
+                    <p>
+                    رغم أن السيرة الذاتية تُعدّ أداة تسويقية أساسية، إلا أن كثيرًا من المتقدّمين يقعون في أخطاء تقلّل من فرصهم في القبول أو التوظيف، حتى وإن امتلكوا مؤهلات جيدة. فيما يلي أبرز الأخطاء الشائعة التي ينبغي تجنّبها أثناء إعداد الـCV:
+                    <br> 1- إدراج معلومات غير ضرورية أو شخصية مفرطة:
+                    <br> مثل ذكر الحالة الاجتماعية، عدد الإخوة، أو تفاصيل لا علاقة لها بالمجال المهني أو الأكاديمي، مما يُظهر نقصًا في الاحترافية.
+                    <br> 2- استخدام بريد إلكتروني غير رسمي أو غير احترافي:
+                    <br> يُنصح باستخدام بريد إلكتروني يتضمّن الاسم الحقيقي للمتقدّم (مثال: name.lastname@gmail.com)، وتجنّب الأسماء غير الجادة أو الغامضة.
+                    <br> 3- الأخطاء الإملائية أو اللغوية:
+                    <br> وجود أخطاء في الكتابة يعطي انطباعًا سلبيًا عن ضعف الانتباه للتفاصيل، وهو ما قد يؤدي إلى استبعاد الطلب مباشرة.
+                    <br> 4- التنسيق السيء أو العشوائي:
+                    <br> مثل استخدام خطوط مختلفة، ألوان غير مناسبة، أو تباعد غير منتظم بين الأقسام، مما يجعل قراءة السيرة الذاتية صعبة وغير مريحة.
+                    <br> 5- الإفراط في الطول أو التفاصيل:
+                    <br> يجب تجنّب جعل السيرة الذاتية طويلة دون داعٍ، خاصة عند إدراج تفاصيل غير مرتبطة بالمجال المستهدف، مما قد يُضعف تركيز القارئ.
+                    <br> 6- عدم تحديث البيانات:
+                    <br> مثل الإبقاء على رقم هاتف أو بريد إلكتروني قديم، أو ذكر وظيفة لم تعد قائمة، مما يسبب فقدان فرص تواصل مهمة.
+                    <br> 7- تكرار العبارات أو تداخل الأقسام:
+                    <br> يُفضل تجنّب إعادة المعلومات نفسها في أكثر من قسم، لأن ذلك يشتّت القارئ ويقلل من فعالية عرض المعلومات.
+                    </p>
+                </div>
+                </div>
+            </section>
+
+            <section id="Questions" class="section">
+            <i class="section-icon fa-solid fa-circle-question"></i>
+            <span class="section-text">الأسئلة الشائعة</span>
+            </section>
+            <section class="section-accordion">
+                <div class="accordion-container">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h1>ما الفرق بين السيرة الذاتية (CV) والسيرة المختصرة</h1>
+                            <i class="fas fa-plus accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            السيرة الذاتية (CV) تُستخدم عادة في الأوساط الأكاديمية وتشمل تفاصيل موسعة حول المؤهلات، الخبرات، والإنجازات. أما فهي نسخة مختصرة ومحددة تُستخدم غالبًا في سوق العمل وتُركّز على المهارات والخبرات المرتبطة بالوظيفة فقط.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h1>ما هو الطول المناسب للسيرة الذاتية؟</h1>
+                            <i class="fas fa-plus accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            يُفضّل أن تتكون السيرة الذاتية من صفحة واحدة للمبتدئين وحديثي التخرج، وصفحتين كحد أقصى لأصحاب الخبرة، مع مراعاة أن تكون المعلومات مركّزة وذات صلة.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h1>هل يجب إدراج صورة شخصية في السيرة الذاتية؟</h1>
+                            <i class="fas fa-plus accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            يُعدّ هذا الخيار اختياريًا ويعتمد على ثقافة سوق العمل. في بعض الدول يُفضّل عدم إدراج الصورة للحد من التحيّز، بينما في دول أخرى كتركيا أو ألمانيا قد يُعتبر وجود الصورة جزءًا من المعايير المهنية.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h1>هل يمكن كتابة سيرة ذاتية واحدة للتقديم على كل الوظائف؟</h1>
+                            <i class="fas fa-plus accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            لا يُنصح بذلك. يجب تخصيص السيرة الذاتية لكل فرصة وظيفية أو أكاديمية من خلال تعديل الأقسام الأهم بما يتوافق مع المتطلبات المحددة لكل جهة.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h1>هل الخبرات التطوعية ضرورية في السيرة الذاتية؟</h1>
+                            <i class="fas fa-plus accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            نعم، تُعد الخبرات التطوعية من الإضافات القيّمة، خاصة إذا كانت ذات صلة بالمجال المطلوب، حيث تُظهر روح المبادرة والمسؤولية المجتمعية وتعكس مهارات عملية مفيدة.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- side column -->
+        <div class="sidebar-column">
+            <div class="sidebar-section">
+                <h1>معلومات مفيدة</h1>
+                <hr>
+                <div class="sidebar-item">
+                    <a href="/HTML/Open education.html" target="_blank">
+                    <img src="/IMAGE/Al-Aqsa.jpg" alt="التعليم المفتوح">
+                    <div class="sidebar-item-content">
+                        <h3>التعليم المفتوح</h3>
+                        <p>ادرس عن بعد من أي مكان وبمرونة كبيرة، دون الحاجة للذهاب إلى الجامعة يوميًا.</p>
+                    </a>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <a href="/HTML/YÖS.html" target="_blank">
+                    <img src="/IMAGE/Al-Aqsa.jpg" alt="امتحان اليوس الموحد">
+                    <div class="sidebar-item-content">
+                        <h3>امتحان اليوس الموحد TR-YÖS</h3>
+                        <p>اختبار قياسي لقياس قدرات الطلاب الدوليين للقبول في الجامعات التركية الحكومية</p>
+                    </a>
+                    </div>
+                </div>
+
+                  <div class="sidebar-item">
+                    <a href="/HTML/Sat.html" target="_blank">
+                    <img src="/IMAGE/Al-Aqsa.jpg" alt="امتحان السات">
+                    <div class="sidebar-item-content">
+                        <h3>امتحان السات</h3>
+                        <p>اختبار دولي يقيس مهارات الطلاب في اللغة والرياضيات، ويستخدم للقبول في الجامعات العالمية</p>
+                    </a>
+                    </div>
+                </div>
+
+                  <div class="sidebar-item">
+                    <a href="/HTML/CV.html" target="_blank">
+                    <img src="/IMAGE/Al-Aqsa.jpg" alt="CV">
+                    <div class="sidebar-item-content">
+                        <h3>الطريقةالصحيحة في اعداد CV</h3>
+                        <p>كيفية إعداد السيرة الذاتية بطريقة احترافية تفتح لك أبواب الفرص الوظيفية</p>
+                    </a>
+                    </div>
+                </div>
+
+                  <div class="sidebar-item">
+                    <a href="/HTML/Letter of intent.html" target="_blank">
+                    <img src="/IMAGE/Al-Aqsa.jpg" alt="خطاب النية">
+                    <div class="sidebar-item-content">
+                        <h3>خطاب النية</h3>
+                        <p>هميته ومكوناته وطريقة صياغته بشكل فعّال</p>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h1>أهم الصحفات</h1>
+                <hr>
+                <div class="sidebar-item">
+                    <a href="/HTML/public universities.html" target="_blank">
+                    <img src="/IMAGE/Al-Aqsa.jpg" alt="الجامعات التركية">
+                    <div class="sidebar-item-content">
+                        <h3>الجامعات الحكومية التركية</h3>
+                        <p>ادرس في جامعات تركيا الحكومية وتمتع بتجربة علمية غنية بين الشرق والغرب.</p>
+                    </a>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <a href="/HTML/private universities.html" target="_blank">
+                    <img src="/IMAGE/Al-Aqsa.jpg" alt="صورة فعالية">
+                    <div class="sidebar-item-content">
+                        <h3>الجامعات الخاصة التركية</h3>
+                        <p>نحو مستقبل أكاديمي مشرق... اختر إحدى الجامعات الخاصة المتميزة في تركيا.</p>
+                    </a>
+                    </div>
+                </div>
+
+                  <div class="sidebar-item">
+                    <a href="/HTML/Scholarships.html" target="_blank">
+                    <img src="/IMAGE/Al-Aqsa.jpg" alt="صورة فعالية">
+                    <div class="sidebar-item-content">
+                        <h3>المنح العالمية</h3>
+                        <p>استعد للانطلاق نحو المستقبل مع أقوى المنح العالمية للدراسة في أرقى الجامعات.<p>
+                    </a>
+                    </div>
+                </div>
+
+                  <div class="sidebar-item">
+                    <a href="/HTML/Training.html" target="_blank">
+                    <img src="/IMAGE/Al-Aqsa.jpg" alt="صورة فعالية">
+                    <div class="sidebar-item-content">
+                        <h3>الفرص التدريبية</h3>
+                        <p>استعد لسوق العمل من خلال أفضل الفرص التدريبية المدعومة أكاديميًا ومهنيًا.</p>
+                    </a>
+                    </div>
+                </div>
+
+                  <div class="sidebar-item">
+                    <a href="/HTML/Table.html" target="_blank">
+                    <img src="/IMAGE/Al-Aqsa.jpg" alt="صورة فعالية">
+                    <div class="sidebar-item-content">
+                        <h3>تقويم مفاضلات الجامعات</h3>
+                        <p>تابع جميع مواعيد المفاضلات في الجامعات التركية خطوة بخطوة في مكان واحد.</p>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="sidebar-item">
+                    <a href="/HTML/map.html" target="_blank">
+                    <img src="/IMAGE/Al-Aqsa.jpg" alt="صورة فعالية">
+                    <div class="sidebar-item-content">
+                        <h3>الخريطة التفاعلية للجامعات التركية</h3>
+                        <p>استكشف الجامعات التركية جغرافيًا عبر خريطة تفاعلية دقيقة وسهلة الاستخدام.</p>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h1>أحدث العروض</h1>
+                <hr>
+                <img src="./imges/gaziantep.png" alt="عرض خاص" class="offer-image">
+                <p class="offer-text">خصم 20% على رسوم الفصل الصيفي للطلاب المسجلين قبل 1 يونيو</p>
+            </div>
+
+            <div class="sidebar-section">
+                <h1>تواصل معنا</h1>
+                <hr>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">الاسم الكامل</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">نص الرسالة</label>
+                        <textarea id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">إرسال الرسالة <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End Section -->
+
+    <!-- Start Footer -->
+
+    <div class="footer-wrapper">
+        <div class="footer-content">
+            <!-- Right Column -->
+            <div class="footer-column right-align">
+                <a href="/HTML/public universities.html" target="_blank" class="footer-link">
+                    <i class="fas fa-university"></i>
+                    <span>الجامعات الحكومية</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="/HTML/private universities.html" target="_blank" class="footer-link">
+                    <i class="fas fa-building"></i>
+                    <span>الجامعات الخاصة</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="/HTML/Scholarships.html" target="_blank" class="footer-link">
+                    <i class="fas fa-globe"></i>
+                    <span>المنح العالمية</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="/HTML/Training.html" target="_blank" class="footer-link">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>التدريب</span>
+                </a>
+            </div>
+            
+            <!-- Middle Column -->
+            <div class="footer-column center-align">
+                <a href="/HTML/map.html" target="_blank" class="footer-link">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>خريطة الجامعات</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="/HTML/Table.html" target="_blank" class="footer-link">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>تقويم الجامعات</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="/HTML/About.html" target="_blank" class="footer-link">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>من نحن؟</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="https://wa.me/905343498411" target="_blank" class="footer-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>اتصل بنا</span>
+                </a>
+            </div>
+            
+            <!-- Left Column (Map) -->
+            <div class="footer-column left-align map-column">
+                <div class="map-container">
+                    <iframe class="map-iframe" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.279637145691!2d28.97885931572036!3d41.00819497930028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab974807d0575%3A0x44089783d1089f31!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="موقعنا في اسطنبول">
+                    </iframe>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="https://wa.me/905343498411" target="_blank" class="social-icon" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://t.me/systemtr" target="_blank" class="social-icon" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright-section">
+            <hr class="copyright-divider">
+            <div class="copyright">
+                جميع الحقوق محفوظة لدى فريق <span class="heart">❤</span> سيستم © <span id="current-year">2023</span>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer-->
+
+    <!-- Start Quick Interaction Tools Section -->
+
+        <div class="scroll-progress-container">
+            <div class="scroll-progress-bar"></div>
+        </div>
+        <!-- الأدوات العائمة -->
+        <div class="floating-tools">
+            <div class="main-tools">
+                <div class="floating-btn scroll-top" id="scrollTopBtn">
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+                <div class="floating-btn action-btn" id="actionBtn">
+                    <i class="fas fa-plus"></i>
+                </div>
+            </div>
+            
+            <div class="social-tools">
+                <div class="floating-btn social-btn whatsapp" id="whatsappBtn">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="floating-btn social-btn telegram" id="telegramBtn">
+                    <i class="fab fa-telegram"></i>
+                </div>
+                <div class="floating-btn social-btn facebook" id="facebookBtn">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+            </div>
+        </div>
+    <!-- End Quick Interaction Tools Section -->
+
+
+    <script src="/CV.js"></script>
+</body>
+</html>

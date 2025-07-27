@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فلترة الجامعات التركية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700&family=Almarai:wght@400&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/public universities.css">
+    <link rel="icon" href="/IMAGE/system logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Start Nab-bar Section -->
+    <nav class="golden-navbar">
+        <div class="nav-row-1">
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-pages">
+                <li><a href="/HTML/Home.html" target="_blank"><i class="fa fa-fw fa-home"></i>الصفحة الرئيسية</a></li>
+                
+                <li>
+                    <a href="#"><i class="fa-solid fa-landmark"></i>الجامعات</a>
+                    <ul class="dropdown-menus">
+                        <li><a href="/HTML/public universities.html" target="_blank">الجامعات الحكومية</a></li>
+                        <li><a href="/HTML/private universities.html" target="_blank">الجامعات الخاصة</a></li>
+                        <li><a href="map.html" target="_blank">خريطة الجامعات</a></li>
+                        <li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="/HTML/Scholarships.html" target="_blank"><i class="fa-solid fa-dollar-sign"></i>المنح</a>
+                </li>
+                
+                <li>
+                    <a href="/HTML/Training.html" target="_blank"><i class="fa-solid fa-chalkboard-user"></i>فرص التدريب</a>
+                </li>
+                
+                <li>
+                    <a href="./About.html" target="_blank"><i class="fa-solid fa-circle-user"></i>من نحن؟</a>
+                </li>
+            </ul>
+            
+            <!-- Communication icons -->
+            <div class="nav-icons">
+                <a href="https://wa.me/905343498411" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://t.me/systemtr" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        
+        <!-- Navigation Bar -->
+        <div class="nav-row-2">
+            <div class="nav-logo">
+                <img src="/IMAGE/system logo.png" alt="شعار الفريق">
+            </div>
+            <div class="nav-search">
+                <input type="text" id="searchInput" placeholder="ابحث في الجامعات، المنح، التدريب...">
+                <i class="fas fa-search" id="searchIcon"></i>
+                
+                <div class="search-results-container" id="searchResults">
+                    <div class="search-results" id="resultsContainer"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-pages">
+                <li>
+                    <a href="/HTML/Home.html" target="_blank"><i class="fa fa-fw fa-home"></i>الصفحة الرئيسية</a>
+                </li>
+                
+                <li>
+                    <div class="dropdown-toggle" data-target="universities">
+                        <span><i class="fa-solid fa-landmark"></i>الجامعات</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="mobile-dropdown" id="universities">
+                        <li><a href="/HTML/public universities.html" target="_blank">الجامعات الحكومية</a></li>
+                        <li><a href="/HTML/private universities.html" target="_blank">الجامعات الخاصة</a></li>
+                        <li><a href="/HTML/map.html" target="_blank">خريطة الجامعات</a></li>
+                        <li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <div class="dropdown-toggle" data-target="scholarships">
+                        <a href="/HTML/Scholarships.html" target="_blank"><i class="fa-solid fa-dollar-sign"></i>المنح</a>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="dropdown-toggle" data-target="training">
+                        <a href="/HTML/Training.html" target="_blank"><i class="fa-solid fa-chalkboard-user"></i>فرص التدريب</a>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="/HTML/About.html" target="_blank"><i class="fa-solid fa-circle-user"></i>من نحن؟</a>
+                </li>
+            </ul>
+            
+            <div class="mobile-icons">
+                <a href="https://wa.me/905343498411" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://t.me/systemtr" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Nab-bar Section -->
+
+
+    <!-- Start Header -->
+
+    <header>
+        <div class="container-Header">
+        <div class="slider-container">
+            <div class="slider">
+                <!-- Slide 1 -->
+                <div class="slide slide-1 active">
+                    <div class="slide-content">
+                        <div class="text-col">
+                            <h1>فرص دراسية متميزة</h1>
+                            <hr>
+                            <p>انضم إلى نخبة الطلاب الدوليين في الجامعات الحكومية التركية التي تتمتع بتصنيف عالمي مرموق، وبرامج تعليمية متقدمة، ورسوم دراسية منخفضة، مما يجعلها خيارًا مثاليًا لمن يسعى لتعليم عالي الجودة بتكاليف مناسبة.</p>
+                            <a href="/HTML/index4.html" class="bttn">ابدأ رحلتك الآن</a>
+                        </div>
+                        <div class="img-col">
+                            <div class="slide-img" data-src="/IMAGE/student1.jpg">
+                                <img src="/IMAGE/student1.jpg" alt="تصميم عصري">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="slide slide-2">
+                    <div class="slide-content">
+                        <div class="text-col">
+                            <h1>تعليم عالي بخيارات مرنة</h1>
+                            <hr>
+                            <p>توفر الجامعات الخاصة في تركيا بيئة تعليمية حديثة، ومناهج دولية، وخيارات تخصص متعددة، بالإضافة إلى شراكات مع جامعات عالمية، مما يمنح الطلاب تجربة تعليمية متميزة وفرصًا واسعة للتطور الأكاديمي والمهني.</p>
+                            <a href="/HTML/index5.html" class="bttn">اكتشف الجامعات الخاصة</a>
+                        </div>
+                        <div class="img-col">
+                            <div class="slide-img" data-src="/IMAGE/student2.jpg">
+                                <img src="/IMAGE/student2.jpg" alt="تفاعلية متميزة">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="slide slide-3">
+                    <div class="slide-content">
+                        <div class="text-col">
+                            <h1>فرص تعليمية مُمَيزة بانتظارك</h1>
+                            <hr>
+                            <p>استفد من المنح الدراسية الممولة بالكامل التي تقدمها الجامعات التركية، بالإضافة إلى برامج تدريبية ميدانية وشراكات دولية تفتح أمامك أبواب سوق العمل وتعزز من فرصك المستقبلية.</p>
+                            <a href="" class="bttn">استكشف المنح الآن</a>
+                        </div>
+                        <div class="img-col">
+                            <div class="slide-img" data-src="/IMAGE/student3.jpg">
+                                <img src="/IMAGE/student3.jpg" alt="تصميم متجاوب">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation buttons -->
+            <div class="navigations">
+                <button class="nav-btns active" data-slide="0"></button>
+                <button class="nav-btns" data-slide="1"></button>
+                <button class="nav-btns" data-slide="2"></button>
+            </div>
+            
+            <!-- Arrows -->
+            <div class="arrows">
+                <div class="arrow prev">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="arrow next">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Lightbox -->
+        <div class="lightbox">
+            <button class="close-btns">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="lightbox-content">
+                <img src="" alt="صورة مكبرة">
+            </div>
+        </div>
+    </header>
+
+
+    <!-- End Header -->
+
+
+    <!-- Start Universities-Section -->
+    <section class="universities-section">
+        <!-- الصف الأول: عنوان القسم -->
+        <div class="section-title">
+            <h1>فلترة الجامعات التركية</h1>
+        </div>
+        
+        <!-- الصف الثاني: واجهة الحقول المنسدلة -->
+        <div class="filters-row">
+            <!-- حقل نوع الشهادة -->
+            <div class="filter-group">
+                <label class="filter-label"><i class="fas fa-graduation-cap"></i> نوع الشهادة</label>
+                <div class="dropdown">
+                    <button class="dropdown-toggle">
+                        اختر نوع الشهادة
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="certificate1" value="شهادة الثانوية العامة">
+                            <label for="certificate1">شهادة الثانوية العامة</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="certificate2" value="شهادة السات">
+                            <label for="certificate2">شهادة السات</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="certificate3" value="شهادة اليوس الموحد TR-YÖS">
+                            <label for="certificate3">"شهادة اليوس الموحد TR-YÖS"</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="certificate4" value="شهادة الثانوية التركية">
+                            <label for="certificate4">شهادة الثانوية التركية</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="selected-badges" id="certificate-badges"></div>
+            </div>
+            
+            <!-- حقل التخصص -->
+            <div class="filter-group">
+                <label class="filter-label"><i class="fas fa-book"></i>الكليات المتاحة</label>
+                <div class="dropdown">
+                    <button class="dropdown-toggle">
+                        اختر الكلية
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="major1" value="كلية الطب البشري">
+                            <label for="major1">كلية الطب البشري</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="major2" value="كلية طب الأسنان">
+                            <label for="major2">كلية طب الأسنان</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="major7" value="كلية الطب البيطري">
+                            <label for="major6">كلية الطب البيطري</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="major3" value="كلية الصيدلة">
+                            <label for="major3">كلية الصيدلة</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="major4" value="كلية الهندسة">
+                            <label for="major4">كلية الهندسة</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="major5" value="كلية الاقتصاد والعلوم الإدارية">
+                            <label for="major5">كلية الاقتصاد والعلوم الإدارية</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="major6" value="كلية الحقوق">
+                            <label for="major6">كلية الحقوق</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="major7" value="كلية الشريعة">
+                            <label for="major6">كلية الشريعة</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="major7" value="كلية العلوم الإسلامية">
+                            <label for="major6">كلية العلوم الإسلامية</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="major7" value="كلية العلوم الإنسانية والاجتماعية">
+                            <label for="major6">كلية العلوم الإنسانية والاجتماعية</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="major7" value="كلية التصميم والفنون الجميلة">
+                            <label for="major6">كلية التصميم والفنون الجميلة</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="selected-badges" id="major-badges"></div>
+            </div>
+            
+            <!-- حقل الولاية التركية -->
+            <div class="filter-group">
+                <label class="filter-label"><i class="fas fa-map-marker-alt"></i> الولاية</label>
+                <div class="dropdown">
+                    <button class="dropdown-toggle">
+                        اختر الولاية
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state1" value="إسطنبول">
+                            <label for="state1">إسطنبول</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state2" value="أنقرة">
+                            <label for="state2">أنقرة</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state1" value="إزمير">
+                            <label for="state1">إزمير</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state5" value="أضنة">
+                            <label for="state5">أضنة</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state5" value="أديمان">
+                            <label for="state5">أديمان</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state5" value="أفيون">
+                            <label for="state5">أفيون</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state5" value="أغري">
+                            <label for="state5">أغري</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state5" value="أكسراي">
+                            <label for="state5">أكسراي</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state5" value="أماسيا">
+                            <label for="state5">أماسيا</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state5" value="أنطاليا">
+                            <label for="state5">أنطاليا</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state5" value="أرداهان">
+                            <label for="state5">أرداهان</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state5" value="أرتيفين">
+                            <label for="state5">أرتفين</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state5" value="أيدن">
+                            <label for="state5">أيدن</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state5" value="أدرنة">
+                            <label for="state5">أدرنة</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state5" value="إيلازيغ">
+                            <label for="state5">إيلازيغ</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state5" value="أرزنجان">
+                            <label for="state5">أرزنجان</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state5" value="إسكي شيهر">
+                            <label for="state5">إسكي شيهر</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state5" value="أرزروم">
+                            <label for="state5">أرزروم</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="أغدير">
+                            <label for="state4">أغدير</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state1" value="إسبارطة">
+                            <label for="state1">إسبارطة</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state1" value="أوردو">
+                            <label for="state1">أوردو</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state1" value="أوشاك">
+                            <label for="state1">أوشاك</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state1" value="العثمانية">
+                            <label for="state1">العثمانية</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="بورصة">
+                            <label for="state4">بورصة</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="بالك إسير">
+                            <label for="state4">بالك إسير</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="بارتن">
+                            <label for="state4">بارتن</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="باتمان">
+                            <label for="state4">باتمان</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="بايبورت">
+                            <label for="state4">بايبورت</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="بيليجيك">
+                            <label for="state4">بيليجيك</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="بينغول">
+                            <label for="state4">بينغول</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="بيتليس إيرن">
+                            <label for="state4">بيتليس إيرن</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="بولو">
+                            <label for="state4">بولو</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="بوردور">
+                            <label for="state4">بوردور</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="تشاناكالي">
+                            <label for="state4">تشاناكالي</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="تشاناكري">
+                            <label for="state4">تشاناكري</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="تشوروم">
+                            <label for="state4">تشوروم</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="تيكرداغ">
+                            <label for="state4">تيكرداغ</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="توكات">
+                            <label for="state4">توكات</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="تونجلي">
+                            <label for="state4">تونجلي</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="دينيزلي">
+                            <label for="state4">دينيزلي</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="ديار بكر">
+                            <label for="state4">ديار بكر</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="دوزجة">
+                            <label for="state4">دوزجة</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state1" value="ريزة">
+                            <label for="state1">ريزة</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state1" value="زونجولداك">
+                            <label for="state1">زونجولداك</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state1" value="سكاريا">
+                            <label for="state1">سكاريا</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state1" value="سيرت">
+                            <label for="state1">سيرت</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state1" value="سينوب">
+                            <label for="state1">سينوب</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state1" value="سيواس">
+                            <label for="state1">سيواس</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state1" value="سامسون">
+                            <label for="state1">سامسون</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state1" value="شانلي أورفا">
+                            <label for="state1">شانلي أورفا</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state1" value="شرناق">
+                            <label for="state1">شرناق</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="state1" value="طرابزون">
+                            <label for="state1">طرابزون</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="غازي عنتاب">
+                            <label for="state4">غازي عنتاب</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="غيرسون">
+                            <label for="state4">غيرسون</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="غوموش هانة">
+                            <label for="state4">غوموش هانة</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="فان">
+                            <label for="state4">فان</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="قارص">
+                            <label for="state4">قارص</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="قيصري">
+                            <label for="state4">قيصري</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="قونيا">
+                            <label for="state4">قونيا</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="كهرمان مرعش">
+                            <label for="state4">كهرمان مرعش</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="كارابوك">
+                            <label for="state4">كارابوك</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="كارامان">
+                            <label for="state4">كارامان</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="كاستامونو">
+                            <label for="state4">كاستامونو</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="كلس">
+                            <label for="state4">كلس</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="كركالة">
+                            <label for="state4">كركالة</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="كركلارلة">
+                            <label for="state4">كركلارلة</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="كير شيهر">
+                            <label for="state4">كير شيهر</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="كوجالي">
+                            <label for="state4">كوجالي</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="كوتاهيا">
+                            <label for="state4">كوتاهيا</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="ملاطيا">
+                            <label for="state4">ملاطيا</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="مانيسا">
+                            <label for="state4">مانيسا</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="ماردين">
+                            <label for="state4">ماردين</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="مرسين">
+                            <label for="state4">مرسين</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="موغلا">
+                            <label for="state4">موغلا</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="موش">
+                            <label for="state4">موش</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="نيفشيهير">
+                            <label for="state4">نيفشيهير</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="نيغدة">
+                            <label for="state4">نيغدة</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="هاكاري">
+                            <label for="state4">هاكاري</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="هاتاي">
+                            <label for="state4">هاتاي</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="يالوفا">
+                            <label for="state4">يالوفا</label>
+                        </div>
+                       <div class="dropdown-item">
+                            <input type="checkbox" id="state4" value="يوزغات">
+                            <label for="state4">يوزغات</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="selected-badges" id="state-badges"></div>
+            </div>
+            
+            <!-- حقل لغة التدريس -->
+            <div class="filter-group">
+                <label class="filter-label"><i class="fas fa-language"></i> لغة التدريس</label>
+                <div class="dropdown">
+                    <button class="dropdown-toggle">
+                        اختر لغة التدريس
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="language1" value="التركية">
+                            <label for="language1">التركية</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="language2" value="الإنجليزية">
+                            <label for="language2">الإنجليزية</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="language3" value="العربية">
+                            <label for="language3">العربية</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="language4" value="الفرنسية">
+                            <label for="language4">الفرنسية</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="language4" value="الألمانية">
+                            <label for="language4">الألمانية</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="language4" value="الصينية">
+                            <label for="language4">الصينية</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="language4" value="الكورية">
+                            <label for="language4">الكورية</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="language4" value="الروسية">
+                            <label for="language4">الروسية</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="language4" value="البلغارية">
+                            <label for="language4">البلغارية</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="language4" value="الأرمينية">
+                            <label for="language4">الأرمينية</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="selected-badges" id="language-badges"></div>
+            </div>
+        </div>
+        
+        <!-- الصف الثالث: أزرار التحكم -->
+        <div class="buttons-row">
+            <button class="filter-btn apply-btn">
+                <i class="fas fa-filter"></i>
+                تطبيق الفلترة
+            </button>
+            <button class="filter-btn clear-btn">
+                <i class="fas fa-times"></i>
+                مسح الفلترة
+            </button>
+        </div>
+        
+        <!-- الصف الرابع: عدادات الخيارات -->
+        <div class="counters-row">
+            <div class="counter-card">
+                <div class="counter-number" id="certificate-count">0</div>
+                <div class="counter-label">عدد الشهادات المختارة</div>
+            </div>
+            <div class="counter-card">
+                <div class="counter-number" id="major-count">0</div>
+                <div class="counter-label">عدد التخصصات</div>
+            </div>
+            <div class="counter-card">
+                <div class="counter-number" id="state-count">0</div>
+                <div class="counter-label">عدد الولايات</div>
+            </div>
+            <div class="counter-card">
+                <div class="counter-number" id="language-count">0</div>
+                <div class="counter-label">عدد لغات التدريس</div>
+            </div>
+        </div>
+        
+        <!-- الصف الخامس: حقل عرض النتائج -->
+        <div class="results-row">
+            <div class="results-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="results-text" id="results-message">
+                من فضلك اختر خيارات من الأعلى
+            </div>
+        </div>
+        
+        <!-- الصف السادس: عرض كروت الجامعات -->
+        <div class="cards-row">
+            <div class="cards-container" id="universities-container">
+                <!-- سيتم إضافة كروت الجامعات هنا ديناميكياً -->
+            </div>
+            
+            <!-- نظام التصفح بين الصفحات -->
+            <div class="pagination" id="pagination">
+                <!-- سيتم إضافة أرقام الصفحات هنا ديناميكياً -->
+            </div>
+        </div>
+</section>
+
+<!-- End Universities-Section -->
+
+<!-- Start Page Section -->
+<div class="page-container">
+<div class="page-header">
+<h1>أهم الصفحات</h1>
+<hr>
+</div>
+
+<div class="page-cards-container">
+<!-- Card 1 -->
+<div class="page-card">
+<div class="page-card-image">
+<!-- <img src="/IMAGE/الجامعات الحكومية.png" alt="تطوير المواقع"> -->
+</div>
+<div class="page-card-content">
+<div class="page-icon-title">
+<h3>الجامعات الحكومية</h3>
+</div>
+<a href="/HTML/public universities.html" target="_blank" class="page-more-btn">
+انقر للمزيد
+<i class="fas fa-arrow-left"></i>
+</a>
+</div>
+<div class="gold-border"></div>
+</div>
+
+<!-- Card 2 -->
+<div class="page-card">
+<div class="page-card-image">
+<!-- <img src="/IMAGE/الجامعات الخاصة.png" alt="تطبيقات الجوال"> -->
+</div>
+<div class="page-card-content">
+<div class="page-icon-title">
+<h3>الجامعات الخاصة</h3>
+</div>
+<a href="/HTML/private universities.html" target="_blank" class="page-more-btn">
+انقر للمزيد
+<i class="fas fa-arrow-left"></i>
+</a>
+</div>
+<div class="gold-border"></div>
+</div>
+
+<!-- Card 3 -->
+<div class="page-card">
+<div class="page-card-image">
+<!-- <img src="/IMAGE/الخريطة التفاعلية.png" alt="التسويق الرقمي"> -->
+</div>
+<div class="page-card-content">
+<div class="page-icon-title">
+<h3>الخريطة التفاعلية</h3>
+</div>
+<a href="/HTML/map.html" target="_blank" class="page-more-btn">
+انقر للمزيد
+<i class="fas fa-arrow-left"></i>
+</a>
+</div>
+<div class="gold-border"></div>
+</div>
+
+<!-- Card 4 -->
+<div class="page-card">
+<div class="page-card-image">
+<!-- <img src="/IMAGE/تقويم المفاضلات.png" alt="التصميم الجرافيكي"> -->
+</div>
+<div class="page-card-content">
+<div class="page-icon-title">
+<h3>التقويم الجامعي</h3>
+</div>
+<a href="/HTML/Table.html" target="_blank" class="page-more-btn">
+انقر للمزيد
+<i class="fas fa-arrow-left"></i>
+</a>
+</div>
+<div class="gold-border"></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Section -->
+
+<!-- Start Interactive Statistics Section -->
+
+<section class="counter-section">
+<div class="counter-bg"></div>
+<div class="counter-overlay"></div>
+<div class="counter-container">
+<div class="section-titles">
+<h1>إنجازاتنا التعليمية</h1>
+<hr class="counter-hr">
+</div>
+
+<div class="counters-grid">
+<!-- Student counter -->
+<div class="counter-item">
+<div class="counter-icon">
+<i class="fas fa-graduation-cap"></i>
+</div>
+<div class="counter-number" data-target="1000">0</div>
+<div class="counter-label">طلاب</div>
+</div>
+
+<!-- revolution counter -->
+<div class="counter-item">
+<div class="counter-icon">
+<i class="fas fa-book-open"></i>
+</div>
+<div class="counter-number" data-target="250">0</div>
+<div class="counter-label">دورة تدريبية</div>
+</div>
+
+<!-- Workshop counter -->
+<div class="counter-item">
+<div class="counter-icon">
+<i class="fas fa-chalkboard-teacher"></i>
+</div>
+<div class="counter-number" data-target="500">0</div>
+<div class="counter-label">ورشة عمل</div>
+</div>
+
+<!-- Certificate counter -->
+<div class="counter-item">
+<div class="counter-icon">
+<i class="fas fa-award"></i>
+</div>
+<div class="counter-number" data-target="50">0</div>
+<div class="counter-label">شهادة دولية</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- End Interactive Statistics Section -->
+
+<!-- Start Services -->
+<section class="customer">
+<div class="background-effects" id="background-effects"></div>
+<div class="header-customer">
+<h1>الخدمات والعروض المميزة</h1>
+<hr class="section-customer-hr">
+</div>
+<!-- Page1 -->
+<div class="page active" id="page1">
+<div class="services-container">
+<!-- Page1 Card 1 -->
+<div class="customer-card">
+<div class="circles-container" id="circles1"></div>
+<h2>الحزمة البرونزية <span style="color: gold;">(50$)</span></h2>
+<p><i class="fas fa-check-circle"></i>القبول الجامعي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>إستقبال من المطار</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>المرافقة للتسجيل في الجامعة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>ترجمة الشهادات عربي - إنجليزي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>ترجمة جواز السفر عربي - إنجليزي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>المساعدة في إستخراج الإقامة الطلابية</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>حجز موعد الإقامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>خط الهاتف</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>بطاقة المواصلات العامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>التأمين الصحي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>إستخراج الرقم الضريبي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>دفع ضريبة الإقامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>تصديق الشهادة الثانوية من كاتب العدل</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>فتح حساب بنكي</p>
+</div>
+
+<!-- Page1 Card 2 -->
+<div class="customer-card">
+<div class="circles-container" id="circles2"></div>
+<h2>الحزمة الفضية <span style="color: gold;">(100$)</span></h2>
+<p><i class="fas fa-check-circle"></i>القبول الجامعي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>إستقبال من المطار</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>المرافقة للتسجيل في الجامعة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>ترجمة الشهادات عربي - إنجليزي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>ترجمة جواز السفر عربي - إنجليزي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>المساعدة في إستخراج الإقامة الطلابية</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>حجز موعد الإقامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>خط الهاتف</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>بطاقة المواصلات العامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>التأمين الصحي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>إستخراج الرقم الضريبي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>دفع ضريبة الإقامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>تصديق الشهادة الثانوية من كاتب العدل</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>فتح حساب بنكي</p>
+</div>
+
+<!-- Page1 Card 3 -->
+<div class="customer-card">
+<div class="circles-container" id="circles3"></div>
+<h2>الحزمة الذهبية <span style="color: gold;">(150$)</span></h2>
+<p><i class="fas fa-check-circle"></i>القبول الجامعي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>إستقبال من المطار</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>المرافقة للتسجيل في الجامعة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>ترجمة الشهادات عربي - إنجليزي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>ترجمة جواز السفر عربي - إنجليزي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>المساعدة في إستخراج الإقامة الطلابية</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>حجز موعد الإقامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>خط الهاتف</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>بطاقة المواصلات العامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>التأمين الصحي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>إستخراج الرقم الضريبي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>دفع ضريبة الإقامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>تصديق الشهادة الثانوية من كاتب العدل</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>فتح حساب بنكي</p>
+</div>
+</div>
+</div>
+
+<!-- Page 2 -->
+<div class="page" id="page2">
+<div class="services-container">
+<!-- Page2 Card 4 -->
+<div class="customer-card">
+<div class="circles-container" id="circles4"></div>
+<h2>الحزمة الألماسية <span style="color: gold;">(200$)</span></h2>
+<p><i class="fas fa-check-circle"></i>القبول الجامعي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>إستقبال من المطار</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>المرافقة للتسجيل في الجامعة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>ترجمة الشهادات عربي - إنجليزي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>ترجمة جواز السفر عربي - إنجليزي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>المساعدة في إستخراج الإقامة الطلابية</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>حجز موعد الإقامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>خط الهاتف</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>بطاقة المواصلات العامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>التأمين الصحي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>إستخراج الرقم الضريبي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>دفع ضريبة الإقامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>تصديق الشهادة الثانوية من كاتب العدل</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>فتح حساب بنكي</p>
+</div>
+
+<!--Page2 Card 5 -->
+<div class="customer-card">
+<div class="circles-container" id="circles5"></div>
+<h2>الحزمة الشائعة <span style="color: gold;">(250$)</span></h2>
+<p><i class="fas fa-check-circle"></i>القبول الجامعي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>إستقبال من المطار</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>المرافقة للتسجيل في الجامعة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>ترجمة الشهادات عربي - إنجليزي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>ترجمة جواز السفر عربي - إنجليزي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>المساعدة في إستخراج الإقامة الطلابية</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>حجز موعد الإقامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>خط الهاتف</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>بطاقة المواصلات العامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>التأمين الصحي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>إستخراج الرقم الضريبي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>دفع ضريبة الإقامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>تصديق الشهادة الثانوية من كاتب العدل</p>
+<hr class="customer-hr">
+<p><i class="fas fa-times-circle"></i>فتح حساب بنكي</p>
+</div>
+
+<!-- Page2 Card 6 -->
+<div class="customer-card">
+<div class="circles-container" id="circles6"></div>
+<h2>الحزمة الشاملة <span style="color: gold;">(300$)</span></h2>
+<p><i class="fas fa-check-circle"></i>القبول الجامعي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>إستقبال من المطار</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>المرافقة للتسجيل في الجامعة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>ترجمة الشهادات عربي - إنجليزي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>ترجمة جواز السفر عربي - إنجليزي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>المساعدة في إستخراج الإقامة الطلابية</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>حجز موعد الإقامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>خط الهاتف</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>بطاقة المواصلات العامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>التأمين الصحي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>إستخراج الرقم الضريبي</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>دفع ضريبة الإقامة</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>تصديق الشهادة الثانوية من كاتب العدل</p>
+<hr class="customer-hr">
+<p><i class="fas fa-check-circle"></i>فتح حساب بنكي</p>
+</div>
+</div>
+</div>
+
+<div class="pagination">
+<button class="customer-page-btn active" id="page1-btn">1</button>
+<button class="customer-page-btn" id="page2-btn">2</button>
+</div>
+</section>
+
+<!-- End Services -->
+
+<!-- Start Customer Reviews -->
+<section class="comments-container">
+<div class="Section-title">
+<h1>آراء عملائنا</h1>
+<hr class="section-title-hr">
+</div>
+
+<div class="testimonial mySwiper">
+<div class="testi-content swiper-wrapper">
+<div class="slides swiper-slide">
+<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" alt="صورة العميل" class="image">
+<p>
+"لقد كانت تجربة رائعة مع هذا الفريق! لقد تجاوزوا توقعاتي في كل جانب من جوانب المشروع. السرعة في الإنجاز والدقة في التنفيذ جعلتني أشعر أنني في أيد أمينة."
+</p>
+<i class="fa-solid fa-quote-left quote-icon"></i>
+<div class="details">
+<span class="name">محمد أحمد</span>
+<div class="rating">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+<div class="slides swiper-slide">
+<img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop" alt="صورة العميل" class="image">
+<p>
+"المهنية والالتزام بالمواعيد النقاط البارزة في تعاملنا. لقد قدم الفريق حلولاً مبتكرة لمشاكل ظننتها مستعصية. بالتأكيد سأتعامل معهم مرة أخرى في مشاريعي القادمة."
+</p>
+<i class="fa-solid fa-quote-left quote-icon"></i>
+<div class="details">
+<span class="name">سارة خالد</span>
+<div class="rating">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+<div class="slides swiper-slide">
+<img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop" alt="صورة العميل" class="image">
+<p>
+"الجودة في العمل والاهتمام بالتفاصيل الصغيرة هي ما يميز هذا الفريق. لقد استمعوا لاحتياجاتي بعناية وترجموها إلى واقع يفوق التوقعات. شكراً لكم على هذا الجهد الرائع!"
+</p>
+<i class="fa-solid fa-quote-left quote-icon"></i>
+<div class="details">
+<span class="name">نورة عبد الله</span>
+<div class="rating">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-button-next nav-btn"></div>
+<div class="swiper-button-prev nav-btn"></div>
+<div class="swiper-pagination"></div>
+</div>
+</section>
+<!-- Ends Customer Reviews -->
+
+<!-- Start Team members -->
+    <section class="teams-section">
+        <h1 class="teams-section-title">أعضاء الفريق</h1>
+        
+        <div class="team-container">
+            <!-- العضو الأول -->
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="المدير التنفيذي">
+                </div>
+                <div class="divider"></div>
+                <h4 class="team-name-ar">أحمد محمد</h4>
+                <h4 class="team-name-en">Ahmed Mohamed</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <!-- العضو الثاني -->
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="مدير التصميم">
+                </div>
+                <div class="divider"></div>
+                <h4 class="team-name-ar">سارة خالد</h4>
+                <h4 class="team-name-en">Sara Khalid</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+            
+            <!-- العضو الثالث -->
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="مدير التطوير">
+                </div>
+                <div class="divider"></div>
+                <h4 class="team-name-ar">عمر عبدالله</h4>
+                <h4 class="team-name-en">Omar Abdullah</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-stack-overflow"></i></a>
+                </div>
+            </div>
+            
+            <!-- العضو الرابع -->
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="مدير التسويق">
+                </div>
+                <div class="divider"></div>
+                <h4 class="team-name-ar">نورا سعد</h4>
+                <h4 class="team-name-en">Nora Saad</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- End Team members -->
+
+<!-- Start Footer -->
+
+<div class="footer-wrapper">
+<div class="footer-content">
+<!-- Right Column -->
+<div class="footer-column right-align">
+<a href="/HTML/public universities.html" target="_blank" class="footer-link">
+<i class="fas fa-university"></i>
+<span>الجامعات الحكومية</span>
+</a>
+<hr class="footer-divider">
+<a href="/HTML/private universities.html" target="_blank" class="footer-link">
+<i class="fas fa-building"></i>
+<span>الجامعات الخاصة</span>
+</a>
+<hr class="footer-divider">
+<a href="/HTML/Scholarships.html" target="_blank" class="footer-link">
+<i class="fas fa-globe"></i>
+<span>المنح العالمية</span>
+</a>
+<hr class="footer-divider">
+<a href="/HTML/Training.html" target="_blank" class="footer-link">
+<i class="fas fa-graduation-cap"></i>
+<span>التدريب</span>
+</a>
+</div>
+
+<!-- Middle Column -->
+<div class="footer-column center-align">
+<a href="/HTML/map.html" target="_blank" class="footer-link">
+<i class="fa-solid fa-location-dot"></i>
+<span>خريطة الجامعات</span>
+</a>
+<hr class="footer-divider">
+<a href="/HTML/Table.html" target="_blank" class="footer-link">
+<i class="fa-solid fa-calendar-days"></i>
+<span>تقويم الجامعات</span>
+</a>
+<hr class="footer-divider">
+<a href="/HTML/About.html" target="_blank" class="footer-link">
+<i class="fa-solid fa-circle-question"></i>
+<span>من نحن؟</span>
+</a>
+<hr class="footer-divider">
+<a href="https://wa.me/905343498411" target="_blank" class="footer-link">
+<i class="fas fa-phone-alt"></i>
+<span>اتصل بنا</span>
+</a>
+</div>
+
+<!-- Left Column (Map) -->
+<div class="footer-column left-align map-column">
+<div class="map-container">
+<iframe class="map-iframe" 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.279637145691!2d28.97885931572036!3d41.00819497930028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab974807d0575%3A0x44089783d1089f31!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
+allowfullscreen="" 
+loading="lazy"
+title="موقعنا في اسطنبول">
+</iframe>
+</div>
+
+<div class="social-icons">
+<a href="https://wa.me/905343498411" target="_blank" class="social-icon" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://t.me/systemtr" target="_blank" class="social-icon" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+<a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</div>
+
+<div class="copyright-section">
+<hr class="copyright-divider">
+<div class="copyright">
+جميع الحقوق محفوظة لدى فريق <span class="heart">❤</span> سيستم © <span id="current-year">2023</span>
+</div>
+</div>
+</div>
+<!-- End Footer-->
+
+<!-- Start Quick Interaction Tools Section -->
+
+<div class="scroll-progress-container">
+<div class="scroll-progress-bar"></div>
+</div>
+<!-- الأدوات العائمة -->
+<div class="floating-tools">
+<div class="main-tools">
+<div class="floating-btn scroll-top" id="scrollTopBtn">
+<i class="fas fa-arrow-up"></i>
+</div>
+<div class="floating-btn action-btn" id="actionBtn">
+<i class="fas fa-plus"></i>
+</div>
+</div>
+
+<div class="social-tools">
+<div class="floating-btn social-btn whatsapp" id="whatsappBtn">
+<i class="fab fa-whatsapp"></i>
+</div>
+<div class="floating-btn social-btn telegram" id="telegramBtn">
+<i class="fab fa-telegram"></i>
+</div>
+<div class="floating-btn social-btn facebook" id="facebookBtn">
+<i class="fab fa-facebook-f"></i>
+</div>
+</div>
+</div>
+<!-- End Quick Interaction Tools Section -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/public universities.js"></script>
+</body>
+</html>

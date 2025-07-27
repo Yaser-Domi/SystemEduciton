@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الجامعة التركية الألمانية</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700&family=Almarai:wght@400&display=swap" 
+rel="stylesheet">
+<link rel="icon" href="/IMAGE/TürkAlman/türkalman logo.png" type="image/x-icon">
+<link rel="stylesheet" href="/TürkAlman.css">
+</head>
+<body>
+
+<!-- Start Nab-bar Section -->
+<nav class="golden-navbar">
+<div class="nav-row-1">
+<button class="hamburger" id="hamburger">
+<i class="fas fa-bars"></i>
+</button>
+
+<ul class="nav-pages">
+<li><a href="/HTML/Home.html" target="_blank"><i class="fa fa-fw fa-home"></i>الصفحة الرئيسية</a></li>
+
+<li>
+<a href="#"><i class="fa-solid fa-landmark"></i>الجامعات</a>
+<ul class="dropdown-menus">
+    <li><a href="/HTML/public universities.html" target="_blank">الجامعات الحكومية</a></li>
+    <li><a href="/HTML/private universities.html" target="_blank">الجامعات الخاصة</a></li>
+    <li><a href="map.html" target="_blank">خريطة الجامعات</a></li>
+    <li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
+</ul>
+</li>
+
+<li>
+<a href="/HTML/Scholarships.html" target="_blank"><i class="fa-solid fa-dollar-sign"></i>المنح</a>
+</li>
+
+<li>
+<a href="/HTML/Training.html" target="_blank"><i class="fa-solid fa-chalkboard-user"></i>فرص التدريب</a>
+</li>
+
+<li>
+<a href="./About.html" target="_blank"><i class="fa-solid fa-circle-user"></i>من نحن؟</a>
+</li>
+</ul>
+
+<!-- Communication icons -->
+<div class="nav-icons">
+<a href="https://wa.me/905343498411" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://t.me/systemtr" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+<a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</div>
+
+<!-- Navigation Bar -->
+<div class="nav-row-2">
+<div class="nav-logo">
+<img src="/IMAGE/system logo.png" alt="شعار الفريق">
+</div>
+<div class="nav-search">
+<input type="text" id="searchInput" placeholder="ابحث في الجامعات، المنح، التدريب...">
+<i class="fas fa-search" id="searchIcon"></i>
+
+<div class="search-results-container" id="searchResults">
+<div class="search-results" id="resultsContainer"></div>
+</div>
+</div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+<ul class="mobile-pages">
+<li>
+<a href="/HTML/Home.html" target="_blank"><i class="fa fa-fw fa-home"></i>الصفحة الرئيسية</a>
+</li>
+
+<li>
+<div class="dropdown-toggle" data-target="universities">
+    <span><i class="fa-solid fa-landmark"></i>الجامعات</span>
+    <i class="fas fa-chevron-down"></i>
+</div>
+<ul class="mobile-dropdown" id="universities">
+    <li><a href="/HTML/public universities.html" target="_blank">الجامعات الحكومية</a></li>
+    <li><a href="/HTML/private universities.html" target="_blank">الجامعات الخاصة</a></li>
+    <li><a href="/HTML/map.html" target="_blank">خريطة الجامعات</a></li>
+    <li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
+</ul>
+</li>
+
+<li>
+<div class="dropdown-toggle" data-target="scholarships">
+    <a href="/HTML/Scholarships.html" target="_blank"><i class="fa-solid fa-dollar-sign"></i>المنح</a>
+</div>
+</li>
+
+<li>
+<div class="dropdown-toggle" data-target="training">
+    <a href="/HTML/Training.html" target="_blank"><i class="fa-solid fa-chalkboard-user"></i>فرص التدريب</a>
+</div>
+</li>
+
+<li>
+<a href="/HTML/About.html" target="_blank"><i class="fa-solid fa-circle-user"></i>من نحن؟</a>
+</li>
+</ul>
+
+<div class="mobile-icons">
+<a href="https://wa.me/905343498411" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://t.me/systemtr" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+<a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</div>
+</nav>
+
+<!-- End Nab-bar Section -->
+
+<header class="header">
+<div class="overlay"></div>
+<div class="floating-element circle" style="top:10%; left:5%; width:80px; height:80px; animation: float1 18s infinite ease-in-out;"></div>
+<div class="floating-element triangle" style="top:70%; left:15%; width:0; height:0; border-width: 0 50px 80px 50px; border-color: transparent transparent #ff9a9e transparent; animation: float2 22s infinite ease-in-out;"></div>
+<div class="floating-element square" style="top:30%; right:10%; width:60px; height:60px; animation: float3 15s infinite ease-in-out;"></div>
+<div class="floating-element circle" style="bottom:15%; right:5%; width:120px; height:120px; animation: float1 25s infinite ease-in-out reverse;"></div>
+<div class="floating-element triangle" style="top:20%; right:20%; width:0; height:0; border-width: 0 30px 50px 30px; border-color: transparent transparent #4facfe transparent; animation: float2 20s infinite ease-in-out reverse;"></div>
+
+<div class="header-content">
+<div class="text-content">
+<h4>الجامعة التركية الألمانية</h4>
+<hr>
+<p>
+نموذج أكاديمي متطور يجمع بين التخصصات الحديثة والبحث العلمي المتكامل في قلب بحر مرمرة
+</p>
+<div class="button-group">
+<button class="btn btn-primary">إبدأ الرحلة</button>
+<button class="btn btn-secondary">استكشف المزيد</button>
+</div>
+</div>
+
+
+<div class="video-container">
+<div class="video-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lyEzOcbM8sY?si=4t3EnUGhbGVFcObp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+
+</div>
+</header>
+
+<!-- Start Section -->
+<div class="academic-section">
+<!-- العمود الرئيسي (70%) -->
+<div class="main-column">
+<div class="section-head">
+<h1>الجامعة التركية الألمانية</h1>
+<h1>Türk Alman Üniversitesi</h1>
+<div class="gold-line first-line"></div>
+<div class="gold-line second-line"></div>
+</div>
+<section class="section-img">
+<img src="/IMAGE/TürkAlman/الجامعة التركية الألمانية.png" alt="صورة جامعية">
+</section>
+
+
+<section class="section">
+<i class="section-icon fa-solid fa-house"></i>
+<span class="section-text">معلومات الجامعة</span>
+</section>
+<section class="section-one">
+<div class="info-row">
+<i class="fa-solid fa-map-location-dot icon"></i>
+<h3><span>المدينة:</span>إسطنبول</h3>
+</div>
+<div class="info-row">
+<i class="fa-solid fa-calendar-days icon"></i>
+<h3><span>تاريخ التأسيس:</span>2013</h3>
+</div>
+<div class="info-row">
+<i class="fa-solid fa-bars icon"></i>
+<h3><span>الترتيب المحلي:</span>144</h3>
+</div>
+<div class="info-row">
+<i class="fa-solid fa-globe icon"></i>
+<h3><span>الموقع الإلكتروني:</span><a href="https://www.tau.edu.t/" target="_blank">زيارة الموقع الرسمي</a></h3>
+</div>
+<div class="info-row">
+<i class="fa-solid fa-language icon"></i>
+<h3><span>للغات التدريس:</span>الإنجليزية - الألمانية<h3>
+</div>
+</section>
+
+
+<!-- Start Slideshow -->
+<section class="section">
+<i class="section-icon fa-solid fa-images"></i>
+<span class="section-text">صور الجامعة</span>
+</section>
+<div class="gallery-container">
+<div class="gallery-slideshow">
+<div class="slide active">
+<img src="/IMAGE/TürkAlman/türkalman1.png" alt="Kırklareli-Üniversitesi1">
+<div class="slide-counter">1/3</div>
+</div>
+<div class="slide">
+<img src="/IMAGE/TürkAlman/türkalman2.png" alt="Kırklareli-Üniversitesi2">
+<div class="slide-counter">2/3</div>
+</div>
+<div class="slide">
+<img src="/IMAGE/TürkAlman/türkalman3.png" alt="Kırklareli-Üniversitesi3">
+<div class="slide-counter">3/3</div>
+</div>
+
+<button class="slide-arrow prev-arrow">&#10095;</button>
+<button class="slide-arrow next-arrow">&#10094;</button>
+
+
+<div class="slide-dots">
+<span class="dot active"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+</div>
+</div>
+</div>
+<!-- End Slideshow -->
+
+<section class="section-two">
+<div class="navigation-buttons">
+<a href="#Bachelor's"  class="nav-btn">
+    <i class="fas fa-graduation-cap"></i> البكالوريوس
+</a>
+<a href="#" class="nav-btn">
+    <i class="fas fa-user-graduate"></i> الدراسات العليا
+</a>
+<a href="#Questions" class="nav-btn">
+    <i class="fas fa-question-circle"></i> الأسئلة الشائعة
+</a>
+</div>
+</section>
+
+
+<section class="section">
+<i class="section-icon fa-solid fa-building-columns"></i>
+<span class="section-text">عن الجامعة</span>
+</section>
+<section class="section-three">
+<div class="text-row">
+<i class="fa-solid fa-calendar-days"></i>
+<div class="text-content">
+<h2>تاريخ التأسيس:</h2>
+<p> 
+تأسست الجامعة التركية الألمانية (TAU) في إسطنبول عام 2010 كرمز للتعاون العميق والشراكة الاستراتيجية بين تركيا وألمانيا تعود عملية تأسيس الجامعة إلى الرغبة في تعزيز الروابط التعليمية والعلمية بين البلدين. 
+</p>
+</div>
+</div>
+<div class="text-row">
+<i class="fa-solid fa-landmark"></i>
+<div class="text-content">
+<h2>الكليات والمعاهد:</h2>
+<p>
+تضم الجامعة 5 كليات و معهد عالي و معهدين دراسات عليا و 6 مراكز تطبيقية وأبحاث
+</p>
+</div>
+</div>
+<div class="text-row">
+<i class="fa-solid fa-book"></i>
+<div class="text-content">
+<h2>أهم التخصصات:</h2>
+<p> 
+كلية الهندسة - كلية الاقتصاد والعلوم الإدارية - كلية العلوم - كلية الثقافة والعلوم الاجتماعية - كلية الحقوق
+</p>
+</div>
+</div>
+<div class="text-row">
+<i class="fa-solid fa-city"></i>
+<div class="text-content">
+<h2>المرافق العامة:</h2>
+<p>
+تضم الجامعة العديد من المرافق الحيوية مثل حديقة عامة ومكتبة ضخمة ومراكز تدريب ومختبرات طبية مجهزة بتقنيات حديثة وغيرها من المرافق الأخرى
+</p>
+</div>
+</div>
+</section>
+
+<!-- Start Section University -->
+<section id="Bachelor's" class="Bachelors">
+<i class="Bachelors-icon fa-solid fa-graduation-cap"></i>
+<span class="section-text">البكالوريوس</span>
+</section>
+
+<div class="dynamic-section" id="section1">
+<div class="section-header">
+<h2>المفاضلة الأولى</h2>
+</div>
+<div class="nav-buttons">
+<button class="nav-btn active" data-tab="tab1">تواريخ هامة
+<button class="nav-btn" data-tab="tab2">الشهادات المقبولة</button>
+<button class="nav-btn" data-tab="tab3">الوثائق المطلوبة</button>
+</div>
+
+<div class="tab-content">
+<div class="tab-pane active" id="tab1">
+    <div class="content-row">
+    <i class="fa-solid fa-calendar-days icon"></i>
+    <p><span style="margin-left: 5px;">بداية التسجيل: </span>2025.07.01</p>
+    </div>
+    <div class="content-row">
+    <i class="fa-solid fa-calendar-days icon"></i>
+    <p><span style="margin-left: 5px;">انتهاء التسجيل: </span>2025.07.23</p>
+    </div>
+    <div class="content-row">
+    <i class="fa-solid fa-calendar-days icon"></i>
+    <p><span style="margin-left: 5px;">إعلان النتائج:</span>2025.08.11</p>
+    </div>
+    <div class="content-row">
+    <i class="fa-solid fa-calendar-days icon"></i>
+    <p><span style="margin-left: 5px;">امتحان معافيات اللغة التركية:</span>2025.07.25</p>
+    </div>
+    <div class="content-row">
+    <i class="fa-solid fa-calendar-days icon"></i>
+    <p><span style="margin-left: 5px;">إعلان نتائج المقبولين احتياط:</span>2025.09.11</p>
+    </div>
+    <div class="content-row">
+    <i class="fa-solid fa-calendar-days icon"></i>
+    <p><span style="margin-left: 5px;">بداية تثبيت قيد المقبولين احتياط :</span>2025.09.15</p>
+    </div>
+    <div class="content-row">
+    <i class="fa-solid fa-calendar-days icon"></i>
+    <p><span style="margin-left: 5px;">نهاية تثبيت قيد المقبولين احتياط :</span>2025.09.16</p>
+    </div>
+</div>
+
+<div class="tab-pane" id="tab2">
+    <div class="content-row">
+    <i class="fa-solid fa-file icon"></i>
+    <p>شهادة اليوس الموحد TR-YÖS</p>
+    </div>
+    <div class="content-row">
+    <i class="fa-solid fa-file icon"></i>
+    <p>يعض الشهادات الدولية</p>
+    </div>
+</div>
+
+<div class="tab-pane" id="tab3">
+    <div class="content-row">
+    <i class="fa-solid fa-file-arrow-down icon"></i>
+        <p>المقاعد المتاحة:  <a href="https://drive.google.com/file/d/1nEIHs84OuRA-w5hcM1VCgqMxZB9Id1H7/view?usp=sharing" target="_blank">اضغط هنا</a></p>
+    </div>
+    <div class="content-row">
+    <i class="fa-solid fa-file-arrow-down icon"></i>
+    <p>الرسوم الدراسية:  <a href="https://drive.google.com/file/d/18IDBBLW0oJO1KzTWqzOPiBerWfRPGgzz/view?usp=sharing" target="_blank">اضغط هنا</a></p>
+    </div>
+    <div class="content-row">
+    <i class="fa-solid fa-file-arrow-down icon"></i>
+        <p>رابط التسجيل:  <a href="https://obs.tau.edu.tr/oibs/foa_app/" target="_blank">اضغط هنا</a></p>
+    </div>
+    <div class="content-row">
+        <p style="margin-right: 10px;"> 50 يورو لكل تخصص يتم اختياره
+        <span style="color: red;">
+        <br> يتم دفعها أونلاين:
+        <br>العملة: الليرة التركية
+        <br> اسم البنك: Halk Bankası
+        <br> اسم الحساب: Türk-Alman Üniversitesi Strateji Geliştirme Daire Başkanlığı
+        <br> TR22 0001 2009 8660 0006  0000 69
+        <br> في خانة التوضيح يجب كتابة الاسم والكنية ورقم الهوية او جواز السفر بالإضافة إلى
+        <br> Yabancı öğrenci Başvuru Değerlendirme Ücreti 
+        <br>العملة: اليورو
+        <br> اسم البنك: Halk Bankası
+        <br> اسم الحساب: Türk-Alman Üniversitesi Strateji Geliştirme Daire Başkanlığı
+        <br> TR88 0001 2009 8660 0058  0000 96
+        <br> في خانة التوضيح يجب كتابة الاسم والكنية ورقم الهوية او جواز السفر بالإضافة إلى
+        <br> Yabancı öğrenci Başvuru Değerlendirme Ücreti 
+        </span>
+        </p>
+    </div>
+</div>
+</div>
+</div>
+
+
+<section id="Questions" class="section">
+<i class="section-icon fa-solid fa-circle-question"></i>
+<span class="section-text">الأسئلة الشائعة</span>
+</section>
+<section class="section-accordion">
+<div class="accordion-container">
+<div class="accordion-item">
+    <div class="accordion-header">
+        <h1>
+        ما هي اللغات الرسمية للتدريس في الجامعة؟
+        </h1>
+        <i class="fas fa-plus accordion-icon"></i>
+    </div>
+    <div class="accordion-content">
+        <p>
+        اللغات الرئيسية للتدريس هي التركية والألمانية. تُقدم بعض الدورات والمناهج باللغة الإنجليزية أيضًا، خاصة في برامج الدراسات العليا
+        </p>
+    </div>
+</div>
+<div class="accordion-item">
+    <div class="accordion-header">
+        <h1>
+        ما هو نوع الجامعة (حكومية أم خاصة)؟
+        </h1>
+        <i class="fas fa-plus accordion-icon"></i>
+    </div>
+    <div class="accordion-content">
+        <p>
+        الجامعة التركية الألمانية هي جامعة حكومية تركية تتمتع بوضع خاص، حيث تأسست وتُدار بالتعاون الوثيق بين الحكومتين التركية والألمانية.
+        </p>
+    </div>
+</div>
+<div class="accordion-item">
+    <div class="accordion-header">
+        <h1>
+       أين يقع حرم الجامعة؟
+        </h1>
+        <i class="fas fa-plus accordion-icon"></i>
+    </div>
+    <div class="accordion-content">
+        <p>
+        يقع الحرم الرئيسي للجامعة في مدينة إسطنبول، تركيا.
+        </p>
+    </div>
+</div>
+<div class="accordion-item">
+    <div class="accordion-header">
+        <h1>
+        هل توفر الجامعة برامج تبادل طلابي مع جامعات ألمانية؟
+        </h1>
+        <i class="fas fa-plus accordion-icon"></i>
+    </div>
+    <div class="accordion-content">
+        <p>
+        نعم، نظرًا لطبيعتها كجامعة تركية-ألمانية، فإنها تولي اهتمامًا كبيرًا لبرامج التبادل الطلابي والأكاديمي مع الجامعات الشريكة في ألمانيا، مثل برنامج إيراسموس+ وغيره من الاتفاقيات الثنائية.
+        </p>
+    </div>
+</div>
+<div class="accordion-item">
+    <div class="accordion-header">
+        <h1>
+        ما هي مزايا الدراسة في الجامعة التركية الألمانية؟
+        </h1>
+        <i class="fas fa-plus accordion-icon"></i>
+    </div>
+    <div class="accordion-content">
+        <p>
+        من أبرز المزايا: تعليم عالي الجودة يجمع بين التقاليد الأكاديمية الألمانية والتركية، بيئة تعليمية دولية متعددة الثقافات، فرص لتعلم لغتين (أو ثلاث)، شهادات معترف بها دوليًا، وفرص مهنية ممتازة بفضل الروابط القوية مع ألمانيا وتركيا.
+        </p>
+    </div>
+</div>
+</div>
+</section>
+
+<section class="section-map">
+<div class="map-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.547903810289!2d29.10344342504788!3d41.14439431103406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cacb1f3b8ac1f1%3A0x734e7f03a0ff277a!2z2KfZhNis2KfZhdi52Kkg2KfZhNij2YTZhdin2YbZitipINin2YTYqtix2YPZitip!5e0!3m2!1sar!2snl!4v1752568075280!5m2!1sar!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</section>
+
+<section class="section">
+<i class="section-icon fa-solid fa-dollar-sign"></i>
+<span class="section-text">الأقساط الدراسية</span>
+</section>
+<section class="section-table">
+<div class="table-container">
+<table>
+    <thead>
+        <tr>
+            <th>التخصص</th>
+            <th>الرسوم السنوية</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>هندسة الحاسوب (الألمانية)</td>
+            <td>25.050 TL</td>
+        </tr>
+        <tr>
+            <td>هندسة الكهرباء والإلكترون (الألمانية)</td>
+            <td>25.050 TL</td>
+        </tr>
+        <tr>
+            <td>الاقتصاد والعلوم الإدارية (الألمانية)</td>
+            <td>20.310 TL</td>
+        </tr>
+        <tr>
+            <td>الثقافة والعلوم الاجتماعية (الألمانية 30%)</td>
+            <td>12.310 TL</td>
+        </tr>
+        <tr>
+            <td>الفنون الجميلة (الألمانية)</td>
+            <td>18.465 TL</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</section>
+</div>
+
+<!-- العمود الجانبي (30%) -->
+<div class="sidebar-column">
+<div class="sidebar-section">
+<h1>معلومات مفيدة</h1>
+<hr>
+<div class="sidebar-item">
+<a href="/HTML/Open education.html" target="_blank">
+<!--  <img src="/IMAGE/Al-Aqsa.jpg" alt="التعليم المفتوح"> -->
+<div class="sidebar-item-content">
+    <h3>التعليم المفتوح</h3>
+    <p>ادرس عن بعد من أي مكان وبمرونة كبيرة، دون الحاجة للذهاب إلى الجامعة يوميًا.</p>
+</a>
+</div>
+</div>
+<div class="sidebar-item">
+<a href="/HTML/YÖS.html" target="_blank">
+<!-- <img src="/IMAGE/امتحان اليوس الموحد.png" alt="امتحان اليوس الموحد"> -->
+<div class="sidebar-item-content">
+    <h3>امتحان اليوس الموحد TR-YÖS</h3>
+    <p>اختبار قياسي لقياس قدرات الطلاب الدوليين للقبول في الجامعات التركية الحكومية</p>
+</a>
+</div>
+</div>
+
+<div class="sidebar-item">
+<a href="/HTML/Sat.html" target="_blank">
+<!-- <img src="/IMAGE/امتحان السات.png" alt="امتحان السات"> --> 
+<div class="sidebar-item-content">
+    <h3>امتحان السات</h3>
+    <p>اختبار دولي يقيس مهارات الطلاب في اللغة والرياضيات، ويستخدم للقبول في الجامعات العالمية</p>
+</a>
+</div>
+</div>
+
+<div class="sidebar-item">
+<a href="/HTML/CV.html" target="_blank">
+<!--  <img src="/IMAGE/CV.png" alt="CV"> -->
+<div class="sidebar-item-content">
+    <h3>الطريقةالصحيحة في اعداد CV</h3>
+    <p>كيفية إعداد السيرة الذاتية بطريقة احترافية تفتح لك أبواب الفرص الوظيفية</p>
+</a>
+</div>
+</div>
+
+<div class="sidebar-item">
+<a href="/HTML/Letter of intent.html" target="_blank">
+<!-- <img src="/IMAGE/خطاب النية.png" alt="خطاب النية"> --> 
+<div class="sidebar-item-content">
+    <h3>خطاب النية</h3>
+    <p>هميته ومكوناته وطريقة صياغته بشكل فعّال</p>
+</a>
+</div>
+</div>
+</div>
+
+<div class="sidebar-section">
+<h1>أهم الصحفات</h1>
+<hr>
+<div class="sidebar-item">
+<a href="/HTML/public universities.html" target="_blank">
+<!--<img src="/IMAGE/الجامعات الحكومية.png" alt="الجامعات التركية"> --> 
+<div class="sidebar-item-content">
+    <h3>الجامعات الحكومية التركية</h3>
+    <p>ادرس في جامعات تركيا الحكومية وتمتع بتجربة علمية غنية بين الشرق والغرب.</p>
+</a>
+</div>
+</div>
+<div class="sidebar-item">
+<a href="/HTML/private universities.html" target="_blank">
+<!--  <img src="/IMAGE/الجامعات الخاصة.png" alt="صورة فعالية"> -->
+<div class="sidebar-item-content">
+    <h3>الجامعات الخاصة التركية</h3>
+    <p>نحو مستقبل أكاديمي مشرق... اختر إحدى الجامعات الخاصة المتميزة في تركيا.</p>
+</a>
+</div>
+</div>
+
+<div class="sidebar-item">
+<a href="/HTML/Scholarships.html" target="_blank">
+<!-- <img src="/IMAGE/المنح العالمية.png" alt="صورة فعالية"> --> 
+<div class="sidebar-item-content">
+    <h3>المنح العالمية</h3>
+    <p>استعد للانطلاق نحو المستقبل مع أقوى المنح العالمية للدراسة في أرقى الجامعات.<p>
+</a>
+</div>
+</div>
+
+<div class="sidebar-item">
+<a href="/HTML/Training.html" target="_blank">
+<!-- <img src="/IMAGE/الدورات التدريبية.png" alt="صورة فعالية"> -->
+<div class="sidebar-item-content">
+    <h3>الفرص التدريبية</h3>
+    <p>استعد لسوق العمل من خلال أفضل الفرص التدريبية المدعومة أكاديميًا ومهنيًا.</p>
+</a>
+</div>
+</div>
+
+<div class="sidebar-item">
+<a href="/HTML/Table.html" target="_blank">
+<!--  <img src="/IMAGE/تقويم المفاضلات.png" alt="صورة فعالية"> -->
+<div class="sidebar-item-content">
+    <h3>تقويم مفاضلات الجامعات</h3>
+    <p>تابع جميع مواعيد المفاضلات في الجامعات التركية خطوة بخطوة في مكان واحد.</p>
+</a>
+</div>
+</div>
+
+<div class="sidebar-item">
+<a href="/HTML/map.html" target="_blank">
+<!-- <img src="/IMAGE/الخريطة التفاعلية.png" alt="صورة فعالية"> -->
+<div class="sidebar-item-content">
+    <h3>الخريطة التفاعلية للجامعات التركية</h3>
+    <p>استكشف الجامعات التركية جغرافيًا عبر خريطة تفاعلية دقيقة وسهلة الاستخدام.</p>
+</a>
+</div>
+</div>
+</div>
+
+<!-- العمود الثالث -->
+<div class="sidebar-section">
+<h1>أحدث العروض</h1>
+<hr>
+<img src="./imges/gaziantep.png" alt="عرض خاص" class="offer-image">
+<p class="offer-text">خصم 20% على رسوم الفصل الصيفي للطلاب المسجلين قبل 1 يونيو</p>
+</div>
+
+<div class="sidebar-section">
+<h1>تواصل معنا</h1>
+<hr>
+<form class="contact-form">
+<div class="form-group">
+    <label for="name">الاسم الكامل</label>
+    <input type="text" id="name" required>
+</div>
+<div class="form-group">
+    <label for="email">البريد الإلكتروني</label>
+    <input type="email" id="email" required>
+</div>
+<div class="form-group">
+    <label for="message">نص الرسالة</label>
+    <textarea id="message" rows="4" required></textarea>
+</div>
+<button type="submit" class="submit-btn">إرسال الرسالة <i class="fas fa-paper-plane"></i></button>
+</form>
+</div>
+</div>
+</div>
+
+
+<!-- End Section -->
+
+<!-- Start Footer -->
+
+<div class="footer-wrapper">
+<div class="footer-content">
+<!-- Right Column -->
+<div class="footer-column right-align">
+<a href="/HTML/index4.html" target="_blank" class="footer-link">
+<i class="fas fa-university"></i>
+<span>الجامعات الحكومية</span>
+</a>
+<hr class="footer-divider">
+<a href="/HTML/index5.html" target="_blank" class="footer-link">
+<i class="fas fa-building"></i>
+<span>الجامعات الخاصة</span>
+</a>
+<hr class="footer-divider">
+<a href="/HTML/index6.html" target="_blank" class="footer-link">
+<i class="fas fa-globe"></i>
+<span>المنح العالمية</span>
+</a>
+<hr class="footer-divider">
+<a href="/HTML/index7.html" target="_blank" class="footer-link">
+<i class="fas fa-graduation-cap"></i>
+<span>التدريب</span>
+</a>
+</div>
+
+<!-- Middle Column -->
+<div class="footer-column center-align">
+<a href="/HTML/map.html" target="_blank" class="footer-link">
+<i class="fa-solid fa-location-dot"></i>
+<span>خريطة الجامعات</span>
+</a>
+<hr class="footer-divider">
+<a href="/HTML/Table.html" target="_blank" class="footer-link">
+<i class="fa-solid fa-calendar-days"></i>
+<span>تقويم الجامعات</span>
+</a>
+<hr class="footer-divider">
+<a href="/HTML/About.html" target="_blank" class="footer-link">
+<i class="fa-solid fa-circle-question"></i>
+<span>من نحن؟</span>
+</a>
+<hr class="footer-divider">
+<a href="https://wa.me/905343498411" target="_blank" class="footer-link">
+<i class="fas fa-phone-alt"></i>
+<span>اتصل بنا</span>
+</a>
+</div>
+
+<!-- Left Column (Map) -->
+<div class="footer-column left-align map-column">
+<div class="map-container">
+<iframe class="map-iframe" 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.279637145691!2d28.97885931572036!3d41.00819497930028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab974807d0575%3A0x44089783d1089f31!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
+    allowfullscreen="" 
+    loading="lazy"
+    title="موقعنا في اسطنبول">
+</iframe>
+</div>
+
+<div class="social-icons">
+<a href="https://wa.me/905343498411" target="_blank" class="social-icon" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://t.me/systemtr" target="_blank" class="social-icon" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+<a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</div>
+
+<div class="copyright-section">
+<hr class="copyright-divider">
+<div class="copyright">
+جميع الحقوق محفوظة لدى فريق <span class="heart">❤</span> سيستم © <span id="current-year">2023</span>
+</div>
+</div>
+</div>
+<!-- End Footer-->
+
+
+<!-- Start Quick Interaction Tools Section -->
+
+<div class="scroll-progress-container">
+<div class="scroll-progress-bar"></div>
+</div>
+<!-- الأدوات العائمة -->
+<div class="floating-tools">
+<div class="main-tools">
+<div class="floating-btn scroll-top" id="scrollTopBtn">
+<i class="fas fa-arrow-up"></i>
+</div>
+<div class="floating-btn action-btn" id="actionBtn">
+<i class="fas fa-plus"></i>
+</div>
+</div>
+
+<div class="social-tools">
+<div class="floating-btn social-btn whatsapp" id="whatsappBtn">
+<i class="fab fa-whatsapp"></i>
+</div>
+<div class="floating-btn social-btn telegram" id="telegramBtn">
+<i class="fab fa-telegram"></i>
+</div>
+<div class="floating-btn social-btn facebook" id="facebookBtn">
+<i class="fab fa-facebook-f"></i>
+</div>
+</div>
+</div>
+<!-- End Quick Interaction Tools Section -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/TürkAlman.js"></script>
+</body>
+</html>

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التعليم المفتوح</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700&family=Almarai:wght@400&display=swap" 
+    rel="stylesheet">
+    <link rel="icon" href="/IMAGE/system logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Open education.css">
+</head>
+<body>
+
+    <!-- Start Nab-bar Section -->
+    <nav class="golden-navbar">
+        <div class="nav-row-1">
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-pages">
+                <li><a href="/HTML/Home.html" target="_blank"><i class="fa fa-fw fa-home"></i>الصفحة الرئيسية</a></li>
+                
+                <li>
+                    <a href="#"><i class="fa-solid fa-landmark"></i>الجامعات</a>
+                    <ul class="dropdown-menus">
+                        <li><a href="/HTML/public universities.html" target="_blank">الجامعات الحكومية</a></li>
+                        <li><a href="/HTML/private universities.html" target="_blank">الجامعات الخاصة</a></li>
+                        <li><a href="map.html" target="_blank">خريطة الجامعات</a></li>
+                        <li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="/HTML/Scholarships.html" target="_blank"><i class="fa-solid fa-dollar-sign"></i>المنح</a>
+                </li>
+                
+                <li>
+                    <a href="/HTML/Training.html" target="_blank"><i class="fa-solid fa-chalkboard-user"></i>فرص التدريب</a>
+                </li>
+                
+                <li>
+                    <a href="./About.html" target="_blank"><i class="fa-solid fa-circle-user"></i>من نحن؟</a>
+                </li>
+            </ul>
+            
+            <!-- Communication icons -->
+            <div class="nav-icons">
+                <a href="https://wa.me/905343498411" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://t.me/systemtr" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        
+        <!-- Navigation Bar -->
+        <div class="nav-row-2">
+            <div class="nav-logo">
+                <img src="/IMAGE/system logo.png" alt="شعار الفريق">
+            </div>
+            <div class="nav-search">
+                <input type="text" id="searchInput" placeholder="ابحث في الجامعات، المنح، التدريب...">
+                <i class="fas fa-search" id="searchIcon"></i>
+                
+                <div class="search-results-container" id="searchResults">
+                    <div class="search-results" id="resultsContainer"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-pages">
+                <li>
+                    <a href="/HTML/Home.html" target="_blank"><i class="fa fa-fw fa-home"></i>الصفحة الرئيسية</a>
+                </li>
+                
+                <li>
+                    <div class="dropdown-toggle" data-target="universities">
+                        <span><i class="fa-solid fa-landmark"></i>الجامعات</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="mobile-dropdown" id="universities">
+                        <li><a href="/HTML/public universities.html" target="_blank">الجامعات الحكومية</a></li>
+                        <li><a href="/HTML/private universities.html" target="_blank">الجامعات الخاصة</a></li>
+                        <li><a href="/HTML/map.html" target="_blank">خريطة الجامعات</a></li>
+                        <li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <div class="dropdown-toggle" data-target="scholarships">
+                        <a href="/HTML/Scholarships.html" target="_blank"><i class="fa-solid fa-dollar-sign"></i>المنح</a>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="dropdown-toggle" data-target="training">
+                        <a href="/HTML/Training.html" target="_blank"><i class="fa-solid fa-chalkboard-user"></i>فرص التدريب</a>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="/HTML/About.html" target="_blank"><i class="fa-solid fa-circle-user"></i>من نحن؟</a>
+                </li>
+            </ul>
+            
+            <div class="mobile-icons">
+                <a href="https://wa.me/905343498411" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://t.me/systemtr" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Nab-bar Section -->
+
+
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="floating-element circle" style="top:10%; left:5%; width:80px; height:80px; animation: float1 18s infinite ease-in-out;"></div>
+        <div class="floating-element circle" style="bottom:15%; right:5%; width:120px; height:120px; animation: float1 25s infinite ease-in-out reverse;"></div>
+
+        <div class="header-content">
+            <div class="text-content">
+                <h4>التعليم المفتوح</h4>
+                <hr class="content-hr">
+                <p>
+                التعليم المفتوح هو نظام دراسي مرن يُمكّن الطلاب من متابعة دراستهم عن بُعد دون الحاجة للحضور الجامعي المنتظم، ويعتمد على المواد الإلكترونية والتعلّم الذاتي.
+                </p>
+                <div class="button-group">
+                    <button class="btn btn-primary">إبدأ الرحلة</button>
+                    <button class="btn btn-secondary">استكشف المزيد</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Start Section -->
+<div class="academic-section">
+        <!-- main column -->
+        <div class="main-column">
+            <div class="section-head">
+            <h1>التعليم المفتوح</h1>
+            <div class="gold-line first-line"></div>
+            <div class="gold-line second-line"></div>
+            </div>
+            <section class="section-img">
+                <img src="./imges/kırklareli.png" alt="صورة جامعية">
+            </section>
+
+
+            <!-- Start Slideshow -->
+            <section class="section">
+            <i class="section-icon fa-solid fa-images"></i>
+            <span class="section-text">صور عن التعليم المفتوح</span>
+            </section>
+            <div class="gallery-container">
+            <div class="gallery-slideshow">
+            <div class="slide active">
+            <img src="./imges/kırklareli1.jpg" alt="Kırklareli-Üniversitesi1">
+            <div class="slide-counter">1/3</div>
+            </div>
+            <div class="slide">
+            <img src="./imges/kırkklareli2.jpg" alt="Kırklareli-Üniversitesi2">
+            <div class="slide-counter">2/3</div>
+            </div>
+            <div class="slide">
+            <img src="./imges/kırklareli3.jpg" alt="Kırklareli-Üniversitesi3">
+            <div class="slide-counter">3/3</div>
+            </div>
+            
+            <button class="slide-arrow prev-arrow">&#10095;</button>
+            <button class="slide-arrow next-arrow">&#10094;</button>
+            <div class="slide-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            </div>
+             </div>
+            </div>
+            <!-- End Slideshow -->
+
+            <section class="section">
+            <i class="section-icon fa-solid fa-building-columns"></i>
+            <span class="section-text">التعليم المفتوح</span>
+            </section>
+             
+            <section class="section-texts">
+                <div class="text-row">
+                <i class="fa-solid fa-file-lines"></i>
+                <div class="text-content">
+                    <h2 id="education">التعليم المفتوح</h2>
+                    <p>التعليم المفتوح هو نظام تعليمي يهدف إلى توفير فرص تعلم مرنة وشاملة تتيح للطلاب متابعة دراستهم بغض النظر عن قيود المكان أو الزمن. يعتمد هذا النظام على استخدام الوسائط التعليمية الحديثة، مثل التعلم عن بُعد والمنصات الرقمية، مما يتيح للمتعلمين الوصول إلى محتوى تعليمي متنوع ومتجدد دون الحاجة إلى الحضور المادي في المؤسسة التعليمية. ويعتبر التعليم المفتوح خيارًا مثاليًا للطلاب الذين يسعون إلى تطوير مهاراتهم ومعارفهم بشكل مستقل ومتواصل، بالإضافة إلى كونه داعمًا لتعزيز مبدأ التعلم مدى الحياة.</p>
+                </div>
+                </div>
+                <div class="text-row">
+                <i class="fa-solid fa-file-lines"></i>
+                <div class="text-content">
+                    <h2>أهم الملاحظات عن التعليم المفتوح</h2>
+                    <p>
+                        1- عدم الاعتراف بالشهادات في بعض الدول: يواجه خريجو التعليم المفتوح تحديات في معادلة شهاداتهم في بعض الدول، مما يؤثر على فرصهم في سوق العمل الدولي
+                        <br> 2- الافتقار إلى التفاعل المباشر: يتميز التعليم المفتوح بالمرونة، لكنه يفتقر إلى التفاعل المباشر بين الطلاب والمعلمين، مما قد يؤثر على جودة الفهم والتطبيق.
+                        <br> 3- تحديات التقييم: اعتماد بعض المقررات على تقييم الأقران قد يؤدي إلى مشكلات في جودة التقييم، خاصة إذا لم يكن لدى الطلاب الخبرة الكافية.
+                        <br> 4- قلة التحفيز الذاتي: يتطلب التعليم المفتوح مستوى عالٍ من الانضباط الذاتي، حيث قد يواجه بعض الطلاب صعوبة في الحفاظ على الدافع دون إشراف مباشر.
+                        <br> 5- لتحديات التقنية: قد يواجه الطلاب مشكلات تقنية مثل ضعف الاتصال بالإنترنت أو نقص الأجهزة المناسبة، مما يؤثر على تجربتهم التعليمية. 
+                        <br> 6- التمويل والتكلفة: رغم أن التعليم المفتوح قد يكون أقل تكلفة من التعليم التقليدي، إلا أن بعض البرامج تتطلب رسومًا قد تكون غير مناسبة لبعض الطلاب ذوي الدخل المحدود.
+                        <br> 7-الافتقار إلى البنية التحتية المناسبة: بعض الجامعات التي تقدم التعليم المفتوح تفتقر إلى البنية التحتية التكنولوجية اللازمة، مما يؤثر على جودة التعليم.  
+                    </p>
+                </div>
+                </div>
+                <div class="text-row">
+                <i class="fa-solid fa-file-lines"></i>
+                <div class="text-content">
+                    <h2>الجامعات الحكومية الرائدة التي توفر التعليم المفتوح</h2>
+                    <p>1- جامعة أناضولو: 
+                    <br>أول جامعة تقدم التعليم المفتوح منذ عام 1982
+                    <br>تضم أكثر من مليون طالب نشط ضمن التعليم عن بعد
+                    <br>تقدم برامج البكالوريوس والدبلوم في عدة تخصصات، مدعومة بمركزات إرشاد أكاديمي منتشرة في مختلف المدن التركية
+                    <br>2- جامعة إسطنبول:
+                    <br>أطلقت برامج التعليم عن بُعد في 2009، والتعليم المفتوح منذ 2011.
+                    <br>تقدم حاليًا حوالي 46 برنامجًا تشمل البكالوريوس والدبلومات المهنية
+                    <br>3- جامعة أتاتورك
+                    <br>تمتلك كلية مفتوحة وتعليم عن بُعد رسمية
+                    <br>تقدم برامج البكالوريوس والدبلومات بمختلف المجالات منذ عام 2010 
+                    <br>4- جامعة أنقرة
+                    <br>تضم كلية للتعليم المفتوح (ANKUZEF) تدعم برامج البكالوريوس والدبلومات المهنية
+                </p>
+                </div>
+                </div>
+                <div class="text-row">
+                <i class="fa-solid fa-file-lines"></i>
+                <div class="text-content">
+                    <h2>ألية التسجيل في التعليم المفتوح</h2>
+                    <p>
+                    <br>يتبع التسجيل في برامج التعليم المفتوح بجامعة أناضولو خطوات منهجية دقيقة تبدأ بتقديم الطلب عبر المنصّة الإلكترونية الرسمية خلال المواعيد المعلنة
+                    <br>فعلى الطلاب الدوليين الراغبين ببدء الدراسة التسجيل أولًا في امتحان اليوس الخاص بالجامعة  ثم التقديم عبر نموذج “الطلب الإلكتروني للطالب الأجنبي” خلال الفترة المحددة
+                    <br>
+                    بعد قبولهم يُحدد الموقع الإلكتروني فترة لتسديد الرسوم وإرفاق الوثائق الأساسية مثل جواز السفر نسخة من الثانوية مترجمة رسميًا وشهادة معادلة الشهادة (denklik) مع تحميل شهادة إتقان اللغة التركية للبرامج باللغة التركية
+                    <br>
+                      عقب ذلك يُطلب من الطالب تقديم الأوراق الأصلية شخصيًا في أحد المراكز التابعة للجامعة داخل تركيا مما يكمل عملية القيد الرسمي  بعبارة أخرى يجمع هذا النهج بين البعد الإلكتروني والإجراءات الحضورية لضمان دقة المعلومات وتحقيق المطابقة الرسمية على مستوى الجامعة والطلاب
+                    </p>
+                </div>
+                </div>
+
+                <div class="text-row">
+                <i class="fa-solid fa-file-lines"></i>
+                <div class="text-content">
+                    <h2>التخصصات وللغات التدريس</h2>
+                    <p>
+                    <br>التخصصات ولغات التدريس في التعليم المفتوح في تركيا
+                    يُقدّم نظام التعليم المفتوح في الجامعات الحكومية التركية، وعلى رأسها جامعة أناضولو 
+                    مجموعة واسعة من التخصصات تشمل مجالات العلوم الإنسانية والاجتماعية (مثل الفلسفة 
+                    والتاريخ وعلم الاجتماع)
+                    إلى جانب تخصصات الإدارة والأعمال (كإدارة الأعمال، العلاقات الدولية، إدارة الرعاية 
+                     الصحية، إدارة الموارد البشرية)، فضلًا عن برامج تطبيقية تقنية ومهنية كالتصوير 
+                     الفوتوغرافي، تصميم الويب، العدالة الجنائية، واللوجستيات. 
+                    <br>
+                    ولدى جامعة إسطنبول في كلية التعليم المفتوح فيها أيضًا تخصصات متنوعة مثل الجغرافيا الاقتصاد، الفلسفة، رعاية الأطفال، والتمريض مع التركيز على الاحترافية العلمية.
+                    <br>  
+                     أما من حيث لغات التدريس، فمعظم البرامج تُقدّم باللغة التركية، لكن جامعة أناضولو تمكّنت من توسيع لغات التعليم لتشمل التركية والإنجليزية والعربية في بعض التخصصات، مثل العلاقات الدولية وإدارة الأعمال الدولية . بينما تقدّم جامعة إسطنبول وجامعة أتاتورك تعليمًا باللغة التركية بشكل رئيسي .
+                    </p>
+                </div>
+                </div>
+
+                <div class="text-row">
+                <i class="fa-solid fa-file-lines"></i>
+                <div class="text-content">
+                    <h2>الأوراق المطلوبة للتسجيل</h2>
+                    <p>صور شخصية
+
+                    <br>صورة الكملك أو الإقامة
+
+                    <br>صورة عن ترجمة ونوترة الشهادة
+
+                    <br>عنوان للسكن
+
+                    <br>بريد إلتروني فعال
+
+                    <br>معادلة الشهادة إن وجدت ( غير مطلوبة في التسجيل لكن مطلوبة في التثبيت )
+                    </p>
+                </div>
+                </div>
+            </section>
+
+            <section id="Questions" class="section">
+            <i class="section-icon fa-solid fa-circle-question"></i>
+            <span class="section-text">الأسئلة الشائعة</span>
+            </section>
+            <section class="section-accordion">
+                <div class="accordion-container">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h1>من يمكنه التسجيل في برامج التعليم المفتوح بجامعة أناضولو؟</h1>
+                            <i class="fas fa-plus accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>يُسمح بالتسجيل لكل من:
+                            <br>المواطنين الأتراك وذوي الجنسية المزدوجة
+                            <br>الحاصلين على شهادة الثانوية (أو ما يعادلها) من داخل تركيا أو خارجها
+                            <br>مواطني جمهورية شمال قبرص التركية الحاصلين على امتحانات GCE/AL
+                            وغيرهم من الطلاب الدوليين ضمن الشروط المحددة 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h1> ما اللغة المستخدمة في امتحان ANADOLUYÖS  للتسجيل؟</h1>
+                            <i class="fas fa-plus accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            يُعقد امتحان  ANADOLUYÖS  بلغتين: التركية والإنجليزية، مما يتيح للطلاب الدوليين الاختيار حسب مستوى اللغة لديهم 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h1> هل يمكن الالتحاق بالتعليم المفتوح بدون اجتياز ANADOLUYÖS؟</h1>
+                            <i class="fas fa-plus accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            نعم، في بعض الحالات يمكن استخدام نتائج امتحانات دولية معترف بها (مثل ACT وGAOKAO) بدلاً من امتحان ANADOLUYÖS للتقدم للقبول ضمن الكوتا المخصصة للطلاب الأجانب 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h1>ما هي الخدمات والمزايا التي يوفرها نظام التعليم المفتوح؟</h1>
+                            <i class="fas fa-plus accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            منصات إلكترونية للتعلم عن بُعد
+                            <br>بثّ مباشر للمحاضرات والتفاعل من خلال e‑Kampüs،
+                            <br>مراكز دعم وتسليم مواد مطبوعة،
+                            <br>وخدمات دعم متنوعة تشمل استشارات تقنية وأكاديمية
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h1>هل يتناسب التعليم المفتوح مع كل التخصصات؟</h1>
+                            <i class="fas fa-plus accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                            هذا النظام مناسب لتخصصات نظرية مثل الاقتصاد والإدارة والتربية، بينما لا يُعدّ مثالياً للتخصصات التي تتطلب تدريباً عملياً مكثفاً مثل الطب أو المهارات التطبيقية الدقيقة.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- side column -->
+        <div class="sidebar-column">
+            <div class="sidebar-section">
+                <h1>معلومات مفيدة</h1>
+                <hr>
+                <div class="sidebar-item">
+                    <a href="/HTML/Open education.html" target="_blank">
+                    <img src="/IMAGE/Al-Aqsa.jpg" alt="التعليم المفتوح">
+                    <div class="sidebar-item-content">
+                        <h3>التعليم المفتوح</h3>
+                        <p>ادرس عن بعد من أي مكان وبمرونة كبيرة، دون الحاجة للذهاب إلى الجامعة يوميًا.</p>
+                    </a>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <a href="/HTML/YÖS.html" target="_blank">
+                    <img src="/IMAGE/امتحان اليوس الموحد.png" alt="امتحان اليوس الموحد">
+                    <div class="sidebar-item-content">
+                        <h3>امتحان اليوس الموحد TR-YÖS</h3>
+                        <p>اختبار قياسي لقياس قدرات الطلاب الدوليين للقبول في الجامعات التركية الحكومية</p>
+                    </a>
+                    </div>
+                </div>
+
+                  <div class="sidebar-item">
+                    <a href="/HTML/Sat.html" target="_blank">
+                    <img src="/IMAGE/امتحان السات.png" alt="امتحان السات">
+                    <div class="sidebar-item-content">
+                        <h3>امتحان السات</h3>
+                        <p>اختبار دولي يقيس مهارات الطلاب في اللغة والرياضيات، ويستخدم للقبول في الجامعات العالمية</p>
+                    </a>
+                    </div>
+                </div>
+
+                  <div class="sidebar-item">
+                    <a href="/HTML/CV.html" target="_blank">
+                    <img src="/IMAGE/CV.png" alt="CV">
+                    <div class="sidebar-item-content">
+                        <h3>الطريقةالصحيحة في اعداد CV</h3>
+                        <p>كيفية إعداد السيرة الذاتية بطريقة احترافية تفتح لك أبواب الفرص الوظيفية</p>
+                    </a>
+                    </div>
+                </div>
+
+                  <div class="sidebar-item">
+                    <a href="/HTML/Letter of intent.html" target="_blank">
+                    <img src="/IMAGE/خطاب النية.png" alt="خطاب النية">
+                    <div class="sidebar-item-content">
+                        <h3>خطاب النية</h3>
+                        <p>هميته ومكوناته وطريقة صياغته بشكل فعّال</p>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h1>أهم الصحفات</h1>
+                <hr>
+                <div class="sidebar-item">
+                    <a href="/HTML/public universities.html" target="_blank">
+                    <img src="/IMAGE/الجامعات الحكومية.png" alt="الجامعات التركية">
+                    <div class="sidebar-item-content">
+                        <h3>الجامعات الحكومية التركية</h3>
+                        <p>ادرس في جامعات تركيا الحكومية وتمتع بتجربة علمية غنية بين الشرق والغرب.</p>
+                    </a>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <a href="/HTML/private universities.html" target="_blank">
+                    <img src="/IMAGE/الجامعات الخاصة.png" alt="صورة فعالية">
+                    <div class="sidebar-item-content">
+                        <h3>الجامعات الخاصة التركية</h3>
+                        <p>نحو مستقبل أكاديمي مشرق... اختر إحدى الجامعات الخاصة المتميزة في تركيا.</p>
+                    </a>
+                    </div>
+                </div>
+
+                  <div class="sidebar-item">
+                    <a href="/HTML/Scholarships.html" target="_blank">
+                    <img src="/IMAGE/المنح العالمية.png" alt="صورة فعالية">
+                    <div class="sidebar-item-content">
+                        <h3>المنح العالمية</h3>
+                        <p>استعد للانطلاق نحو المستقبل مع أقوى المنح العالمية للدراسة في أرقى الجامعات.<p>
+                    </a>
+                    </div>
+                </div>
+
+                  <div class="sidebar-item">
+                    <a href="/HTML/Training.html" target="_blank">
+                    <img src="/IMAGE/الدورات التدريبية.png" alt="صورة فعالية">
+                    <div class="sidebar-item-content">
+                        <h3>الفرص التدريبية</h3>
+                        <p>استعد لسوق العمل من خلال أفضل الفرص التدريبية المدعومة أكاديميًا ومهنيًا.</p>
+                    </a>
+                    </div>
+                </div>
+
+                  <div class="sidebar-item">
+                    <a href="/HTML/Table.html" target="_blank">
+                    <img src="/IMAGE/تقويم المفاضلات.png" alt="صورة فعالية">
+                    <div class="sidebar-item-content">
+                        <h3>تقويم مفاضلات الجامعات</h3>
+                        <p>تابع جميع مواعيد المفاضلات في الجامعات التركية خطوة بخطوة في مكان واحد.</p>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="sidebar-item">
+                    <a href="/HTML/map.html" target="_blank">
+                    <img src="/IMAGE/الخريطة التفاعلية.png" alt="صورة فعالية">
+                    <div class="sidebar-item-content">
+                        <h3>الخريطة التفاعلية للجامعات التركية</h3>
+                        <p>استكشف الجامعات التركية جغرافيًا عبر خريطة تفاعلية دقيقة وسهلة الاستخدام.</p>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h1>أحدث العروض</h1>
+                <hr>
+                <img src="./imges/gaziantep.png" alt="عرض خاص" class="offer-image">
+                <p class="offer-text">خصم 20% على رسوم الفصل الصيفي للطلاب المسجلين قبل 1 يونيو</p>
+            </div>
+
+            <div class="sidebar-section">
+                <h1>تواصل معنا</h1>
+                <hr>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">الاسم الكامل</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">نص الرسالة</label>
+                        <textarea id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">إرسال الرسالة <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End Section -->
+
+    <!-- Start Footer -->
+
+    <div class="footer-wrapper">
+        <div class="footer-content">
+            <!-- Right Column -->
+            <div class="footer-column right-align">
+                <a href="/HTML/public universities.html" target="_blank" class="footer-link">
+                    <i class="fas fa-university"></i>
+                    <span>الجامعات الحكومية</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="/HTML/private universities.html" target="_blank" class="footer-link">
+                    <i class="fas fa-building"></i>
+                    <span>الجامعات الخاصة</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="/HTML/Scholarships.html" target="_blank" class="footer-link">
+                    <i class="fas fa-globe"></i>
+                    <span>المنح العالمية</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="/HTML/Training.html" target="_blank" class="footer-link">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>التدريب</span>
+                </a>
+            </div>
+            
+            <!-- Middle Column -->
+            <div class="footer-column center-align">
+                <a href="/HTML/map.html" target="_blank" class="footer-link">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>خريطة الجامعات</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="/HTML/Table.html" target="_blank" class="footer-link">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>تقويم الجامعات</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="/HTML/About.html" target="_blank" class="footer-link">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>من نحن؟</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="https://wa.me/905343498411" target="_blank" class="footer-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>اتصل بنا</span>
+                </a>
+            </div>
+            
+            <!-- Left Column (Map) -->
+            <div class="footer-column left-align map-column">
+                <div class="map-container">
+                    <iframe class="map-iframe" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.279637145691!2d28.97885931572036!3d41.00819497930028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab974807d0575%3A0x44089783d1089f31!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="موقعنا في اسطنبول">
+                    </iframe>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="https://wa.me/905343498411" target="_blank" class="social-icon" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://t.me/systemtr" target="_blank" class="social-icon" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright-section">
+            <hr class="copyright-divider">
+            <div class="copyright">
+                جميع الحقوق محفوظة لدى فريق <span class="heart">❤</span> سيستم © <span id="current-year">2023</span>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer-->
+
+    <!-- Start Quick Interaction Tools Section -->
+
+        <div class="scroll-progress-container">
+            <div class="scroll-progress-bar"></div>
+        </div>
+        <!-- الأدوات العائمة -->
+        <div class="floating-tools">
+            <div class="main-tools">
+                <div class="floating-btn scroll-top" id="scrollTopBtn">
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+                <div class="floating-btn action-btn" id="actionBtn">
+                    <i class="fas fa-plus"></i>
+                </div>
+            </div>
+            
+            <div class="social-tools">
+                <div class="floating-btn social-btn whatsapp" id="whatsappBtn">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="floating-btn social-btn telegram" id="telegramBtn">
+                    <i class="fab fa-telegram"></i>
+                </div>
+                <div class="floating-btn social-btn facebook" id="facebookBtn">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+            </div>
+        </div>
+    <!-- End Quick Interaction Tools Section -->
+
+
+    <script src="/Open education.js"></script>
+</body>
+</html>

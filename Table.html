@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام مفاضلات الجامعات التركية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Table.css">
+</head>
+<body>
+
+    <!-- Start Nab-bar Section -->
+    <nav class="golden-navbar">
+        <div class="nav-row-1">
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-pages">
+                <li><a href="/HTML/Home.html" target="_blank"><i class="fa fa-fw fa-home"></i>الصفحة الرئيسية</a></li>
+                
+                <li>
+                    <a href="#"><i class="fa-solid fa-landmark"></i>الجامعات</a>
+                    <ul class="dropdown-menus">
+                        <li><a href="/HTML/public universities.html" target="_blank">الجامعات الحكومية</a></li>
+                        <li><a href="/HTML/private universities.html" target="_blank">الجامعات الخاصة</a></li>
+                        <li><a href="map.html" target="_blank">خريطة الجامعات</a></li>
+                        <li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="/HTML/Scholarships.html" target="_blank"><i class="fa-solid fa-dollar-sign"></i>المنح</a>
+                </li>
+                
+                <li>
+                    <a href="/HTML/Training.html" target="_blank"><i class="fa-solid fa-chalkboard-user"></i>فرص التدريب</a>
+                </li>
+                
+                <li>
+                    <a href="./About.html" target="_blank"><i class="fa-solid fa-circle-user"></i>من نحن؟</a>
+                </li>
+            </ul>
+            
+            <!-- Communication icons -->
+            <div class="nav-icons">
+                <a href="https://wa.me/905343498411" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://t.me/systemtr" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        
+        <!-- Navigation Bar -->
+        <div class="nav-row-2">
+            <div class="nav-logo">
+                <img src="/IMAGE/system logo.png" alt="شعار الفريق">
+            </div>
+            <div class="nav-search">
+                <input type="text" id="searchInput" placeholder="ابحث في الجامعات، المنح، التدريب...">
+                <i class="fas fa-search" id="searchIcon"></i>
+                
+                <div class="search-results-container" id="searchResults">
+                    <div class="search-results" id="resultsContainer"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-pages">
+                <li>
+                    <a href="/HTML/Home.html" target="_blank"><i class="fa fa-fw fa-home"></i>الصفحة الرئيسية</a>
+                </li>
+                
+                <li>
+                    <div class="dropdown-toggle" data-target="universities">
+                        <span><i class="fa-solid fa-landmark"></i>الجامعات</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="mobile-dropdown" id="universities">
+                        <li><a href="/HTML/public universities.html" target="_blank">الجامعات الحكومية</a></li>
+                        <li><a href="/HTML/private universities.html" target="_blank">الجامعات الخاصة</a></li>
+                        <li><a href="/HTML/map.html" target="_blank">خريطة الجامعات</a></li>
+                        <li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <div class="dropdown-toggle" data-target="scholarships">
+                        <a href="/HTML/Scholarships.html" target="_blank"><i class="fa-solid fa-dollar-sign"></i>المنح</a>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="dropdown-toggle" data-target="training">
+                        <a href="/HTML/Training.html" target="_blank"><i class="fa-solid fa-chalkboard-user"></i>فرص التدريب</a>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="/HTML/About.html" target="_blank"><i class="fa-solid fa-circle-user"></i>من نحن؟</a>
+                </li>
+            </ul>
+            
+            <div class="mobile-icons">
+                <a href="https://wa.me/905343498411" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://t.me/systemtr" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Nab-bar Section -->
+
+    <div class="container">        
+        <header>
+            <h1>نظام مفاضلات الجامعات التركية</h1>
+        </header>
+        
+        <!-- قسم الفلترة -->
+        <section class="filter-section">
+            <div class="filter-grid">
+                <!-- فلتر نوع الشهادة -->
+                <div class="filter-group">
+                    <label class="filter-label">
+                        <i class="fas fa-graduation-cap"></i> نوع الشهادة
+
+                    </label>
+                    <div class="filter-select" id="certificateSelect">
+                        اختر نوع الشهادة
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown" id="certificateDropdown">
+                        <input type="text" class="search-input" placeholder="ابحث عن شهادة...">
+                        <ul class="options-list">
+                            <li class="option-item">
+                                <input type="checkbox" id="cert1" value="شهادة الثانوية العامة">
+                                <label for="cert1">شهادة الثانوية العامة</label>
+                            </li>
+                            <li class="option-item">
+                                <input type="checkbox" id="cert2" value="شهادة السات">
+                                <label for="cert2">شهادة السات</label>
+                            </li>
+                            <li class="option-item">
+                                <input type="checkbox" id="cert3" value="شهادة اليوس الموحد">
+                                <label for="cert3">شهادة اليوس الموحد</label>
+                            </li>
+                            <li class="option-item">
+                                <input type="checkbox" id="cert4" value="شهادة الثانوية الدولية">
+                                <label for="cert4">شهادة الثانوية الدولية</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="selected-tags" id="certificateTags"></div>
+                </div>
+                
+                <!-- فلتر نوع التخصص -->
+                <div class="filter-group">
+                    <label class="filter-label">
+                        <i class="fas fa-book"></i> نوع التخصص
+                    </label>
+                    <div class="filter-select" id="majorSelect">
+                        اختر نوع التخصص
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown" id="majorDropdown">
+                        <input type="text" class="search-input" placeholder="ابحث عن تخصص...">
+                        <ul class="options-list" id="majorList">
+                            <!-- سيتم ملؤها بواسطة الجافاسكريبت -->
+                        </ul>
+                    </div>
+                    <div class="selected-tags" id="majorTags"></div>
+                </div>
+                
+                <!-- فلتر الولاية -->
+                <div class="filter-group">
+                    <label class="filter-label">
+                        <i class="fas fa-map-marker-alt"></i> الولاية التركية
+
+                    </label>
+                    <div class="filter-select" id="stateSelect">
+                        اختر الولاية
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown" id="stateDropdown">
+                        <input type="text" class="search-input" placeholder="ابحث عن ولاية...">
+                        <ul class="options-list" id="stateList">
+                            <!-- سيتم ملؤها بواسطة الجافاسكريبت -->
+                        </ul>
+                    </div>
+                    <div class="selected-tags" id="stateTags"></div>
+                </div>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="btn btn-primary" id="applyFilter">
+                    <i class="fas fa-filter"></i> تطبيق الفلترة
+                </button>
+                <button class="btn btn-secondary" id="clearFilter">
+                    <i class="fas fa-times"></i> مسح الفلاتر
+                </button>
+            </div>
+        </section>
+        
+        <!-- قسم الجدول -->
+        <section class="table-section">
+            <div class="table-header">
+                نتائج مفاضلات الجامعات التركية
+            </div>
+            <div class="table-container">
+                <table id="universityTable">
+                    <thead>
+                        <tr>
+                            <th>اسم الجامعة</th>
+                            <th>المكان</th>
+                            <th>بداية التسجيل</th>
+                            <th>نهاية التسجيل</th>
+                            <th>إعلان النتائج</th>
+                            <th>الشهادات المقبولة</th>
+                            <th>رسوم التقديم</th>
+                            <th>نوع التقديم</th>
+                            <th>الترتيب</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+                <div class="loader" id="loader">
+                    <div class="spinner"></div>
+                    <p>جاري تحميل البيانات...</p>
+                </div>
+                <div class="no-results" id="noResults">
+                    <i class="fas fa-university"></i>
+                    <p>لم يتم العثور على جامعات تطابق معايير البحث</p>
+                    <p>الرجاء تغيير معايير الفلترة والمحاولة مرة أخرى</p>
+                </div>
+                <div class="load-more">
+                    <button class="load-more-btn" id="loadMoreBtn">
+                        <i class="fas fa-plus-circle"></i> تحميل المزيد من الجامعات
+                    </button>
+                </div>
+            </div>
+            <div class="status-bar">
+                <div>تم تحديث البيانات: <span id="currentDate"></span></div>
+                <div>عدد النتائج: <span class="result-count" id="resultCount">0</span></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Start Footer -->
+
+    <div class="footer-wrapper">
+        <div class="footer-content">
+            <!-- Right Column -->
+            <div class="footer-column right-align">
+                <a href="/HTML/public universities.html" target="_blank" class="footer-link">
+                    <i class="fas fa-university"></i>
+                    <span>الجامعات الحكومية</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="/HTML/private universities.html" target="_blank" class="footer-link">
+                    <i class="fas fa-building"></i>
+                    <span>الجامعات الخاصة</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="/HTML/Scholarships.html" target="_blank" class="footer-link">
+                    <i class="fas fa-globe"></i>
+                    <span>المنح العالمية</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="/HTML/Training.html" target="_blank" class="footer-link">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>التدريب</span>
+                </a>
+            </div>
+            
+            <!-- Middle Column -->
+            <div class="footer-column center-align">
+                <a href="/HTML/map.html" target="_blank" class="footer-link">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>خريطة الجامعات</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="/HTML/Table.html" target="_blank" class="footer-link">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>تقويم الجامعات</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="/HTML/About.html" target="_blank" class="footer-link">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>من نحن؟</span>
+                </a>
+                <hr class="footer-divider">
+                <a href="https://wa.me/905343498411" target="_blank" class="footer-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>اتصل بنا</span>
+                </a>
+            </div>
+            
+            <!-- Left Column (Map) -->
+            <div class="footer-column left-align map-column">
+                <div class="map-container">
+                    <iframe class="map-iframe" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.279637145691!2d28.97885931572036!3d41.00819497930028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab974807d0575%3A0x44089783d1089f31!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="موقعنا في اسطنبول">
+                    </iframe>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="https://wa.me/905343498411" target="_blank" class="social-icon" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://t.me/systemtr" target="_blank" class="social-icon" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright-section">
+            <hr class="copyright-divider">
+            <div class="copyright">
+                جميع الحقوق محفوظة لدى فريق <span class="heart">❤</span> سيستم © <span id="current-year">2023</span>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer-->
+
+    <!-- Start Quick Interaction Tools Section -->
+
+        <div class="scroll-progress-container">
+            <div class="scroll-progress-bar"></div>
+        </div>
+        <!-- الأدوات العائمة -->
+        <div class="floating-tools">
+            <div class="main-tools">
+                <div class="floating-btn scroll-top" id="scrollTopBtn">
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+                <div class="floating-btn action-btn" id="actionBtn">
+                    <i class="fas fa-plus"></i>
+                </div>
+            </div>
+            
+            <div class="social-tools">
+                <div class="floating-btn social-btn whatsapp" id="whatsappBtn">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="floating-btn social-btn telegram" id="telegramBtn">
+                    <i class="fab fa-telegram"></i>
+                </div>
+                <div class="floating-btn social-btn facebook" id="facebookBtn">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+            </div>
+        </div>
+    <!-- End Quick Interaction Tools Section -->
+
+<script src="/Table.js"></script>
+</body>
+</html>
