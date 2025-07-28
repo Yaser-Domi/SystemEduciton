@@ -554,7 +554,7 @@ body {
         .slide-1 {
             background: 
              linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
-             url('/IMAGE/student1.jpg');
+             url('IMAGE/student1.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -563,7 +563,7 @@ body {
         .slide-2 {
             background: 
             linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
-            url('/IMAGE/student2.jpg');
+            url('IMAGE/student2.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -572,7 +572,7 @@ body {
         .slide-3 {
         background: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
-        url('/IMAGE/student3.jpg');
+        url('IMAGE/student3.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
