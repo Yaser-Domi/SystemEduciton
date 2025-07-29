@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نظام مفاضلات الجامعات التركية</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Table.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نظام مفاضلات الجامعات التركية</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Table.css">
+<link rel="icon" href="system logo.png" type="image/x-icon">
 </head>
 <body>
 
@@ -23,10 +24,10 @@
 <li>
 <a href="#"><i class="fa-solid fa-landmark"></i>الجامعات</a>
 <ul class="dropdown-menus">
-    <li><a href="public universities.html" target="_blank">الجامعات الحكومية</a></li>
-    <li><a href="private universities.html" target="_blank">الجامعات الخاصة</a></li>
-    <li><a href="map.html" target="_blank">خريطة الجامعات</a></li>
-    <li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
+<li><a href="public universities.html" target="_blank">الجامعات الحكومية</a></li>
+<li><a href="private universities.html" target="_blank">الجامعات الخاصة</a></li>
+<li><a href="map.html" target="_blank">خريطة الجامعات</a></li>
+<li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
 </ul>
 </li>
 
@@ -75,26 +76,26 @@
 
 <li>
 <div class="dropdown-toggle" data-target="universities">
-    <span><i class="fa-solid fa-landmark"></i>الجامعات</span>
-    <i class="fas fa-chevron-down"></i>
+<span><i class="fa-solid fa-landmark"></i>الجامعات</span>
+<i class="fas fa-chevron-down"></i>
 </div>
 <ul class="mobile-dropdown" id="universities">
-    <li><a href="public universities.html" target="_blank">الجامعات الحكومية</a></li>
-    <li><a href="private universities.html" target="_blank">الجامعات الخاصة</a></li>
-    <li><a href="map.html" target="_blank">خريطة الجامعات</a></li>
-    <li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
+<li><a href="public universities.html" target="_blank">الجامعات الحكومية</a></li>
+<li><a href="private universities.html" target="_blank">الجامعات الخاصة</a></li>
+<li><a href="map.html" target="_blank">خريطة الجامعات</a></li>
+<li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
 </ul>
 </li>
 
 <li>
 <div class="dropdown-toggle" data-target="scholarships">
-    <a href="Scholarships.html" target="_blank"><i class="fa-solid fa-dollar-sign"></i>المنح</a>
+<a href="Scholarships.html" target="_blank"><i class="fa-solid fa-dollar-sign"></i>المنح</a>
 </div>
 </li>
 
 <li>
 <div class="dropdown-toggle" data-target="training">
-    <a href="Training.html" target="_blank"><i class="fa-solid fa-chalkboard-user"></i>فرص التدريب</a>
+<a href="Training.html" target="_blank"><i class="fa-solid fa-chalkboard-user"></i>فرص التدريب</a>
 </div>
 </li>
 
@@ -114,139 +115,139 @@
 
 <!-- End Nab-bar Section -->
 
-    <div class="container">        
-        <header>
-            <h1>نظام مفاضلات الجامعات التركية</h1>
-        </header>
-        
-        <!-- قسم الفلترة -->
-        <section class="filter-section">
-            <div class="filter-grid">
-                <!-- فلتر نوع الشهادة -->
-                <div class="filter-group">
-                    <label class="filter-label">
-                        <i class="fas fa-graduation-cap"></i> نوع الشهادة
+<div class="container">        
+<header>
+<h1>نظام مفاضلات الجامعات التركية</h1>
+</header>
 
-                    </label>
-                    <div class="filter-select" id="certificateSelect">
-                        اختر نوع الشهادة
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="dropdown" id="certificateDropdown">
-                        <input type="text" class="search-input" placeholder="ابحث عن شهادة...">
-                        <ul class="options-list">
-                            <li class="option-item">
-                                <input type="checkbox" id="cert1" value="شهادة الثانوية العامة">
-                                <label for="cert1">شهادة الثانوية العامة</label>
-                            </li>
-                            <li class="option-item">
-                                <input type="checkbox" id="cert2" value="شهادة السات">
-                                <label for="cert2">شهادة السات</label>
-                            </li>
-                            <li class="option-item">
-                                <input type="checkbox" id="cert3" value="شهادة اليوس الموحد">
-                                <label for="cert3">شهادة اليوس الموحد</label>
-                            </li>
-                            <li class="option-item">
-                                <input type="checkbox" id="cert4" value="شهادة الثانوية الدولية">
-                                <label for="cert4">شهادة الثانوية الدولية</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="selected-tags" id="certificateTags"></div>
-                </div>
-                
-                <!-- فلتر نوع التخصص -->
-                <div class="filter-group">
-                    <label class="filter-label">
-                        <i class="fas fa-book"></i> نوع التخصص
-                    </label>
-                    <div class="filter-select" id="majorSelect">
-                        اختر نوع التخصص
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="dropdown" id="majorDropdown">
-                        <input type="text" class="search-input" placeholder="ابحث عن تخصص...">
-                        <ul class="options-list" id="majorList">
-                            <!-- سيتم ملؤها بواسطة الجافاسكريبت -->
-                        </ul>
-                    </div>
-                    <div class="selected-tags" id="majorTags"></div>
-                </div>
-                
-                <!-- فلتر الولاية -->
-                <div class="filter-group">
-                    <label class="filter-label">
-                        <i class="fas fa-map-marker-alt"></i> الولاية التركية
+<!-- قسم الفلترة -->
+<section class="filter-section">
+<div class="filter-grid">
+<!-- فلتر نوع الشهادة -->
+<div class="filter-group">
+<label class="filter-label">
+<i class="fas fa-graduation-cap"></i> نوع الشهادة
 
-                    </label>
-                    <div class="filter-select" id="stateSelect">
-                        اختر الولاية
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="dropdown" id="stateDropdown">
-                        <input type="text" class="search-input" placeholder="ابحث عن ولاية...">
-                        <ul class="options-list" id="stateList">
-                            <!-- سيتم ملؤها بواسطة الجافاسكريبت -->
-                        </ul>
-                    </div>
-                    <div class="selected-tags" id="stateTags"></div>
-                </div>
-            </div>
-            
-            <div class="filter-buttons">
-                <button class="btn btn-primary" id="applyFilter">
-                    <i class="fas fa-filter"></i> تطبيق الفلترة
-                </button>
-                <button class="btn btn-secondary" id="clearFilter">
-                    <i class="fas fa-times"></i> مسح الفلاتر
-                </button>
-            </div>
-        </section>
-        
-        <!-- قسم الجدول -->
-        <section class="table-section">
-            <div class="table-header">
-                نتائج مفاضلات الجامعات التركية
-            </div>
-            <div class="table-container">
-                <table id="universityTable">
-                    <thead>
-                        <tr>
-                            <th>اسم الجامعة</th>
-                            <th>المكان</th>
-                            <th>بداية التسجيل</th>
-                            <th>نهاية التسجيل</th>
-                            <th>إعلان النتائج</th>
-                            <th>الشهادات المقبولة</th>
-                            <th>رسوم التقديم</th>
-                            <th>نوع التقديم</th>
-                            <th>الترتيب</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody"></tbody>
-                </table>
-                <div class="loader" id="loader">
-                    <div class="spinner"></div>
-                    <p>جاري تحميل البيانات...</p>
-                </div>
-                <div class="no-results" id="noResults">
-                    <i class="fas fa-university"></i>
-                    <p>لم يتم العثور على جامعات تطابق معايير البحث</p>
-                    <p>الرجاء تغيير معايير الفلترة والمحاولة مرة أخرى</p>
-                </div>
-                <div class="load-more">
-                    <button class="load-more-btn" id="loadMoreBtn">
-                        <i class="fas fa-plus-circle"></i> تحميل المزيد من الجامعات
-                    </button>
-                </div>
-            </div>
-            <div class="status-bar">
-                <div>تم تحديث البيانات: <span id="currentDate"></span></div>
-                <div>عدد النتائج: <span class="result-count" id="resultCount">0</span></div>
-            </div>
-        </section>
-    </div>
+</label>
+<div class="filter-select" id="certificateSelect">
+اختر نوع الشهادة
+<i class="fas fa-chevron-down"></i>
+</div>
+<div class="dropdown" id="certificateDropdown">
+<input type="text" class="search-input" placeholder="ابحث عن شهادة...">
+<ul class="options-list">
+<li class="option-item">
+<input type="checkbox" id="cert1" value="شهادة الثانوية العامة">
+<label for="cert1">شهادة الثانوية العامة</label>
+</li>
+<li class="option-item">
+<input type="checkbox" id="cert2" value="شهادة السات">
+<label for="cert2">شهادة السات</label>
+</li>
+<li class="option-item">
+<input type="checkbox" id="cert3" value="شهادة اليوس الموحد">
+<label for="cert3">شهادة اليوس الموحد</label>
+</li>
+<li class="option-item">
+<input type="checkbox" id="cert4" value="شهادة الثانوية الدولية">
+<label for="cert4">شهادة الثانوية الدولية</label>
+</li>
+</ul>
+</div>
+<div class="selected-tags" id="certificateTags"></div>
+</div>
+
+<!-- فلتر نوع التخصص -->
+<div class="filter-group">
+<label class="filter-label">
+<i class="fas fa-book"></i> نوع التخصص
+</label>
+<div class="filter-select" id="majorSelect">
+اختر نوع التخصص
+<i class="fas fa-chevron-down"></i>
+</div>
+<div class="dropdown" id="majorDropdown">
+<input type="text" class="search-input" placeholder="ابحث عن تخصص...">
+<ul class="options-list" id="majorList">
+<!-- سيتم ملؤها بواسطة الجافاسكريبت -->
+</ul>
+</div>
+<div class="selected-tags" id="majorTags"></div>
+</div>
+
+<!-- فلتر الولاية -->
+<div class="filter-group">
+<label class="filter-label">
+<i class="fas fa-map-marker-alt"></i> الولاية التركية
+
+</label>
+<div class="filter-select" id="stateSelect">
+اختر الولاية
+<i class="fas fa-chevron-down"></i>
+</div>
+<div class="dropdown" id="stateDropdown">
+<input type="text" class="search-input" placeholder="ابحث عن ولاية...">
+<ul class="options-list" id="stateList">
+<!-- سيتم ملؤها بواسطة الجافاسكريبت -->
+</ul>
+</div>
+<div class="selected-tags" id="stateTags"></div>
+</div>
+</div>
+
+<div class="filter-buttons">
+<button class="btn btn-primary" id="applyFilter">
+<i class="fas fa-filter"></i> تطبيق الفلترة
+</button>
+<button class="btn btn-secondary" id="clearFilter">
+<i class="fas fa-times"></i> مسح الفلاتر
+</button>
+</div>
+</section>
+
+<!-- قسم الجدول -->
+<section class="table-section">
+<div class="table-header">
+نتائج مفاضلات الجامعات التركية
+</div>
+<div class="table-container">
+<table id="universityTable">
+<thead>
+<tr>
+<th>اسم الجامعة</th>
+<th>المكان</th>
+<th>بداية التسجيل</th>
+<th>نهاية التسجيل</th>
+<th>إعلان النتائج</th>
+<th>الشهادات المقبولة</th>
+<th>رسوم التقديم</th>
+<th>نوع التقديم</th>
+<th>الترتيب</th>
+</tr>
+</thead>
+<tbody id="tableBody"></tbody>
+</table>
+<div class="loader" id="loader">
+<div class="spinner"></div>
+<p>جاري تحميل البيانات...</p>
+</div>
+<div class="no-results" id="noResults">
+<i class="fas fa-university"></i>
+<p>لم يتم العثور على جامعات تطابق معايير البحث</p>
+<p>الرجاء تغيير معايير الفلترة والمحاولة مرة أخرى</p>
+</div>
+<div class="load-more">
+<button class="load-more-btn" id="loadMoreBtn">
+<i class="fas fa-plus-circle"></i> تحميل المزيد من الجامعات
+</button>
+</div>
+</div>
+<div class="status-bar">
+<div>تم تحديث البيانات: <span id="currentDate"></span></div>
+<div>عدد النتائج: <span class="result-count" id="resultCount">0</span></div>
+</div>
+</section>
+</div>
 
 <!-- Start Footer -->
 
@@ -327,35 +328,35 @@ title="موقعنا في اسطنبول">
 </div>
 <!-- End Footer-->
 
-    <!-- Start Quick Interaction Tools Section -->
+<!-- Start Quick Interaction Tools Section -->
 
-        <div class="scroll-progress-container">
-            <div class="scroll-progress-bar"></div>
-        </div>
-        <!-- الأدوات العائمة -->
-        <div class="floating-tools">
-            <div class="main-tools">
-                <div class="floating-btn scroll-top" id="scrollTopBtn">
-                    <i class="fas fa-arrow-up"></i>
-                </div>
-                <div class="floating-btn action-btn" id="actionBtn">
-                    <i class="fas fa-plus"></i>
-                </div>
-            </div>
-            
-            <div class="social-tools">
-                <div class="floating-btn social-btn whatsapp" id="whatsappBtn">
-                    <i class="fab fa-whatsapp"></i>
-                </div>
-                <div class="floating-btn social-btn telegram" id="telegramBtn">
-                    <i class="fab fa-telegram"></i>
-                </div>
-                <div class="floating-btn social-btn facebook" id="facebookBtn">
-                    <i class="fab fa-facebook-f"></i>
-                </div>
-            </div>
-        </div>
-    <!-- End Quick Interaction Tools Section -->
+<div class="scroll-progress-container">
+<div class="scroll-progress-bar"></div>
+</div>
+<!-- الأدوات العائمة -->
+<div class="floating-tools">
+<div class="main-tools">
+<div class="floating-btn scroll-top" id="scrollTopBtn">
+<i class="fas fa-arrow-up"></i>
+</div>
+<div class="floating-btn action-btn" id="actionBtn">
+<i class="fas fa-plus"></i>
+</div>
+</div>
+
+<div class="social-tools">
+<div class="floating-btn social-btn whatsapp" id="whatsappBtn">
+<i class="fab fa-whatsapp"></i>
+</div>
+<div class="floating-btn social-btn telegram" id="telegramBtn">
+<i class="fab fa-telegram"></i>
+</div>
+<div class="floating-btn social-btn facebook" id="facebookBtn">
+<i class="fab fa-facebook-f"></i>
+</div>
+</div>
+</div>
+<!-- End Quick Interaction Tools Section -->
 
 <script src="Table.js"></script>
 </body>

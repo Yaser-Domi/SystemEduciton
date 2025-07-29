@@ -1,35 +1,36 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+        :root {
             /* GOLD */
-        --gold: #FFD700;
-        --gold-light: #D4AF37;
-        --gold-dark: #B8860B;
-            /* GRAY */
-        --gray-900: #1e1e1e;
-        --gray-800: #2a2a2a;
-        --gray-700: #3a3a3a;
-        --gray-600: #4a4a4a;
-        --gray-500: #6e6e6e;
-        --gray-300: #c2c2c2;
-            /* WHITE */
-        --white-warm: #f5f2e9;
-            /* DARK BLUE */
-        --blue-dark: #1a2c3a;
-        --blue-darker: #0f1e2a;
-            /* BACKGROUND COLORS */
-        --bg-gradient-dark: linear-gradient(135deg, var(--gray-900), var(--gray-700));
-        --card-gradient: linear-gradient(135deg, var(--gray-800), var(--gray-600));
-         
+            --gold: #FFD700;
+            --gold-light: #D4AF37;
+            --gold-dark: #B8860B;
+                /* GRAY */
+            --gray-900: #1e1e1e;
+            --gray-800: #2a2a2a;
+            --gray-700: #3a3a3a;
+            --gray-600: #4a4a4a;
+            --gray-500: #6e6e6e;
+            --gray-300: #c2c2c2;
+                /* WHITE */
+            --white-warm: #f5f2e9;
+                /* DARK BLUE */
+            --blue-dark: #1a2c3a;
+            --blue-darker: #0f1e2a;
+                /* BACKGROUND COLORS */
+            --bg-gradient-dark: linear-gradient(135deg, var(--gray-900), var(--gray-700));
+            --card-gradient: linear-gradient(135deg, var(--gray-800), var(--gray-600));
         }
-        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Tajawal', 'Segoe UI', sans-serif;
+            font-family: "Cairo", sans-serif;
         }
-        
+
         body {
-            background-color: var(--gray-800);
+            background-color: var(--white-warm);
+            font-family: "Cairo", sans-serif;
+            font-weight: 400;
             line-height: 1.6;
         }
         /* Start Nab-bar Section */
@@ -444,7 +445,6 @@
 
             .nav-search {
                 width: 100%;
-                padding-right: 60px;
             }
         }
         
