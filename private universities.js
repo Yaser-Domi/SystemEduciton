@@ -420,6 +420,7 @@
                 id: 6,
                 name: "جامعة البيروني",
                 state: "إسطنبول",
+                url: "Biruni.html",
                 languages: ["التركية", "الإنجليزية"],
                 majors: ["الهندسة", "العمارة"],
                 certificates: ["شهادة الثانوية العامة", "شهادة اليوس الموحد TR-YÖS", "شهادة السات"],
@@ -429,6 +430,7 @@
                 id: 7,
                 name: "جامعة أسينورت",
                 state: "إسطنبول",
+                url: "Esinurt.html",
                 languages: ["التركية"],
                 majors: ["الطب", "الصيدلة"],
                 certificates: ["شهادة الثانوية العامة", "شهادة اليوس الموحد TR-YÖS", "شهادة السات", "شهادة الثانوية التركية"],
@@ -488,24 +490,24 @@
             //     certificates: ["شهادة الثانوية العامة","شهادة اليوس الموحد TR-YÖS", "شهادة السات", "شهادة الثانوية التركية"],
             //     image: "/img/جامعة إسطنبول اريل.webp"
             // },
-            {
-                id: 14,
-                name: "جامعة إسطنبول أطلس",
-                state: "إسطنبول",
-                languages: ["التركية" ,"الإنجليزية"],
-                majors: ["إدارة الأعمال", "الحقوق"],
-                certificates: ["شهادة الثانوية العامة", "شهادة اليوس الموحد TR-YÖS", "شهادة الثانوية التركية"],
-                image: "/IMAGE/İSTANBUL ATLAS.png"
-            },
-            {
-                id: 15,
-                name: "جامعة إسطنبول أيدن",
-                state: "إسطنبول",
-                languages: ["التركية", "الإنجليزية"],
-                majors: ["الطب", "الصيدلة"],
-                certificates: ["شهادة اليوس الموحد TR-YÖS", "شهادة السات"],
-                image: "/IMAGE/AYDIN.png",
-            },
+            // {
+            //     id: 14,
+            //     name: "جامعة إسطنبول أطلس",
+            //     state: "إسطنبول",
+            //     languages: ["التركية" ,"الإنجليزية"],
+            //     majors: ["إدارة الأعمال", "الحقوق"],
+            //     certificates: ["شهادة الثانوية العامة", "شهادة اليوس الموحد TR-YÖS", "شهادة الثانوية التركية"],
+            //     image: "/IMAGE/İSTANBUL ATLAS.png"
+            // },
+            // {
+            //     id: 15,
+            //     name: "جامعة إسطنبول أيدن",
+            //     state: "إسطنبول",
+            //     languages: ["التركية", "الإنجليزية"],
+            //     majors: ["الطب", "الصيدلة"],
+            //     certificates: ["شهادة اليوس الموحد TR-YÖS", "شهادة السات"],
+            //     image: "/IMAGE/AYDIN.png",
+            // },
             // {
             //     id: 16,
             //     name: "جامعة إسطنبول بيلجي",
@@ -596,15 +598,15 @@
             //     certificates: ["شهادة الثانوية العامة", "شهادة اليوس الموحد TR-YÖS", "شهادة السات"],
             //     image: "/img/جامعة أوزيجين.webp"
             // },
-            {
-                id: 26,
-                name: "جامعة أسكودار",
-                state: "إسطنبول",
-                languages: ["التركية", "الإنجليزية"],
-                majors: ["الطب", "الصيدلة"],
-                certificates: ["شهادة اليوس الموحد TR-YÖS", "شهادة السات"],
-                image: "/IMAGE/ÜSKÜDAR.png",
-            },
+            // {
+            //     id: 26,
+            //     name: "جامعة أسكودار",
+            //     state: "إسطنبول",
+            //     languages: ["التركية", "الإنجليزية"],
+            //     majors: ["الطب", "الصيدلة"],
+            //     certificates: ["شهادة اليوس الموحد TR-YÖS", "شهادة السات"],
+            //     image: "/IMAGE/ÜSKÜDAR.png",
+            // },
             // {
             //     id: 27,
             //     name: "جامعة الشرق الأدنى",
@@ -813,15 +815,15 @@
             //     image: "/img/جامعة مالتبة.jpg"
             // },
 
-            {
-                id: 50,
-                name: "جامعة نيشان تاشي",
-                state: "إسطنبول",
-                languages: ["التركية", "الإنجليزية"],
-                majors: ["القانون", "العلوم السياسية"],
-                certificates: ["شهادة الثانوية العامة", "شهادة اليوس الموحد TR-YÖS", "شهادة السات", "شهادة الثانوية التركية"],
-                image: "/IMAGE/NİŞANTAŞİ.jpg",
-            },
+            // {
+            //     id: 50,
+            //     name: "جامعة نيشان تاشي",
+            //     state: "إسطنبول",
+            //     languages: ["التركية", "الإنجليزية"],
+            //     majors: ["القانون", "العلوم السياسية"],
+            //     certificates: ["شهادة الثانوية العامة", "شهادة اليوس الموحد TR-YÖS", "شهادة السات", "شهادة الثانوية التركية"],
+            //     image: "/IMAGE/NİŞANTAŞİ.jpg",
+            // },
             // {
             //     id: 51,
             //     name: "جامعة يشار",
@@ -1026,23 +1028,23 @@
                     <div class="card-image">
                         <img src="${university.image}" alt="${university.name}">
                         <div class="card-overlay">
-                           <span>خاصة</span>
+                            <h2 class="university-name"></h2>
                         </div>
                     </div>
                     <div class="card-info">
                         <div class="info-row">
-                           <i class="fa-solid fa-building-columns"></i>
+                            <i class="fa-solid fa-building-columns"></i>
                             <h3>${university.name}</h3>
                         </div>
                         <hr class="info-divider">
                         <div class="info-row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h3>${university.state}</h3>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3>${university.languages}</h3>
                         </div>
                         <hr class="info-divider">
                         <div class="info-row">
-                            <i class="fas fa-language"></i>
-                            <h3>${university.languages.join(', ')}</h3>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <a href="${university.url}" target="_blank" class="more-link">انقر للمزيد...</a>
                         </div>
                     </div>
                 `;
