@@ -2,7 +2,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             const hamburger = document.getElementById('hamburger');
             const mobileMenu = document.getElementById('mobileMenu');
-            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+            const dropdownToggles = document.querySelectorAll('.nav-dropdown-toggle');
             
             // التحكم في قائمة الجوال
             hamburger.addEventListener('click', function() {

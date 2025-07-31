@@ -446,7 +446,6 @@
 
             .nav-search {
                 width: 100%;
-                padding-right: 60px;
             }
         }
         
@@ -492,18 +491,19 @@
         /* End nav-bar */
 
         .container {
-            max-width: 1400px;
+            min-height: 100vh;
             width: 100%;
             margin: 0 auto;
             background-color: var(--gray-800);
+            padding: 0; /* تم إصلاح المشكلة هنا */
         }
         
-
         header {
             text-align: center;
-            margin-bottom: 30px;
             position: relative;
-            padding: 30px 0;
+            padding: 30px 0 20px;
+            margin-bottom: 0;
+            background: linear-gradient(to bottom, var(--gray-900), var(--gray-800));
         }
         
         h1 {
@@ -527,17 +527,15 @@
             background: linear-gradient(90deg, transparent, var(--gold-dark), transparent);
             border-radius: 2px;
         }
-
         
         .filter-section {
             background: var(--gray-700);
-            border-radius: 40px;
-            margin: 30px;
-            padding: 30px;
+            margin: 0;
+            border-radius: 0;
             margin-bottom: 40px;
             border: 2px solid var(--gold-dark);
             position: relative;
-          
+            padding: 30px 20px;
         }
         
         .filter-section::before {
@@ -573,17 +571,6 @@
             gap: 10px;
         }
         
-        .filter-label i {
-            color: var(--gold);
-            background: rgba(201, 161, 69, 0.1);
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
         .filter-select {
             width: 100%;
             padding: 16px 24px;
@@ -606,20 +593,6 @@
             box-shadow: 0 4px 10px rgba(201, 161, 69, 0.15);
         }
         
-        .filter-select.active {
-            border-color: var(--gold);
-            box-shadow: 0 4px 12px rgba(201, 161, 69, 0.2);
-        }
-        
-        .filter-select i {
-            color: var(--blue-darker);
-            transition: all 0.3s ease;
-        }
-        
-        .filter-select.active i {
-            transform: rotate(180deg);
-        }
-        
         .dropdown {
             position: absolute;
             left: 0;
@@ -631,14 +604,14 @@
             max-height: 300px;
             overflow-y: auto;
             display: none;
+            border-radius: 20px;
+            margin-top: 5px;
         }
         
         .dropdown.active {
             display: block;
             opacity: 1;
             transform: translateY(0);
-            border-radius: 20px;
-           
         }
         
         .search-input {
@@ -650,11 +623,7 @@
             background: var(--gray-300);
             color: var(--blue-darker);
             transition: all 0.3s ease;
-        }
-        
-        .search-input:focus {
-            outline: none;
-            background: var(--gray-600);
+            margin-bottom: 10px;
         }
         
         .options-list {
@@ -672,19 +641,7 @@
         
         .option-item:hover {
             background: var(--gold-dark);
-        }
-        
-        .option-item input {
-            margin-left: 12px;
-            width: 20px;
-            height: 20px;
-            cursor: pointer;
-            accent-color: var(--gold);
-        }
-        .option-item label {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--gray-900);
+            color: var(--dark-color);
         }
         
         .selected-tags {
@@ -705,17 +662,6 @@
             font-size: 1rem;
             font-weight: 700;
             box-shadow: 0 2px 5px rgba(201, 161, 69, 0.3);
-        }
-        
-        .tag i {
-            margin-right: 8px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-        }
-        
-        .tag i:hover {
-            transform: scale(1.2);
         }
         
         .filter-buttons {
@@ -759,32 +705,27 @@
             border: 1px solid var(--gray-500);
         }
         
-        .btn-secondary:hover {
-            background: var(--blue-dark);
-            border: 1px solid var(--blue-dark);
-            transform: translateY(-3px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
         .table-section {
             background: var(--gray-800);
             overflow: hidden;
             border: 1px solid var(--gold-light);
+            border-radius: 8px;
+            margin: 0 20px 40px;
         }
         
         .table-header {
-            padding: 20px;
             background: var(--gray-800);
             color: var(--gold);
             text-align: center;
             font-size: 1.5rem;
             font-weight: 700;
-            position: relative;
+            padding: 20px;
+            border-bottom: 2px solid var(--gold);
         }
 
         .table-container {
             overflow-x: auto;
-            padding: 20px;
+            padding: 0 10px;
         }
         
         table {
@@ -794,7 +735,6 @@
         }
         
         th {
-            
             background: var(--gold-dark);
             color: var(--dark-color);
             padding: 20px;
@@ -802,6 +742,7 @@
             font-weight: 700;
             position: sticky;
             font-size: 0.75rem;
+            top: 0;
         }
         
         th {
@@ -818,8 +759,7 @@
         }
         
         tr:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            background-color: var(--gray-700);
         }
 
         td {
@@ -828,58 +768,38 @@
             vertical-align: middle;
             color: var(--gold-light);
             font-size: 0.75rem;
-            border: 1px solid black;
-            
+            border: 1px solid var(--gray-700);
         }
         
         .university-name {
             font-weight: 700;
             color: var(--gold-light);
             font-size: 0.75rem;
-            padding: 0 40px;
         }
         
-        .university-location {
-            color: var(--gray-300);
-            font-size: 0.5rem;
-            margin-top: 5px;
-        }
         .location {
             font-size: 0.75rem;
             font-weight: 700;
             color: var(--gold-light);
-            padding: 0 20px;
         }
-        
-        .date-cell {
-            font-family: monospace;
-            color: var(--gold-light);
-            font-weight: 500;
-            font-size: 0.75rem;
-            padding: 0 20px;
-        }        
-
         
         .cert-badge {
             color: var(--gold-light);
             margin: 5px;
             font-size: 0.75rem;
             font-weight: 600;
-            
         }
         
         .free {
             color: var(--gold-light);
             font-weight: 700;
             font-size: 0.75rem;
-            padding: 0 10px;
         }
         
         .online {
             color: var(--gold-light);
             font-weight: 700;
             font-size: 0.75rem;
-            padding: 0 10px;
         }
         
         .ranking {
@@ -912,10 +832,6 @@
         }
         
         @media (max-width: 768px) {
-            body {
-                padding: 15px;
-            }
-            
             h1 {
                 font-size: 1.9rem;
             }
@@ -957,6 +873,10 @@
                 font-size: 1.2rem;
                 padding: 15px;
             }
+            
+            .table-section {
+                margin: 0 10px 30px;
+            }
         }
         
         /* الرسوم المتحركة */
@@ -979,18 +899,6 @@
             background: var(--gray-800);
             border-radius: 20px;
             margin: 20px;
-        }
-        
-        .no-results i {
-            font-size: 3.5rem;
-            margin-bottom: 25px;
-            color: var(--gold-dark);
-        }
-        
-        .no-results p:first-of-type {
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: var(--gray-300);
         }
         
         .status-bar {
