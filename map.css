@@ -2694,27 +2694,6 @@ gap: 15px;
 margin-top: 20px;
 }
 
-.social-icon {
-width: 40px;
-height: 40px;
-border-radius: 50%;
-background: rgba(212, 175, 55, 0.1);
-display: flex;
-justify-content: center;
-align-items: center;
-color: #d4af37;
-font-size: 18px;
-transition: all 0.3s ease;
-border: 1px solid rgba(212, 175, 55, 0.3);
-}
-
-.social-icon:hover {
-background: rgba(212, 175, 55, 0.3);
-transform: translateY(-5px);
-color: #fff;
-box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
-}
-
 /* تصميم متجاوب */
 @media (max-width: 1200px) {
 .team-container {
@@ -2726,8 +2705,8 @@ min-width: 240px;
 }
 
 @media (max-width: 992px) {
-.section-title {
-font-size: 3rem;
+.teams-section-title {
+font-size: 2.5rem;
 }
 .team-card {
 min-width: 220px;
@@ -2738,7 +2717,7 @@ width: 160px;
 height: 160px;
 }
 .team-name-ar {
-font-size: 1.6rem;
+font-size: 1.5rem;
 }
 .team-name-en {
 font-size: 1.2rem;
@@ -2746,8 +2725,8 @@ font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
-.section-title {
-font-size: 2.5rem;
+.teams-section-title {
+font-size: 2rem;
 margin-bottom: 60px;
 }
 .team-container {
@@ -2765,8 +2744,8 @@ height: 170px;
 }
 
 @media (max-width: 576px) {
-.section-title {
-font-size: 2.2rem;
+.teams-section-title {
+font-size: 1.5rem;
 }
 .team-card {
 min-width: 95%;
@@ -2777,15 +2756,14 @@ width: 150px;
 height: 150px;
 }
 .team-name-ar {
-font-size: 1.5rem;
+font-size: 0.75rem;
 }
 .team-name-en {
-font-size: 1.1rem;
+font-size: 0.75rem;
 }
 }
 
 /* Emd Team members */
-
 
 /* Start Footer */
 
