@@ -645,39 +645,7 @@ background: var(--blue-darker);
 border-color: var(--blue-darker);
 }
 
-/* قسم الفيديو المعدل */
-.img-container {
-position: relative;
-width: 100%;
-height: auto;
-object-fit: cover;
-padding-top: 56.25%; /* نسبة 16:9 */
-}
 
-.img-wrapper {
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-border-radius: 15px;
-overflow: hidden;
-box-shadow: 0 15px 35px rgba(0,0,0,0.4);
-transition: all 0.5s ease;
-border: 3px solid rgba(255,255,255,0.2);
-}
-
-.img-wrapper:hover {
-transform: scale(1.02);
-box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-border-color: rgba(255,255,255,0.4);
-}
-
-.img-wrapper iframe {
-width: 100%;
-height: 100%;
-border: none;
-}
 
 /* التجاوب */
 @media (max-width: 768px) {
@@ -698,13 +666,6 @@ margin: 1.5rem auto;
 .button-group {
 justify-content: center;
 flex-wrap: wrap;
-}
-
-.img-container {
-margin-top: 2rem;
-max-width: 90%;
-margin-left: auto;
-margin-right: auto;
 }
 }
 
@@ -840,7 +801,7 @@ cursor: pointer;
 }
 
 .section-one .info-row i {
-font-size: 1.5rem;
+font-size: 1rem;
 color: var(--gold-dark); 
 margin-top: 5px; 
 margin-right: 5px;
@@ -858,11 +819,11 @@ font-weight: 400;
 color: var(--gold-dark);
 }
 .info-row h3 {
-font-size: 1rem;
+font-size: 0.75rem;
 color: var(--gray-800);
 }
 .info-row span {
-font-size: 1rem;
+font-size: 0.75rem;
 color: var(--gold-dark);
 margin-left: 10px;
 }
@@ -925,6 +886,30 @@ color: var(--gold-dark);
 }
 
 /* End Sections */
+
+@media (max-width: 768px) {
+.section-three h2 {
+font-size: 0.75rem;
+}
+.section-three p {
+font-size: 0.5rem;
+}
+.section-three a {
+font-size: 0.5rem;
+}
+}
+
+@media (max-width: 480px) {
+.section-three h2 {
+font-size: 0.75rem;
+}
+.section-three p {
+font-size: 0.5rem;
+}
+.section-three a {
+font-size: 0.5rem;
+}
+}
 
 /* Start Accordion */
 
@@ -996,6 +981,23 @@ max-height: 300px;
 
 .accordion-item.active .accordion-icon {
 transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+.accordion-header h1 {
+    font-size: 0.75rem;
+}
+.accordion-content p {
+    font-size: 0.5rem;
+}
+}
+@media (max-width: 480px) {
+.accordion-header h1 {
+    font-size: 0.75rem;
+}
+.accordion-content p {
+    font-size: 0.5rem;
+}
 }
 
 /* End Accordion */

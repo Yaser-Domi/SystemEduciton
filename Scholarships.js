@@ -549,22 +549,22 @@ const universities = [
 id: 1,
 name: "منحة الحكومة التركية",
 state: "بكالوريوس",
-url: "/HTML/TurkishScholarship.html",
+url: "TurkishScholarship.html",
 languages: ["الإنجليزية" ,"التركية"],
 majors: ["ممولة بالكامل"],
 certificates: ["تركيا"],
-image: "/IMAGE/Türkiye Burs.jpg"
+image: "IMAGE/المنحة التركية.png"
 },
 
 {
 id: 2,
 name: "منحة وقف الديانة التركية",
 state: "تركيا",
-url: "",
+url: "Endowment Grant.html",
 languages: ["الإنجليزية", "التركية"],
 majors: ["ممولة جزئيا"],
 certificates: ["تركيا"],
-image: "/img/جامعة أنقرة للعلوم.webp"
+image: "IMAGE/منحة وقف الديانة.png"
 },
 // {
 //     id: 3,
