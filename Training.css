@@ -1,38 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
-:root {
-/* GOLD */
---gold: #FFD700;
---gold-light: #D4AF37;
---gold-dark: #B8860B;
-/* GRAY */
---gray-900: #1e1e1e;
---gray-800: #2a2a2a;
---gray-700: #3a3a3a;
---gray-600: #4a4a4a;
---gray-500: #6e6e6e;
---gray-300: #c2c2c2;
-/* WHITE */
---white-warm: #f5f2e9;
-/* DARK BLUE */
---blue-dark: #1a2c3a;
---blue-darker: #0f1e2a;
-/* BACKGROUND COLORS */
---bg-gradient-dark: linear-gradient(135deg, var(--gray-900), var(--gray-700));
---card-gradient: linear-gradient(135deg, var(--gray-800), var(--gray-600));
-}
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: "Cairo", sans-serif;
-}
+        :root {
+            /* GOLD */
+            --gold: #FFD700;
+            --gold-light: #D4AF37;
+            --gold-dark: #B8860B;
+                /* GRAY */
+            --gray-900: #1e1e1e;
+            --gray-800: #2a2a2a;
+            --gray-700: #3a3a3a;
+            --gray-600: #4a4a4a;
+            --gray-500: #6e6e6e;
+            --gray-300: #c2c2c2;
+                /* WHITE */
+            --white-warm: #f5f2e9;
+                /* DARK BLUE */
+            --blue-dark: #1a2c3a;
+            --blue-darker: #0f1e2a;
+                /* BACKGROUND COLORS */
+            --bg-gradient-dark: linear-gradient(135deg, var(--gray-900), var(--gray-700));
+            --card-gradient: linear-gradient(135deg, var(--gray-800), var(--gray-600));
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Cairo", sans-serif;
+        }
 
-body {
-background-color: var(--white-warm);
-font-family: "Cairo", sans-serif;
-font-weight: 400;
-line-height: 1.6;
-}
+        body {
+            background-color: var(--white-warm);
+            font-family: "Cairo", sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+        }
 
 /* Start Nab-bar Section */
 .golden-navbar {
@@ -440,6 +440,7 @@ gap: 20px;
 }
 
 .nav-logo {
+height: 80px;
 margin-top: -20px;
 justify-content: center;
 }
@@ -473,6 +474,7 @@ height: 70px;
 
 @media (min-width: 480px) {
 .nav-logo {
+height: 80px;
 position: absolute;
 right: 5%;
 }
@@ -1195,6 +1197,7 @@ margin-bottom: 3rem;
 .university-card {
 background: var(--gray-700);
 border-radius: 80px;
+border-bottom: 4px solid var(--gold-dark);
 overflow: hidden;
 box-shadow: var(--gold);
 transition: all 0.3s ease;
@@ -1202,7 +1205,6 @@ position: relative;
 height: 100%;
 display: flex;
 flex-direction: column;
-border-bottom: 6px solid var(--gold-dark);
 }
 
 .university-card:hover {
