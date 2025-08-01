@@ -712,127 +712,127 @@
         const cardsData = [
             {
                 title: "جامعة بوغازتشي",
-                image: "/IMAGE/boğaziçi/جامعة بوغازتشي.png",
+                image: "IMAGE/جامعة بوغازتشي.png",
                 url: "boğaziçi.html" 
             },
             {
                 title: "جامعة الفرات",
-                image: "/IMAGE/Fırat/جامعة الفرات.png",
+                image: "IMAGE/جامعة الفرات.png",
                 url: "Fırat.html" 
             },
             {
                 title: "جامعة نيغدة عمر خالص",
-                image: "/IMAGE/Niğde/جامعة نيغدة عمر خالص.png",
+                image: "IMAGE/جامعة نيغدة عمر خالص.png",
                 url: "niğde.html" 
             },
             {
                 title: "جامعة بورصة التقنية",
-                image: "/IMAGE/BursaTeknik/جامعة بورصة التقنية.png",
+                image: "IMAGE/جامعة بورصة التقنية.png",
                 url: "Bursateknik.html" 
             },
             {
                 title: "جامعة إسطنبول",
-                image: "/IMAGE/istanbul/جامعة إسطنبول.png",
+                image: "IMAGE/جامعة إسطنبول.png",
                 url: "Istanbul.html" 
             },
             {
                 title: "جامعة باندرما 17 إيلول",
-                image: "/IMAGE/Bandırma/جامعة باندرما.png",
+                image: "IMAGE/جامعة باندرما.png",
                 url: "Bandırma.html" 
             },
             {
                 title: "جامعة يوزغات بوزوك",
-                image: "/IMAGE/Yozgat/جامعة يوزغات بوزوك.png",
+                image: "IMAGE/جامعة يوزغات بوزوك.png",
                 url: "yozgat.html" 
             },
             {
                 title: "جامعة أديمان",
-                image: "/IMAGE/Adıyaman/جامعة أديمان.png",
+                image: "IMAGE/جامعة أديمان.png",
                 url: "Adıyaman.html" 
             },
             {
                 title: "جامعة تراكيا",
-                image: "/IMAGE/Tarakya/جامعة تراكيا.png",
+                image: "IMAGE/جامعة تراكيا.png",
                 url: "Tarakya.html" 
             },
             {
                 title: "جامعة سامسون",
-                image: "/IMAGE/Samsun/جامعة سامسون.png",
+                image: "IMAGE/جامعة سامسون.png",
                 url: "Samsun.html" 
             },
             {
                 title: "الجامعة التركية الألمانية",
-                image: "/IMAGE/TürkAlman/الجامعة التركية الألمانية.png",
+                image: "IMAGE/الجامعة التركية الألمانية.png",
                 url: "TürkAlman.html" 
             },
             {
                 title: "جامعة أغري ",
-                image: "/IMAGE/Ağrıibrahim/جامعة أغري إبراهيم تشيتشان.png",
+                image: "IMAGE/جامعة أغري إبراهيم تشيتشان.png",
                 url: "Ağrıibrahim.html" 
             },
             {
                 title: "جامعة كارامان أوغلو",
-                image: "/IMAGE/Karaman/جامعة كارامان.png",
+                image: "IMAGE/جامعة كارامان.png",
                 url: "Karaman.html" 
             },
             {
                 title: "جامعة كهرمان مرعش استقلال",
-                image: "/IMAGE/Maraaşİstiklal/جامعة كهرمان مرعش استقلال.png",
+                image: "IMAGE/جامعة كهرمان مرعش استقلال.png",
                 url: "Kahramanmaraş.html" 
             },
             {
                 title: "جامعة كهرمان مرعش",
-                image: "/IMAGE/Süçüİmam/جامعة كهرمان مرعش سوتشو امام.png",
+                image: "IMAGE/جامعة كهرمان مرعش سوتشو امام.png",
                 url: "Kahramansüçü.html" 
             },
             {
                 title: "جامعة ارزروم التقنية",
-                image: "/IMAGE/Erzurum/جامعة أرزروم التقنية.png",
+                image: "IMAGE/جامعة أرزروم التقنية.png",
                 url: "Erzurum.html" 
             },
             {
                 title: "جامعة عبد الله غول",
-                image: "/IMAGE/AbdullahGül/جامعة عبد الله غول.png",
+                image: "IMAGE/جامعة عبد الله غول.png",
                 url: "Abdullahgül.html" 
             },
             {
                 title: "جامعة كوتاهيا دملوبينار",
-                image: "/IMAGE/Kütahya/جامعة كوتاهيا دملوبينار.png",
+                image: "IMAGE/جامعة كوتاهيا دملوبينار.png",
                 url: "Kütahyadumlupınar.html" 
             },
             {
                 title: "جامعة غبزة التقنية",
-                image: "/IMAGE/Gebze/جامعة غبزة التنقية.png",
+                image: "IMAGE/جامعة غبزة التنقية.png",
                 url: "GebzeTeknik.html" 
             },
             {
                 title: "جامعة إسطنبول التقنية",
-                image: "/IMAGE/İstanbulTeknik/جامعة إسطنبول التقنية.png",
+                image: "IMAGE/جامعة إسطنبول التقنية.png",
                 url: "İstanbulTeknik.html" 
             },
             {
                 title: "جامعة تشانكيري كراتكين",
-                image: "/IMAGE/Çankırı/جامعة تشانكري.png",
+                image: "IMAGE/جامعة تشانكري.png",
                 url: "Çankırı.html" 
             },
             {
                 title: "جامعة غلطة سراي",
-                image: "/IMAGE/GalataSaray/جامعة غلطة سراي.png",
+                image: "IMAGE/جامعة غلطة سراي.png",
                 url: "Galatasaray.html" 
             },
             {
                 title: "جامعة بايبورت",
-                image: "/IMAGE/Bayburt/جامعة بايبورت.png",
+                image: "IMAGE/جامعة بايبورت.png",
                 url: "Bayburt.html"
             },
             {
                 title: "جامعة كارابوك",
-                image: "/IMAGE/Karabük/جامعة كارابوك.png",
+                image: "IMAGE/جامعة كارابوك.png",
                 url: "Karabük.html"
             },
             {
                 title: "جامعة أفيون كوجاتيبه",
-                image: "/IMAGE/Kocatepe/afyon üniversitesi .png",
+                image: "IMAGE/جامعة أفيون كوجاتيبه.png",
                 url: "Afyonkocatepe.html"
             }
         ];

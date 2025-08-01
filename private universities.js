@@ -1542,7 +1542,6 @@
         }
 
 // End Customer Reviews
-
 // Start Customer Comments Setion 
 
         var swiper = new Swiper(".mySwiper", {
