@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> جامعة إسطنبول أريل</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700&family=Almarai:wght@400&display=swap" 
+rel="stylesheet">
+<link rel="icon" href="IMAGE/İSTANBUL AREL ÜNİ.png" type="image/x-icon">
+<link rel="stylesheet" href="İstanbul arel.css">
+</head>
+<body>
+
+<!-- Start Nab-bar Section -->
+<nav class="golden-navbar">
+<div class="nav-row-1">
+<button class="hamburger" id="hamburger">
+<i class="fas fa-bars"></i>
+</button>
+
+<ul class="nav-pages">
+<li><a href="index.html" target="_blank"><i class="fa fa-fw fa-home"></i>الصفحة الرئيسية</a></li>
+
+<li>
+<a href="#"><i class="fa-solid fa-landmark"></i>الجامعات</a>
+<ul class="dropdown-menus">
+    <li><a href="public universities.html" target="_blank">الجامعات الحكومية</a></li>
+    <li><a href="private universities.html" target="_blank">الجامعات الخاصة</a></li>
+    <li><a href="map.html" target="_blank">خريطة الجامعات</a></li>
+    <li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
+</ul>
+</li>
+
+<li>
+<a href="Scholarships.html" target="_blank"><i class="fa-solid fa-dollar-sign"></i>المنح</a>
+</li>
+
+<li>
+<a href="Training.html" target="_blank"><i class="fa-solid fa-chalkboard-user"></i>فرص التدريب</a>
+</li>
+
+<li>
+<a href="About.html" target="_blank"><i class="fa-solid fa-circle-user"></i>من نحن؟</a>
+</li>
+</ul>
+
+<!-- Communication icons -->
+<div class="nav-icons">
+<a href="https://wa.me/905343498411" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://t.me/systemtr" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+<a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</div>
+
+<!-- Navigation Bar -->
+<div class="nav-row-2">
+<div class="nav-logo">
+<img src="IMAGE/system logo.png" alt="شعار الفريق">
+</div>
+<div class="nav-search">
+<input type="text" id="searchInput" placeholder="ابحث في الجامعات، المنح، التدريب...">
+<i class="fas fa-search" id="searchIcon"></i>
+
+<div class="search-results-container" id="searchResults">
+<div class="search-results" id="resultsContainer"></div>
+</div>
+</div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+<ul class="mobile-pages">
+<li>
+<a href="index.html" target="_blank"><i class="fa fa-fw fa-home"></i>الصفحة الرئيسية</a>
+</li>
+
+<li>
+<div class="dropdown-toggle" data-target="universities">
+    <span><i class="fa-solid fa-landmark"></i>الجامعات</span>
+    <i class="fas fa-chevron-down"></i>
+</div>
+<ul class="mobile-dropdown" id="universities">
+    <li><a href="public universities.html" target="_blank">الجامعات الحكومية</a></li>
+    <li><a href="private universities.html" target="_blank">الجامعات الخاصة</a></li>
+    <li><a href="map.html" target="_blank">خريطة الجامعات</a></li>
+    <li><a href="Table.html" target="_blank">التقويم الجامعي</a></li>
+</ul>
+</li>
+
+<li>
+<div class="dropdown-toggle" data-target="scholarships">
+    <a href="Scholarships.html" target="_blank"><i class="fa-solid fa-dollar-sign"></i>المنح</a>
+</div>
+</li>
+
+<li>
+<div class="dropdown-toggle" data-target="training">
+    <a href="Training.html" target="_blank"><i class="fa-solid fa-chalkboard-user"></i>فرص التدريب</a>
+</div>
+</li>
+
+<li>
+<a href="About.html" target="_blank"><i class="fa-solid fa-circle-user"></i>من نحن؟</a>
+</li>
+</ul>
+
+<div class="mobile-icons">
+<a href="https://wa.me/905343498411" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://t.me/systemtr" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+<a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</div>
+</nav>
+
+<!-- End Nab-bar Section -->
+
+<header class="header">
+<div class="overlay"></div>
+<div class="floating-element circle" style="top:10%; left:5%; width:80px; height:80px; animation: float1 18s infinite ease-in-out;"></div>
+<div class="floating-element triangle" style="top:70%; left:15%; width:0; height:0; border-width: 0 50px 80px 50px; border-color: transparent transparent #ff9a9e transparent; animation: float2 22s infinite ease-in-out;"></div>
+<div class="floating-element square" style="top:30%; right:10%; width:60px; height:60px; animation: float3 15s infinite ease-in-out;"></div>
+<div class="floating-element circle" style="bottom:15%; right:5%; width:120px; height:120px; animation: float1 25s infinite ease-in-out reverse;"></div>
+<div class="floating-element triangle" style="top:20%; right:20%; width:0; height:0; border-width: 0 30px 50px 30px; border-color: transparent transparent #4facfe transparent; animation: float2 20s infinite ease-in-out reverse;"></div>
+
+<div class="header-content">
+<div class="text-content">
+<h4> جامعة  إسطنبول أريل  </h4>
+<hr>
+<p style="border-bottom: none;">
+جامعة إسطنبول أريل توفر بيئة تعليمية متعددة التخصصات باللغة الإنجليزية والتركية، ببرامج أكاديمية متنوعة تفوق 300 برنامج، مع أعضاء هيئة تدريس ذوي خبرة، وبنية تحتية عصرية تضم عددًا من الحُرُم الجامعية الحديثة وشراكات دولية قوية
+</p>
+<div class="button-group">
+<button class="btn btn-primary">إبدأ الرحلة</button>
+<button class="btn btn-secondary">استكشف المزيد</button>
+</div>
+</div>
+
+
+<div class="video-container">
+<div class="video-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lQ3n6GxwQTw?si=SXQKoRyX8JQXGYRB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+
+</div>
+</header>
+
+<!-- Start Section -->
+<div class="academic-section">
+<!-- العمود الرئيسي (70%) -->
+<div class="main-column">
+
+<section class="section-one">
+<div class="info-row">
+<i class="fa-solid fa-map-location-dot icon"></i>
+<h3><span>الولاية:</span>إسطنبول</h3>
+</div>
+<div class="info-row">
+<i class="fa-solid fa-calendar-days icon"></i>
+<h3><span>تاريخ التأسيس:</span>2007</h3>
+</div>
+<div class="info-row">
+<i class="fa-solid fa-globe icon"></i>
+<h3><span>الموقع الإلكتروني:</span><a href="https://aday.arel.edu.tr/?kampanya=1010-Arama-Marka&gad_source=1&gad_campaignid=22757927714&gbraid=0AAAAAoyUu62HyoDyb-k6qnRHWRn9Gc-lO&gclid=Cj0KCQjw18bEBhCBARIsAKuAFEbLADExFvBwBud_5oCNrr6ktRzB38kGqBdZgyMBywtZjHLtH6rTPI4aAruqEALw_wcB" target="_blank">زيارة الموقع الرسمي</a></h3>
+</div>
+<div class="info-row">
+<i class="fa-solid fa-language icon"></i>
+<h3><span>للغات التدريس:</span>التركية - الإنجليزية<h3>
+</div>
+</section>
+
+<section class="section-three">
+<div class="text-row">
+<div class="text-content">
+<h2> معلومات عن جامعة إسطنبول أريل :</h2>
+<p style="border-bottom: none;"> 
+تأسست جامعة إسطنبول أريل في 18 مايو 2007 عبر مؤسسة التعليم والثقافة Kemal Gözükara، وهي تُعد جامعة خاصة غير ربحية حاصلة على الاعتراف الرسمي من رئاسة الجمهورية التركية  بدأت بتقديم التعليم الجامعي في حي Küçükçekmece-Sefaköy، ثم انتقلت إلى حرم Tepekent (المُعلَن لاحقًا Kemal Gözükara) عام 2010 وهو يقع في منطقة Büyükçekmece بمساحة داخلية حوالي 52,413 م² ومساحة خارجية 113,750 م² وفي العام الأكاديمي 2019–2020 افتُتح حرم Cevizlibağ للعلوم الصحية والطبية بإدارة مشتركة مع مستشفى Bahçelievler Memorial، ويحتوي على مساحة داخلية تصل إلى 14,783 م² ومختبرات متقدمة لأقسام الطب والعلاج الطبيعي وغيرها
+</p>
+</div>
+</div>
+</section>
+
+<section class="section-three">
+<div class="text-row">
+<div class="text-content">
+<h2>
+تاريخ تأسيس جامعة إسطنبول أريل:
+</h2>
+<p>
+تأسست جامعة إسطنبول أريل في 18 مايو 2007 تُعد جامعة إسطنبول أريل مؤسسة تعليمية خاصة غير ربحية، تقع في منطقة بيوك تشكمجه على الجانب الأوروبي من إسطنبول. تقدم الجامعة برامج أكاديمية باللغة التركية والإنجليزية، تشمل درجة البكالوريوس، والماجستير، والدكتوراه، في مجالات متنوعة. تسعى الجامعة إلى تحقيق معايير الجودة الدولية في التعليم والبحث، وتضم حاليًا أكثر من 12000 طالب، مع هيئة تدريسية مؤهلة تضم حوالي 480 عضوًا
+</p>
+</div>
+</div>
+</section>
+
+<section class="section-three">
+<div class="text-row">
+<div class="text-content">
+<h2>
+للغات التدريس
+</h2>
+<p>
+تُقدّم جامعة إسطنبول أريل برامجها التعليمية بلغتين رئيسيتين هما التركية والإنجليزية، حيث يتم تدريس معظم التخصصات باللغة التركية، مع إتاحة عدد كبير من البرامج المتميزة التي تُدرس باللغة الإنجليزية لتلبية احتياجات الطلاب الدوليين وتحقيق المعايير الأكاديمية العالمية.
+</p>
+</div>
+</div>
+</section>
+
+<section class="section-three">
+<div class="text-row">
+<div class="text-content">
+<h2>
+مميزات الدراسة في جامعة إسطنبول أريل  
+</h2>
+<p> &bull;   تُقدّم جامعة إسطنبول أريل برامج أكاديمية تُدرَّس باللغة الإنجليزية، مما يُتيح للطلاب فرصًا للتعلم وفقًا للمعايير الدولية. </p>
+<p> &bull;   تضم الجامعة أكثر من 740 عضوًا من أعضاء هيئة التدريس المؤهلين، مما يُساهم في تقديم تعليم عالي الجودة </p>
+<p> &bull;   توفر جامعة إسطنبول أريل بيئة تعليمية مجهّزة بأحدث التقنيات، بما في ذلك مختبرات حديثة ومرافق تعليمية متطورة. </p>
+</div>
+</div>
+</section>
+
+<section class="section-three">
+<div class="text-row">
+<div class="text-content">
+<h2>
+جامعة إسطنبول أريل بالأرقام
+</h2>
+<p> &bull; 12800 عدد الطلاب (عدد تقريبي) </p>
+<p> &bull; 3400  أعضاء هيئة التدريس </p>
+<p> &bull; 7    عدد الكليات </p>
+<p> &bull; 40   عدد البرامج الأكاديمية لمرحلة البكالوريوس </p>
+<p> &bull; 50   عدد البرامج الأكاديمية لمرحلة الدراسات العليا </p>
+<p> &bull; 22   عدد المراكز التدريبية </p>
+</div>
+</div>
+</section>
+
+<section class="section-three">
+<div class="text-row">
+<div class="text-content">
+<h2>
+اعترافات جامعة إسطنبول أريل 
+</h2>
+<p>
+جامعة ايشك معتمدة من كافة الدول الأوروبية وبعض الدول العربية مثل ليبيا الأردن مصر السودان المغرب وغيرها
+</p>
+</div>
+</div>
+</section>
+
+<section class="section-three">
+<div class="text-row">
+<div class="text-content">
+<h2>
+كيفيّة التقديم والتسجيل في جامعة إسطنبول أريل
+</h2>
+<p> يمكن التقديم على جامعة إيشك لمرحلة البكالوريوس في كافة التخصصات بمعدل ثانوية لا يقل عن 60%  </p>
+<p> &bull; الأوراق المطلوبة للتسجيل </p>
+<p> &bull; الشهادة الثانوية مترجمة لإحدى اللغتين الإنكليزية أو التركية ومصدقة من وزارة الخارجيّة. </p>
+<p> &bull; كشف علامات مترجم لإحدى اللغتين الإنكليزية أو التركية ومصدّق من وزارة الخارجيّة. </p>
+<p> &bull; جواز سفر </p>
+<p> &bull; صورة شخصية </p>
+</div>
+</div>
+</section>
+
+<section class="section-three">
+<div class="text-row">
+<div class="text-content">
+<h2>
+كيفيّة التقديم والتسجيل في جامعة إسطنبول أريل 
+</h2>
+<p> يمكن التقديم على جامعة إيشك لمرحلة الماجستير في كافة التخصصات بمعدل بكالوريوس لا يقل عن 60%  </p>
+<p> &bull; الأوراق المطلوبة للتسجيل </p>
+<p> &bull; الشهادة الجامعيةس مترجمة لإحدى اللغتين الإنكليزية أو التركية ومصدقة من وزارة الخارجيّة. </p>
+<p> &bull; كشف علامات مترجم لإحدى اللغتين الإنكليزية أو التركية ومصدّق من وزارة الخارجيّة. </p>
+<p> &bull; جواز سفر </p>
+<p> &bull; صورة شخصية </p>
+</div>
+</div>
+</section>
+
+<section class="section-three">
+<div class="text-row">
+<div class="text-content">
+<h2>
+مواعيد التقديم على جامعة إسطنبول ألتن باش 
+</h2>
+<p>
+تتيح جامعة أنقرة للعلوم التسجيل على مرحلة البكالوريوس لمرة واحدة في السنة وذلك في فصل الخريف حيث يبدأ التسجيل تقريبا من الشهر الخامس ويستمر حتى الشهر التاسع مع احتمالية التجديد حتى الشهر العاشر
+</p>
+</div>
+</div>
+</section>
+
+</div>
+
+<!-- العمود الجانبي (30%) -->
+<div class="sidebar-column">
+<div class="sidebar-section">
+<h1>معلومات مفيدة</h1>
+<hr>
+<div class="sidebar-item">
+<a href="Open education.html" target="_blank">
+<!--  <img src="/IMAGE/Al-Aqsa.jpg" alt="التعليم المفتوح"> -->
+<div class="sidebar-item-content">
+<h3>التعليم المفتوح</h3>
+<p>ادرس عن بعد من أي مكان وبمرونة كبيرة، دون الحاجة للذهاب إلى الجامعة يوميًا.</p>
+</a>
+</div>
+</div>
+<div class="sidebar-item">
+<a href="YÖS.html" target="_blank">
+<!-- <img src="/IMAGE/امتحان اليوس الموحد.png" alt="امتحان اليوس الموحد"> -->
+<div class="sidebar-item-content">
+<h3>امتحان اليوس الموحد TR-YÖS</h3>
+<p>اختبار قياسي لقياس قدرات الطلاب الدوليين للقبول في الجامعات التركية الحكومية</p>
+</a>
+</div>
+</div>
+
+<div class="sidebar-item">
+<a href="Sat.html" target="_blank">
+<!-- <img src="/IMAGE/امتحان السات.png" alt="امتحان السات"> --> 
+<div class="sidebar-item-content">
+<h3>امتحان السات</h3>
+<p>اختبار دولي يقيس مهارات الطلاب في اللغة والرياضيات، ويستخدم للقبول في الجامعات العالمية</p>
+</a>
+</div>
+</div>
+
+<div class="sidebar-item">
+<a href="CV.html" target="_blank">
+<!--  <img src="/IMAGE/CV.png" alt="CV"> -->
+<div class="sidebar-item-content">
+<h3>الطريقةالصحيحة في اعداد CV</h3>
+<p>كيفية إعداد السيرة الذاتية بطريقة احترافية تفتح لك أبواب الفرص الوظيفية</p>
+</a>
+</div>
+</div>
+
+<div class="sidebar-item">
+<a href="Letter of intent.html" target="_blank">
+<!-- <img src="/IMAGE/خطاب النية.png" alt="خطاب النية"> --> 
+<div class="sidebar-item-content">
+<h3>خطاب النية</h3>
+<p>هميته ومكوناته وطريقة صياغته بشكل فعّال</p>
+</a>
+</div>
+</div>
+</div>
+
+<div class="sidebar-section">
+<h1>أهم الصحفات</h1>
+<hr>
+<div class="sidebar-item">
+<a href="public universities.html" target="_blank">
+<!--<img src="/IMAGE/الجامعات الحكومية.png" alt="الجامعات التركية"> --> 
+<div class="sidebar-item-content">
+<h3>الجامعات الحكومية التركية</h3>
+<p>ادرس في جامعات تركيا الحكومية وتمتع بتجربة علمية غنية بين الشرق والغرب.</p>
+</a>
+</div>
+</div>
+<div class="sidebar-item">
+<a href="private universities.html" target="_blank">
+<!--  <img src="/IMAGE/الجامعات الخاصة.png" alt="صورة فعالية"> -->
+<div class="sidebar-item-content">
+<h3>الجامعات الخاصة التركية</h3>
+<p>نحو مستقبل أكاديمي مشرق... اختر إحدى الجامعات الخاصة المتميزة في تركيا.</p>
+</a>
+</div>
+</div>
+
+<div class="sidebar-item">
+<a href="Scholarships.html" target="_blank">
+<!-- <img src="/IMAGE/المنح العالمية.png" alt="صورة فعالية"> --> 
+<div class="sidebar-item-content">
+<h3>المنح العالمية</h3>
+<p>استعد للانطلاق نحو المستقبل مع أقوى المنح العالمية للدراسة في أرقى الجامعات.<p>
+</a>
+</div>
+</div>
+
+<div class="sidebar-item">
+<a href="Training.html" target="_blank">
+<!-- <img src="/IMAGE/الدورات التدريبية.png" alt="صورة فعالية"> -->
+<div class="sidebar-item-content">
+<h3>الفرص التدريبية</h3>
+<p>استعد لسوق العمل من خلال أفضل الفرص التدريبية المدعومة أكاديميًا ومهنيًا.</p>
+</a>
+</div>
+</div>
+
+<div class="sidebar-item">
+<a href="Table.html" target="_blank">
+<!--  <img src="/IMAGE/تقويم المفاضلات.png" alt="صورة فعالية"> -->
+<div class="sidebar-item-content">
+<h3>تقويم مفاضلات الجامعات</h3>
+<p>تابع جميع مواعيد المفاضلات في الجامعات التركية خطوة بخطوة في مكان واحد.</p>
+</a>
+</div>
+</div>
+
+<div class="sidebar-item">
+<a href="map.html" target="_blank">
+<!-- <img src="/IMAGE/الخريطة التفاعلية.png" alt="صورة فعالية"> -->
+<div class="sidebar-item-content">
+<h3>الخريطة التفاعلية للجامعات التركية</h3>
+<p>استكشف الجامعات التركية جغرافيًا عبر خريطة تفاعلية دقيقة وسهلة الاستخدام.</p>
+</a>
+</div>
+</div>
+</div>
+
+<!-- العمود الثالث -->
+<div class="sidebar-section">
+<h1>أحدث العروض</h1>
+<hr>
+<img src="./imges/gaziantep.png" alt="عرض خاص" class="offer-image">
+<p class="offer-text">خصم 20% على رسوم الفصل الصيفي للطلاب المسجلين قبل 1 يونيو</p>
+</div>
+
+<div class="sidebar-section">
+<h1>تواصل معنا</h1>
+<hr>
+<form class="contact-form">
+<div class="form-group">
+<label for="name">الاسم الكامل</label>
+<input type="text" id="name" required>
+</div>
+<div class="form-group">
+<label for="email">البريد الإلكتروني</label>
+<input type="email" id="email" required>
+</div>
+<div class="form-group">
+<label for="message">نص الرسالة</label>
+<textarea id="message" rows="4" required></textarea>
+</div>
+<button type="submit" class="submit-btn">إرسال الرسالة <i class="fas fa-paper-plane"></i></button>
+</form>
+</div>
+</div>
+</div>
+
+
+<!-- End Section -->
+
+<!-- Start Footer -->
+
+<div class="footer-wrapper">
+<div class="footer-content">
+<!-- Right Column -->
+<div class="footer-column right-align">
+<a href="public universities.html" target="_blank" class="footer-link">
+<i class="fas fa-university"></i>
+<span>الجامعات الحكومية</span>
+</a>
+<hr class="footer-divider">
+<a href="private universities.html" target="_blank" class="footer-link">
+<i class="fas fa-building"></i>
+<span>الجامعات الخاصة</span>
+</a>
+<hr class="footer-divider">
+<a href="Scholarships.html" target="_blank" class="footer-link">
+<i class="fas fa-globe"></i>
+<span>المنح العالمية</span>
+</a>
+<hr class="footer-divider">
+<a href="Training.html" target="_blank" class="footer-link">
+<i class="fas fa-graduation-cap"></i>
+<span>التدريب</span>
+</a>
+</div>
+
+<!-- Middle Column -->
+<div class="footer-column center-align">
+<a href="map.html" target="_blank" class="footer-link">
+<i class="fa-solid fa-location-dot"></i>
+<span>خريطة الجامعات</span>
+</a>
+<hr class="footer-divider">
+<a href="Table.html" target="_blank" class="footer-link">
+<i class="fa-solid fa-calendar-days"></i>
+<span>تقويم الجامعات</span>
+</a>
+<hr class="footer-divider">
+<a href="About.html" target="_blank" class="footer-link">
+<i class="fa-solid fa-circle-question"></i>
+<span>من نحن؟</span>
+</a>
+<hr class="footer-divider">
+<a href="https://wa.me/905015579829" target="_blank" class="footer-link">
+<i class="fas fa-phone-alt"></i>
+<span>اتصل بنا</span>
+</a>
+</div>
+
+<!-- Left Column (Map) -->
+<div class="footer-column left-align map-column">
+<div class="map-container">
+<iframe class="map-iframe" 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.279637145691!2d28.97885931572036!3d41.00819497930028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab974807d0575%3A0x44089783d1089f31!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
+allowfullscreen="" 
+loading="lazy"
+title="موقعنا في اسطنبول">
+</iframe>
+</div>
+
+<div class="social-icons">
+<a href="https://wa.me/905015579829" target="_blank" class="social-icon" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://t.me/systemtr" target="_blank" class="social-icon" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+<a href="https://www.facebook.com/profile.php?id=100094096810288&mibextid=ZbWKwL" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://instagram.com/systemedutr?igshid=MzNlNGNkZWQ4Mg==" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</div>
+
+<div class="copyright-section">
+<hr class="copyright-divider">
+<div class="copyright">
+جميع الحقوق محفوظة لدى فريق <span class="heart">❤</span> سيستم © <span id="current-year">2023</span>
+</div>
+</div>
+</div>
+<!-- End Footer-->
+
+
+<!-- Start Quick Interaction Tools Section -->
+
+<div class="scroll-progress-container">
+<div class="scroll-progress-bar"></div>
+</div>
+<!-- الأدوات العائمة -->
+<div class="floating-tools">
+<div class="main-tools">
+<div class="floating-btn scroll-top" id="scrollTopBtn">
+<i class="fas fa-arrow-up"></i>
+</div>
+<div class="floating-btn action-btn" id="actionBtn">
+<i class="fas fa-plus"></i>
+</div>
+</div>
+
+<div class="social-tools">
+<div class="floating-btn social-btn whatsapp" id="whatsappBtn">
+<i class="fab fa-whatsapp"></i>
+</div>
+<div class="floating-btn social-btn telegram" id="telegramBtn">
+<i class="fab fa-telegram"></i>
+</div>
+<div class="floating-btn social-btn facebook" id="facebookBtn">
+<i class="fab fa-facebook-f"></i>
+</div>
+</div>
+</div>
+<!-- End Quick Interaction Tools Section -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="İstanbul arel.js"></script>
+</body>
+</html>
+

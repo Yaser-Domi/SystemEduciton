@@ -651,51 +651,57 @@
                 id: 11,
                 name: "جامعة ايشك",
                 state: "إسطنبول",
+                url: "Işık.html",
                 languages: ["الإنجليزية" ,"التركية"],
                 majors: ["الطب", "الحقوق"],
                 certificates: ["شهادة الثانوية العامة", "شهادة اليوس الموحد TR-YÖS", "شهادة السات", "شهادة الثانوية التركية"],
-                image: "/img/جامعة ايشك.webp"
+                image: "IMAGE/IŞIK ÜNİVERSİTESİ.png"
             },
             {
                 id: 12,
                 name: "جامعة إسطنبول التن باش",
                 state: "إسطنبول",
+                url: "İstanbul Altın Baş.html",
                 languages: ["الإنجليزية", "التركية"],
                 majors: ["الطب", "الصيدلة"],
                 certificates: ["شهادة اليوس الموحد TR-YÖS", "شهادة السات"],
-                image: "/img/جامعة اسطنبول التن باش.webp"
+                image: "IMAGE/İSTANBUL ALTIN BAŞ ÜNİVERSİTESİ.png"
             },
             {
                 id: 13,
                 name: "جامعة إسطنبول اريل ",
                 state: "إسطنبول",
+                url: "İstanbul arel.html",
                 languages: ["الإنجليزية" ,"التركية"],
                 majors: ["الهندسة", "العمارة"],
                 certificates: ["شهادة الثانوية العامة","شهادة اليوس الموحد TR-YÖS", "شهادة السات", "شهادة الثانوية التركية"],
-                image: "/img/جامعة إسطنبول اريل.webp"
+                image: "IMAGE/İSTANBUL AREL ÜNİVERSİTESİ.png"
             },
             {
                 id: 14,
                 name: "جامعة إسطنبول أطلس",
                 state: "إسطنبول",
+                url: "İstanbul Atlas.css",
                 languages: ["التركية" ,"الإنجليزية"],
                 majors: ["إدارة الأعمال", "الحقوق"],
                 certificates: ["شهادة الثانوية العامة", "شهادة اليوس الموحد TR-YÖS", "شهادة الثانوية التركية"],
-                image: "/IMAGE/İSTANBUL ATLAS.png"
+                image: "IMAGE/İSTANBUL ATLAS.png"
             },
             {
                 id: 15,
                 name: "جامعة إسطنبول أيدن",
                 state: "إسطنبول",
+                url: "İstanbul Aydın.html",
                 languages: ["التركية", "الإنجليزية"],
                 majors: ["الطب", "الصيدلة"],
                 certificates: ["شهادة اليوس الموحد TR-YÖS", "شهادة السات"],
-                image: "/IMAGE/AYDIN.png",
+                image: "IMAGE/İSTANBUL AYDIN ÜNİVERSİTESİ.png",
             },
             {
                 id: 16,
                 name: "جامعة إسطنبول بيلجي",
                 state: "إسطنبول",
+                url: "İbn Haldun.html",
                 languages: ["الإنجليزية", "التركية"],
                 majors: ["الطب", "الصيدلة"],
                 certificates: ["شهادة اليوس الموحد TR-YÖS"],
