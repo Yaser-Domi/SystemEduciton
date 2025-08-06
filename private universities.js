@@ -701,11 +701,11 @@
                 id: 16,
                 name: "جامعة إسطنبول بيلجي",
                 state: "إسطنبول",
-                url: "İbn Haldun.html",
+                url: "İstanbul bilgi.html",
                 languages: ["الإنجليزية", "التركية"],
                 majors: ["الطب", "الصيدلة"],
                 certificates: ["شهادة اليوس الموحد TR-YÖS"],
-                image: "/img/جامعة إسطنبول بيلجي.jpg"
+                image: "IMAGE/İSTANBUL BİLGİ ÜNİVERSİTESİ.png"
             },
             // {
             //     id: 17,
